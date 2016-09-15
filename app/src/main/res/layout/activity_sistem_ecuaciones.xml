@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.Matematicas.SistemEcuaciones">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/fullwrap"
+                    android:text="Número de variables"/>
+                <Spinner
+                    android:id="@+id/spinnumvar"
+                    style="@style/fullwrap"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/textviewteoria"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/fullwrap"
+                    android:text="Número de ecuaciones"/>
+                <Spinner
+                    android:id="@+id/spinnumecuac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+            </LinearLayout>
+            <Button
+                style="@style/fullwrap"
+                android:text="Aceptar"
+                android:onClick="aceptaNdatosNecuac"
+                android:layout_gravity="center"/>
+            <TextView
+                style="@style/textviewteoria"
+                android:text="Deslice tabla derecha o izquierda en caso tabla sea grande para ancho de pantalla"/>
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <TableLayout
+                    android:id="@+id/tablaSistemaEcuac"
+                    style="@style/textviewteoria">
+                </TableLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:id="@+id/layoutOperar"
+                style="@style/textviewteoria"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+                <Button
+                    style="@style/fullwrap"
+                    android:textStyle="bold"
+                    android:onClick="resolver"
+                    android:text="OPERAR"/>
+                <TextView
+                    style="@style/textviewteoria"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="italic"
+                    android:text="Nota: No se aceptan valores complejos"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

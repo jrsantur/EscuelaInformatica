@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.InvestOperaciones.SimplexMax">
+    <LinearLayout
+        style="@style/textviewteoria"
+        android:background="#97B3D1"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/fullwrap"
+            android:text="# de restricciones"/>
+        <Spinner
+            android:id="@+id/spnnrest"
+            style="@style/textviewteoria"></Spinner>
+    </LinearLayout>
+    <Button
+        style="@style/fullwrap"
+        android:onClick="generarTablas"
+        android:text="aceptar"/>
+    <LinearLayout
+        android:id="@+id/layParaLlenar"
+        style="@style/textviewteoria"
+        android:orientation="vertical"
+        android:background="#97CFB6"
+        android:visibility="invisible">
+        <TextView
+            style="@style/textviewteoria"
+            android:text="Usar como variables x1 y x2 en minúsculas, ejemplo: 5x1+4x2 y decimal separar con punto"/>
+        <TextView
+            style="@style/fullwrap"
+            android:layout_marginTop="10dp"
+            android:text="Maximizar o Minimizar :"/>
+
+        <LinearLayout
+            style="@style/textviewteoria"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/fullwrap"
+                android:text="Funcion"/>
+            <EditText
+                android:id="@+id/editFuncionMax"
+                style="@style/textviewteoria"
+                android:background="@drawable/borde"/>
+            </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            style="@style/fullwrap"
+            android:text="Sujeto a:"/>
+
+        <TableLayout
+            android:id="@+id/tablaRestricciones"
+            style="@style/fullwrap"></TableLayout>
+        </LinearLayout>
+    <LinearLayout
+        style="@style/textviewteoria"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnResolver"
+            style="@style/textviewteoria"
+            android:onClick="resolverMax"
+            android:text="RESOLVER"
+            android:visibility="invisible"/>
+        </LinearLayout>
+
+<TextView
+    android:id="@+id/txtrptaMax"
+    style="@style/textviewteoria"
+    android:background="#CFCF97"
+    android:visibility="invisible"/>
+
+<TextView
+    style="@style/textviewteoria"
+    android:text="Agradecimientos a: Edwin Camino quien brindó codigo de solución"/>
+
+</LinearLayout>

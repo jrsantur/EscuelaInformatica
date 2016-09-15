@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.SimulacionSistemas">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView android:text="TEMAS"
+                android:id="@+id/titleSimulacion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#E32030"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView android:text="***Generación números pseudoaleatorios***"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="#27e6cd"
+                android:textColor="#635870"/>
+
+            <TextView android:text="+ Metodo No Congruenciales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2248e3"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityCuadradoMedio"
+                android:text="a) Metodo del Cuadrado Medio"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityProductoCuadradoMedio"
+                android:text="b) Metodo del Producto Medio"/>
+
+            <TextView android:text="+ Metodo Congruenciales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2248e3"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityMCLinealMultiplicativo"
+                android:text="a) Lineal Multiplicativo"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityMCLMixto"
+                android:text="b) Lineal Mixto"/>
+            <TextView android:text="***Generadores de valores aleatorios***"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="#27e6cd"
+                android:textColor="#635870"/>
+            <TextView android:text="+ Procesos Discretos"
+                style="@style/textviewteoria.2248E3"/>
+            <Button
+                style="@style/textviewteoria"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityProcesoBinomial"
+                android:text="Proceso Binomial"/>
+            <Button
+                style="@style/textviewteoria"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityProcesoGeomtrico"
+                android:text="Proceso Geométrico"/>
+            <Button
+                style="@style/textviewteoria"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityProcesoBinomialNegativo"
+                android:text="Proceso Binomial Negativo o Pascalino"/>
+            <Button
+                style="@style/textviewteoria"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityProcesoHiperGeom"
+                android:text="Proceso Hipergeométrico"/>
+            <Button
+                style="@style/textviewteoria"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityPoisoniano"
+                android:text="Proceso Poisoniano"/>
+
+            <TextView android:text="+ Procesos Continuos"
+                style="@style/textviewteoria.2248E3"/>
+            <Button
+                style="@style/textviewteoria"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityProcesoUniforme"
+                android:text="Proceso Uniforme"/>
+            <Button
+                style="@style/textviewteoria"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityProcesoExpon"
+                android:text="Proceso Exponencial"/>
+            <Button
+                style="@style/textviewteoria"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityProcesoNormGauss"
+                android:text="Proceso Normal"/>
+            <Button
+                style="@style/textviewteoria"
+                android:gravity="fill_vertical"
+                android:onClick="abrirActivityProcesoLognormal"
+                android:text="Proceso Lognormal"/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

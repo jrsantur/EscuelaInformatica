@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.InvestOperaciones.CadMarkovPotencia">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/fullwrap"
+                    android:text="Número de estados:"/>
+                <Spinner
+                    android:id="@+id/spinNumEstados"
+                    style="@style/fullwrap"></Spinner>
+            </LinearLayout>
+            <Button
+                style="@style/fullwrap"
+                android:text="Crear matriz de estados"
+                android:onClick="crearTabla"/>
+            <LinearLayout
+                android:id="@+id/layoutMatrizEstado"
+                style="@style/textviewteoria"
+                android:orientation="vertical"
+                android:visibility="invisible">
+                <TextView
+                    style="@style/textviewteoria"
+                    android:paddingBottom="4dp"
+                    android:text="Llenar matriz de estados:"/>
+                <TableLayout
+                    android:id="@+id/tablaMatrizEstado"
+                    style="@style/fullwrap"></TableLayout>
+                <TextView
+                    style="@style/textviewteoria"
+                    android:padding="4dp"
+                    android:text="Obtener la potencia de una matriz, ejemplo Matriz A elevada  la 'n' potencia: A^n"/>
+                <LinearLayout
+                    style="@style/textviewteoria"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/fullwrap"
+                        android:text="n:"/>
+                    <EditText
+                        android:id="@+id/edtNpotencia"
+                        style="@style/fullwrap"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:padding="2dp"
+                        android:background="@drawable/borde"
+                        android:textSize="10dp"
+                        android:width="100dp"/>
+                </LinearLayout>
+                <Button
+                    style="@style/fullwrap"
+                    android:onClick="elevarMatriz"
+                    android:text="Resolver"/>
+                <TableLayout
+                    android:id="@+id/tablarptamatrizpotencia"
+                    style="@style/fullwrap"></TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

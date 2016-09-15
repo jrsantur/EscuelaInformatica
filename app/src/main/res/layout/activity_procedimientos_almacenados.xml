@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.ProcedimientosAlmacenados">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:layout_marginTop="4px"
+                android:text="@string/intro_activity_proc_almac"/>
+            <TextView
+                android:id="@+id/txttituloprocalmac"
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:text="Procedimiento Almacenado:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:layout_marginTop="4px"
+                android:text="@string/concepto_activity_proc_almac"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="create procedure NOMBREPROCEDIMIENTO
+                \n as INSTRUCCIONES;\n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Ejemplo:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="CREATE PROCEDURE paListarDependencias\nAS\nBEGIN\n    SELECT N_DEPENDENCIAS_NOMBRE
+                \n    FROM Dependencias\nEND\n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/ejecutar_activity_proc_almac"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="exec paListarDependencias;\n"/>
+            <TextView
+                android:id="@+id/txttituloparamentrada"
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:text="Con parámetros de entrada:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/concepto_activity_proc_alm_entrada"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="create proc NOMBREPROCEDIMIENTO\n  @NOMBREPARAMETRO TIPO =VALORPORDEFECTO\n  as SENTENCIAS; \n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Ejemplo:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="@string/ejemplo_activity_proc_alm_entrada"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/descrip_ejemplo_activity_proc_alm_entrada"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:text="exec NOMBREPROCEDIMIENTO 'PARÁMETROENTRADA' ... ;\n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Ejemplo:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="exec retornaCodigoUniversitario 'Chiroque Peña David'\n"/>
+            <TextView
+                android:id="@+id/txttituloparamsalida"
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:text="Con parámetros de salida:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/concepto_activity_proc_alm_salida"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:text="@string/sintaxis_activity_proc_alm_salida"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Ejemplo: (Un procedimiento que retorna codigo universitario sabiendo nombre)"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="@string/ejemplo_activity_proc_alm_salida"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Para ejecutarlo:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="declare @variable char(10)\nexec getCodUniversOutput 'Jose Antonio',@variable output\nselect @variable;"/>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

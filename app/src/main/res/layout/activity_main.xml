@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="4dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtgeneralEscuelaInformatica"
+                style="@style/textviewteoria"
+                android:text="Cursos tomados en cuenta:"/>
+            <Button
+                android:id="@+id/btnOpenMatematicas"
+                style="@style/textviewteoria"
+                android:text="Matemáticas"
+                android:onClick="matematicas"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="programac"
+                android:text="Programación"/>
+            <Button
+                style="@style/textviewteoria"
+                android:text="Estadísticas"
+                android:onClick="estadistica"/>
+            <Button
+                style="@style/textviewteoria"
+                android:text="Investigación de Operaciones"
+                android:onClick="investop"/>
+            <Button
+                style="@style/textviewteoria"
+                android:text="MicrocomputadorasI"
+                android:onClick="microcompI"/>
+            <Button
+                style="@style/textviewteoria"
+                android:text="MicrocomputadorasII"
+                android:onClick="microcompII"/>
+            <Button
+                style="@style/textviewteoria"
+                android:text="Simulación de Sistemas"
+                android:onClick="simulacionsistemas"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="estructuraDeDatos"
+                android:text="Estructura de Datos"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="adminBaseDeDatos"
+                android:text="Administración de Base de Datos"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="redesSeguridadInform"
+                android:text="Redes - Seguridad Informática"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="tecnologyWeb"
+                android:text="Tecnología Web"/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

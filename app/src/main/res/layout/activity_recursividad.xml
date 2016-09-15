@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.Recursividad">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txttituloRecursividad"
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:text="Recursividad:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:scrollbars="vertical"
+                android:text="@string/concepto_recursividad"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:layout_marginTop="4px"
+                android:textStyle="italic"
+                android:text="Caso ejemplar:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:background="#99FFCC"
+                android:scrollbars="vertical"
+                android:padding="8dp"
+                android:layout_marginBottom="4px"
+                android:text="•	Factorial: Se desea calcular n! o el factorial de n, que es el producto de todos los enteros positivos de 1 a n. Se resolver el problema de forma recurrente como n(n-1)!; como (n-1)! es menor que n! , el caso base es 0!  que es 1"/>
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/recursividadfactorial"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.003333"
+                android:layout_marginTop="4px"
+                android:textStyle="italic"
+                android:text="Otro caso ejemplar:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:scrollbars="vertical"
+                android:text="Se puede incluso la operación SUMAR implementar de manera recursiva, a continuación codificado en java"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="Codificado en java:"/>
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/factorialrecursivojava"/>
+            </HorizontalScrollView>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

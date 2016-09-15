@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.Vlan">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:background="#FFFFCC"
+                android:text="@string/concepto_vlan"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:background="@drawable/bordemorado"
+                android:padding="4dp"
+                android:text="@string/clasificacion_vlan"/>
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:layout_marginLeft="4px"
+                    android:src="@drawable/vlan"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:text="Imagen: Vlan, Autor de imagen:Oyuhain (Wikimedia Commons)"/>
+            <TextView
+                style="@style/textviewteoria"
+                android:text="@string/nota_fuente_vlan"/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

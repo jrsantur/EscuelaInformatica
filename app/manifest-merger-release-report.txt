@@ -1,0 +1,639 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	android:versionCode
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:5:5
+	android:name
+		ADDED from AndroidManifest.xml:5:22
+application
+ADDED from AndroidManifest.xml:7:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+	android:label
+		ADDED from AndroidManifest.xml:10:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:8:9
+	android:icon
+		ADDED from AndroidManifest.xml:9:9
+	android:theme
+		ADDED from AndroidManifest.xml:11:9
+activity#chiroque.aplicaciones.com.escuelainformatica.MainActivity
+ADDED from AndroidManifest.xml:12:9
+	android:label
+		ADDED from AndroidManifest.xml:14:13
+	android:name
+		ADDED from AndroidManifest.xml:13:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:15:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:16:17
+	android:name
+		ADDED from AndroidManifest.xml:16:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:18:17
+	android:name
+		ADDED from AndroidManifest.xml:18:27
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.ChiCuadrado
+ADDED from AndroidManifest.xml:21:9
+	android:label
+		ADDED from AndroidManifest.xml:23:13
+	android:name
+		ADDED from AndroidManifest.xml:22:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.Tstudent
+ADDED from AndroidManifest.xml:25:9
+	android:label
+		ADDED from AndroidManifest.xml:27:13
+	android:name
+		ADDED from AndroidManifest.xml:26:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.DistZnormal
+ADDED from AndroidManifest.xml:29:9
+	android:label
+		ADDED from AndroidManifest.xml:31:13
+	android:name
+		ADDED from AndroidManifest.xml:30:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Matematicas.Matrices
+ADDED from AndroidManifest.xml:33:9
+	android:label
+		ADDED from AndroidManifest.xml:35:13
+	android:name
+		ADDED from AndroidManifest.xml:34:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.AsemblerFormComandos
+ADDED from AndroidManifest.xml:37:9
+	android:label
+		ADDED from AndroidManifest.xml:39:13
+	android:name
+		ADDED from AndroidManifest.xml:38:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.Estadisticas
+ADDED from AndroidManifest.xml:41:9
+	android:label
+		ADDED from AndroidManifest.xml:43:13
+	android:name
+		ADDED from AndroidManifest.xml:42:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.MicrocomputI
+ADDED from AndroidManifest.xml:45:9
+	android:label
+		ADDED from AndroidManifest.xml:47:13
+	android:name
+		ADDED from AndroidManifest.xml:46:13
+activity#chiroque.aplicaciones.com.escuelainformatica.InvestOperaciones.InvestOperaciones
+ADDED from AndroidManifest.xml:49:9
+	android:label
+		ADDED from AndroidManifest.xml:51:13
+	android:name
+		ADDED from AndroidManifest.xml:50:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.GraficoEstadistico
+ADDED from AndroidManifest.xml:53:9
+	android:label
+		ADDED from AndroidManifest.xml:55:13
+	android:name
+		ADDED from AndroidManifest.xml:54:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.MicroComputII
+ADDED from AndroidManifest.xml:57:9
+	android:label
+		ADDED from AndroidManifest.xml:59:13
+	android:name
+		ADDED from AndroidManifest.xml:58:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.Interrupciones
+ADDED from AndroidManifest.xml:61:9
+	android:label
+		ADDED from AndroidManifest.xml:63:13
+	android:name
+		ADDED from AndroidManifest.xml:62:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.GraficosEstadisticos.GraficoPLOT
+ADDED from AndroidManifest.xml:65:9
+	android:label
+		ADDED from AndroidManifest.xml:67:13
+	android:name
+		ADDED from AndroidManifest.xml:66:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.GraficosEstadisticos.BarChartPLOT
+ADDED from AndroidManifest.xml:69:9
+	android:label
+		ADDED from AndroidManifest.xml:71:13
+	android:name
+		ADDED from AndroidManifest.xml:70:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.DistribHipergeomtrica
+ADDED from AndroidManifest.xml:73:9
+	android:label
+		ADDED from AndroidManifest.xml:75:13
+	android:name
+		ADDED from AndroidManifest.xml:74:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.DistribFisher
+ADDED from AndroidManifest.xml:77:9
+	android:label
+		ADDED from AndroidManifest.xml:79:13
+	android:name
+		ADDED from AndroidManifest.xml:78:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.DistribBinomial
+ADDED from AndroidManifest.xml:81:9
+	android:label
+		ADDED from AndroidManifest.xml:83:13
+	android:name
+		ADDED from AndroidManifest.xml:82:13
+activity#chiroque.aplicaciones.com.escuelainformatica.InvestOperaciones.ProblemaMochila
+ADDED from AndroidManifest.xml:85:9
+	android:label
+		ADDED from AndroidManifest.xml:87:13
+	android:name
+		ADDED from AndroidManifest.xml:86:13
+activity#chiroque.aplicaciones.com.escuelainformatica.InvestOperaciones.ProblemaDiligencia
+ADDED from AndroidManifest.xml:89:9
+	android:label
+		ADDED from AndroidManifest.xml:91:13
+	android:name
+		ADDED from AndroidManifest.xml:90:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Matematicas.Matematicas
+ADDED from AndroidManifest.xml:93:9
+	android:label
+		ADDED from AndroidManifest.xml:95:13
+	android:name
+		ADDED from AndroidManifest.xml:94:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Matematicas.Derivadas
+ADDED from AndroidManifest.xml:97:9
+	android:label
+		ADDED from AndroidManifest.xml:99:13
+	android:name
+		ADDED from AndroidManifest.xml:98:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Matematicas.ConversionAngulos
+ADDED from AndroidManifest.xml:101:9
+	android:label
+		ADDED from AndroidManifest.xml:103:13
+	android:name
+		ADDED from AndroidManifest.xml:102:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Matematicas.SistemEcuaciones
+ADDED from AndroidManifest.xml:105:9
+	android:label
+		ADDED from AndroidManifest.xml:107:13
+	android:name
+		ADDED from AndroidManifest.xml:106:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.ConversionBinHexa
+ADDED from AndroidManifest.xml:109:9
+	android:label
+		ADDED from AndroidManifest.xml:111:13
+	android:name
+		ADDED from AndroidManifest.xml:110:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Matematicas.FormulaIntegrales
+ADDED from AndroidManifest.xml:113:9
+	android:label
+		ADDED from AndroidManifest.xml:115:13
+	android:name
+		ADDED from AndroidManifest.xml:114:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Matematicas.IntegralNumerica
+ADDED from AndroidManifest.xml:117:9
+	android:label
+		ADDED from AndroidManifest.xml:119:13
+	android:name
+		ADDED from AndroidManifest.xml:118:13
+activity#chiroque.aplicaciones.com.escuelainformatica.InvestOperaciones.SimplexMax
+ADDED from AndroidManifest.xml:121:9
+	android:label
+		ADDED from AndroidManifest.xml:123:13
+	android:name
+		ADDED from AndroidManifest.xml:122:13
+activity#chiroque.aplicaciones.com.escuelainformatica.InvestOperaciones.CadMarkovPotencia
+ADDED from AndroidManifest.xml:125:9
+	android:label
+		ADDED from AndroidManifest.xml:127:13
+	android:name
+		ADDED from AndroidManifest.xml:126:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Matematicas.ProductoMatrices
+ADDED from AndroidManifest.xml:129:9
+	android:label
+		ADDED from AndroidManifest.xml:131:13
+	android:name
+		ADDED from AndroidManifest.xml:130:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.SimulacionSistemas
+ADDED from AndroidManifest.xml:133:9
+	android:label
+		ADDED from AndroidManifest.xml:135:13
+	android:name
+		ADDED from AndroidManifest.xml:134:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.CuadradoMedio
+ADDED from AndroidManifest.xml:137:9
+	android:label
+		ADDED from AndroidManifest.xml:139:13
+	android:name
+		ADDED from AndroidManifest.xml:138:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProductoMedio
+ADDED from AndroidManifest.xml:141:9
+	android:label
+		ADDED from AndroidManifest.xml:143:13
+	android:name
+		ADDED from AndroidManifest.xml:142:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.MetodoCongruencialLinealMultiplicativo
+ADDED from AndroidManifest.xml:145:9
+	android:label
+		ADDED from AndroidManifest.xml:147:13
+	android:name
+		ADDED from AndroidManifest.xml:146:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.MetodoLinealMixto
+ADDED from AndroidManifest.xml:149:9
+	android:label
+		ADDED from AndroidManifest.xml:151:13
+	android:name
+		ADDED from AndroidManifest.xml:150:13
+activity#chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.EstructuraDDatos
+ADDED from AndroidManifest.xml:153:9
+	android:label
+		ADDED from AndroidManifest.xml:155:13
+	android:name
+		ADDED from AndroidManifest.xml:154:13
+activity#chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.Arboles
+ADDED from AndroidManifest.xml:157:9
+	android:label
+		ADDED from AndroidManifest.xml:159:13
+	android:name
+		ADDED from AndroidManifest.xml:158:13
+activity#chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.TiposDeDatos
+ADDED from AndroidManifest.xml:161:9
+	android:label
+		ADDED from AndroidManifest.xml:163:13
+	android:name
+		ADDED from AndroidManifest.xml:162:13
+activity#chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.AlgoritmOrdenacionArreglos
+ADDED from AndroidManifest.xml:165:9
+	android:label
+		ADDED from AndroidManifest.xml:167:13
+	android:name
+		ADDED from AndroidManifest.xml:166:13
+activity#chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.Pilas
+ADDED from AndroidManifest.xml:169:9
+	android:label
+		ADDED from AndroidManifest.xml:171:13
+	android:name
+		ADDED from AndroidManifest.xml:170:13
+activity#chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.Recursividad
+ADDED from AndroidManifest.xml:173:9
+	android:label
+		ADDED from AndroidManifest.xml:175:13
+	android:name
+		ADDED from AndroidManifest.xml:174:13
+activity#chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.ListasEnlazadas
+ADDED from AndroidManifest.xml:177:9
+	android:label
+		ADDED from AndroidManifest.xml:179:13
+	android:name
+		ADDED from AndroidManifest.xml:178:13
+activity#chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.AdminBaseDeDatos
+ADDED from AndroidManifest.xml:181:9
+	android:label
+		ADDED from AndroidManifest.xml:183:13
+	android:name
+		ADDED from AndroidManifest.xml:182:13
+activity#chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.CrearBaseDatos
+ADDED from AndroidManifest.xml:185:9
+	android:label
+		ADDED from AndroidManifest.xml:187:13
+	android:name
+		ADDED from AndroidManifest.xml:186:13
+activity#chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.CrearEliminarTabla
+ADDED from AndroidManifest.xml:189:9
+	android:label
+		ADDED from AndroidManifest.xml:191:13
+	android:name
+		ADDED from AndroidManifest.xml:190:13
+activity#chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.InsertSelectTabla
+ADDED from AndroidManifest.xml:193:9
+	android:label
+		ADDED from AndroidManifest.xml:195:13
+	android:name
+		ADDED from AndroidManifest.xml:194:13
+activity#chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.DeleteUpdateTabla
+ADDED from AndroidManifest.xml:197:9
+	android:label
+		ADDED from AndroidManifest.xml:199:13
+	android:name
+		ADDED from AndroidManifest.xml:198:13
+activity#chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.ProcedimientosAlmacenados
+ADDED from AndroidManifest.xml:201:9
+	android:label
+		ADDED from AndroidManifest.xml:203:13
+	android:name
+		ADDED from AndroidManifest.xml:202:13
+activity#chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.FuncionesSABD
+ADDED from AndroidManifest.xml:205:9
+	android:label
+		ADDED from AndroidManifest.xml:207:13
+	android:name
+		ADDED from AndroidManifest.xml:206:13
+activity#chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.Triggers
+ADDED from AndroidManifest.xml:209:9
+	android:label
+		ADDED from AndroidManifest.xml:211:13
+	android:name
+		ADDED from AndroidManifest.xml:210:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.RedesSegInformatica
+ADDED from AndroidManifest.xml:213:9
+	android:label
+		ADDED from AndroidManifest.xml:215:13
+	android:name
+		ADDED from AndroidManifest.xml:214:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProcesoBinomial
+ADDED from AndroidManifest.xml:217:9
+	android:label
+		ADDED from AndroidManifest.xml:219:13
+	android:name
+		ADDED from AndroidManifest.xml:218:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProcesoGeometrico
+ADDED from AndroidManifest.xml:221:9
+	android:label
+		ADDED from AndroidManifest.xml:223:13
+	android:name
+		ADDED from AndroidManifest.xml:222:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProcesoBinomialNegativo
+ADDED from AndroidManifest.xml:225:9
+	android:label
+		ADDED from AndroidManifest.xml:227:13
+	android:name
+		ADDED from AndroidManifest.xml:226:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProcesoHipergeometrico
+ADDED from AndroidManifest.xml:229:9
+	android:label
+		ADDED from AndroidManifest.xml:231:13
+	android:name
+		ADDED from AndroidManifest.xml:230:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProcesoPoisoniano
+ADDED from AndroidManifest.xml:233:9
+	android:label
+		ADDED from AndroidManifest.xml:235:13
+	android:name
+		ADDED from AndroidManifest.xml:234:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProcesoExponencial
+ADDED from AndroidManifest.xml:237:9
+	android:label
+		ADDED from AndroidManifest.xml:239:13
+	android:name
+		ADDED from AndroidManifest.xml:238:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProcesoGaussianoNorm
+ADDED from AndroidManifest.xml:241:9
+	android:label
+		ADDED from AndroidManifest.xml:243:13
+	android:name
+		ADDED from AndroidManifest.xml:242:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProcesoLognormal
+ADDED from AndroidManifest.xml:245:9
+	android:label
+		ADDED from AndroidManifest.xml:247:13
+	android:name
+		ADDED from AndroidManifest.xml:246:13
+activity#chiroque.aplicaciones.com.escuelainformatica.SimulacionDeSistemas.ProcesoUniforme
+ADDED from AndroidManifest.xml:249:9
+	android:label
+		ADDED from AndroidManifest.xml:251:13
+	android:name
+		ADDED from AndroidManifest.xml:250:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.IPv6
+ADDED from AndroidManifest.xml:253:9
+	android:label
+		ADDED from AndroidManifest.xml:255:13
+	android:name
+		ADDED from AndroidManifest.xml:254:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.MascaradeRed
+ADDED from AndroidManifest.xml:257:9
+	android:label
+		ADDED from AndroidManifest.xml:259:13
+	android:name
+		ADDED from AndroidManifest.xml:258:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.Ipv4
+ADDED from AndroidManifest.xml:261:9
+	android:label
+		ADDED from AndroidManifest.xml:263:13
+	android:name
+		ADDED from AndroidManifest.xml:262:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.Ipv6II
+ADDED from AndroidManifest.xml:265:9
+	android:label
+		ADDED from AndroidManifest.xml:267:13
+	android:name
+		ADDED from AndroidManifest.xml:266:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.Subred
+ADDED from AndroidManifest.xml:269:9
+	android:label
+		ADDED from AndroidManifest.xml:271:13
+	android:name
+		ADDED from AndroidManifest.xml:270:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.ClasesdeIp
+ADDED from AndroidManifest.xml:273:9
+	android:label
+		ADDED from AndroidManifest.xml:275:13
+	android:name
+		ADDED from AndroidManifest.xml:274:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.SubredesApps
+ADDED from AndroidManifest.xml:277:9
+	android:label
+		ADDED from AndroidManifest.xml:279:13
+	android:name
+		ADDED from AndroidManifest.xml:278:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.Vlan
+ADDED from AndroidManifest.xml:281:9
+	android:label
+		ADDED from AndroidManifest.xml:283:13
+	android:name
+		ADDED from AndroidManifest.xml:282:13
+activity#chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.AtaqueInformatico
+ADDED from AndroidManifest.xml:285:9
+	android:label
+		ADDED from AndroidManifest.xml:287:13
+	android:name
+		ADDED from AndroidManifest.xml:286:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Estadistica.ZnormalStand
+ADDED from AndroidManifest.xml:289:9
+	android:label
+		ADDED from AndroidManifest.xml:291:13
+	android:name
+		ADDED from AndroidManifest.xml:290:13
+activity#chiroque.aplicaciones.com.escuelainformatica.TecnologiaWeb.TecnoWeb
+ADDED from AndroidManifest.xml:293:9
+	android:label
+		ADDED from AndroidManifest.xml:295:13
+	android:name
+		ADDED from AndroidManifest.xml:294:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.Arquitectura8086
+ADDED from AndroidManifest.xml:297:9
+	android:label
+		ADDED from AndroidManifest.xml:299:13
+	android:name
+		ADDED from AndroidManifest.xml:298:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.Registros8086
+ADDED from AndroidManifest.xml:301:9
+	android:label
+		ADDED from AndroidManifest.xml:303:13
+	android:name
+		ADDED from AndroidManifest.xml:302:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.MemoriaSegm
+ADDED from AndroidManifest.xml:305:9
+	android:label
+		ADDED from AndroidManifest.xml:307:13
+	android:name
+		ADDED from AndroidManifest.xml:306:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.MemDirecc
+ADDED from AndroidManifest.xml:309:9
+	android:label
+		ADDED from AndroidManifest.xml:311:13
+	android:name
+		ADDED from AndroidManifest.xml:310:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.ES8086
+ADDED from AndroidManifest.xml:313:9
+	android:label
+		ADDED from AndroidManifest.xml:315:13
+	android:name
+		ADDED from AndroidManifest.xml:314:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.Controlador8259
+ADDED from AndroidManifest.xml:317:9
+	android:label
+		ADDED from AndroidManifest.xml:319:13
+	android:name
+		ADDED from AndroidManifest.xml:318:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.Copr8087
+ADDED from AndroidManifest.xml:321:9
+	android:label
+		ADDED from AndroidManifest.xml:323:13
+	android:name
+		ADDED from AndroidManifest.xml:322:13
+activity#chiroque.aplicaciones.com.escuelainformatica.TecnologiaWeb.Html5
+ADDED from AndroidManifest.xml:325:9
+	android:label
+		ADDED from AndroidManifest.xml:327:13
+	android:name
+		ADDED from AndroidManifest.xml:326:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Programation.Programacion
+ADDED from AndroidManifest.xml:329:9
+	android:label
+		ADDED from AndroidManifest.xml:331:13
+	android:name
+		ADDED from AndroidManifest.xml:330:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Programation.TecProgramacion
+ADDED from AndroidManifest.xml:333:9
+	android:label
+		ADDED from AndroidManifest.xml:335:13
+	android:name
+		ADDED from AndroidManifest.xml:334:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Programation.ProgOO
+ADDED from AndroidManifest.xml:337:9
+	android:label
+		ADDED from AndroidManifest.xml:339:13
+	android:name
+		ADDED from AndroidManifest.xml:338:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Programation.LenguajeProgramacion
+ADDED from AndroidManifest.xml:341:9
+	android:label
+		ADDED from AndroidManifest.xml:343:13
+	android:name
+		ADDED from AndroidManifest.xml:342:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.FuncComputador
+ADDED from AndroidManifest.xml:345:9
+	android:label
+		ADDED from AndroidManifest.xml:347:13
+	android:name
+		ADDED from AndroidManifest.xml:346:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.ArquitecturaInstruccion
+ADDED from AndroidManifest.xml:349:9
+	android:label
+		ADDED from AndroidManifest.xml:351:13
+	android:name
+		ADDED from AndroidManifest.xml:350:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.CicloInstruccion
+ADDED from AndroidManifest.xml:353:9
+	android:label
+		ADDED from AndroidManifest.xml:355:13
+	android:name
+		ADDED from AndroidManifest.xml:354:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.SegmInstrucciones
+ADDED from AndroidManifest.xml:357:9
+	android:label
+		ADDED from AndroidManifest.xml:359:13
+	android:name
+		ADDED from AndroidManifest.xml:358:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.JerarquiaMemoria
+ADDED from AndroidManifest.xml:361:9
+	android:label
+		ADDED from AndroidManifest.xml:363:13
+	android:name
+		ADDED from AndroidManifest.xml:362:13
+activity#chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.Memoria
+ADDED from AndroidManifest.xml:365:9
+	android:label
+		ADDED from AndroidManifest.xml:367:13
+	android:name
+		ADDED from AndroidManifest.xml:366:13
+activity#chiroque.aplicaciones.com.escuelainformatica.TecnologiaWeb.Css
+ADDED from AndroidManifest.xml:369:9
+	android:label
+		ADDED from AndroidManifest.xml:371:13
+	android:name
+		ADDED from AndroidManifest.xml:370:13
+activity#chiroque.aplicaciones.com.escuelainformatica.TecnologiaWeb.Bootstrap
+ADDED from AndroidManifest.xml:373:9
+	android:label
+		ADDED from AndroidManifest.xml:375:13
+	android:name
+		ADDED from AndroidManifest.xml:374:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Programation.MetodologiaDesarrollo
+ADDED from AndroidManifest.xml:377:9
+	android:label
+		ADDED from AndroidManifest.xml:379:13
+	android:name
+		ADDED from AndroidManifest.xml:378:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Programation.IngenieriaSoftware
+ADDED from AndroidManifest.xml:381:9
+	android:label
+		ADDED from AndroidManifest.xml:383:13
+	android:name
+		ADDED from AndroidManifest.xml:382:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Programation.JavaLenguaje
+ADDED from AndroidManifest.xml:385:9
+	android:label
+		ADDED from AndroidManifest.xml:387:13
+	android:name
+		ADDED from AndroidManifest.xml:386:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Programation.DesAgilSoftw
+ADDED from AndroidManifest.xml:389:9
+	android:label
+		ADDED from AndroidManifest.xml:391:13
+	android:name
+		ADDED from AndroidManifest.xml:390:13
+activity#chiroque.aplicaciones.com.escuelainformatica.Programation.Rup
+ADDED from AndroidManifest.xml:393:9
+	android:label
+		ADDED from AndroidManifest.xml:395:13
+	android:name
+		ADDED from AndroidManifest.xml:394:13
+activity#chiroque.aplicaciones.com.escuelainformatica.TecnologiaWeb.AspNet
+ADDED from AndroidManifest.xml:397:9
+	android:label
+		ADDED from AndroidManifest.xml:399:13
+	android:name
+		ADDED from AndroidManifest.xml:398:13
+activity#chiroque.aplicaciones.com.escuelainformatica.TecnologiaWeb.Foundation
+ADDED from AndroidManifest.xml:401:9
+	android:label
+		ADDED from AndroidManifest.xml:403:13
+	android:name
+		ADDED from AndroidManifest.xml:402:13
+activity#chiroque.aplicaciones.com.escuelainformatica.TecnologiaWeb.Jsp
+ADDED from AndroidManifest.xml:405:9
+	android:label
+		ADDED from AndroidManifest.xml:407:13
+	android:name
+		ADDED from AndroidManifest.xml:406:13
+uses-sdk
+INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+	android:targetSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0

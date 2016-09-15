@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.Matematicas.IntegralNumerica">
+
+    <EditText
+        android:id="@+id/edtxb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde"
+        android:hint="b"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"/>
+
+    <LinearLayout
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/fullwrap"
+            android:text="∫"
+            android:textSize="40dp"/>
+        <EditText
+            android:id="@+id/edtxfuncion"
+            style="@style/fullwrap"
+            android:background="@drawable/borde"
+            android:hint="  f(x) "
+            android:layout_gravity="center_vertical"
+            android:textStyle="italic"
+            android:padding="2dp"/>
+        <TextView
+            style="@style/fullwrap"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:text="dx"/>
+        </LinearLayout>
+    <EditText
+        android:id="@+id/edtxa"
+        style="@style/fullwrap"
+        android:background="@drawable/borde"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:hint="a"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/fullwrap"
+            android:text="# particiones:"/>
+        <EditText
+            android:id="@+id/edtxn"
+            style="@style/fullwrap"
+            android:background="@drawable/borde"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:hint="   n   "/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            style="@style/fullwrap"
+            android:onClick="riemman"
+            android:text="Riemman"/>
+        <TextView
+            android:id="@+id/textriemman"
+            style="@style/textviewteoria.negrita"
+            android:padding="8dp"
+            android:background="#E8D0E8"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            style="@style/fullwrap"
+            android:onClick="trapecios"
+            android:text="Trapecios"/>
+        <TextView
+            android:id="@+id/texttrapecios"
+            style="@style/textviewteoria.negrita"
+            android:padding="8dp"
+            android:background="#E8D0E8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            style="@style/fullwrap"
+            android:onClick="simpson13"
+            android:text="Simpson 1/3"/>
+        <TextView
+            android:id="@+id/textsimpson13"
+            style="@style/textviewteoria.negrita"
+            android:padding="8dp"
+            android:background="#E8D0E8"
+            android:hint="OJO:# particiones par"/>
+    </LinearLayout>
+    <Button
+        style="@style/textviewteoria"
+        android:onClick="resetearform"
+        android:text="Resetear formulario"/>
+    <TextView
+        style="@style/textviewteoria.0000FF"
+        android:background="#D4f57A"
+        android:textStyle="bold"
+        android:text="Sugerencia:"/>
+    <TextView
+        style="@style/textviewteoria.negrita"
+        android:textStyle="italic"
+        android:background="#D4f57A"
+        android:text="Al escribir las funciones deben seguirse las sugerencias como en la sección de Derivadas"/>
+
+</LinearLayout>

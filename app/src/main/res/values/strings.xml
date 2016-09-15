@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Escuela Informatica</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mruv">MRUV</string>
+    <string name="title_activity_programacion_dinamica">Programacion Dinamica</string>
+    <string name="title_activity_chi_cuadrado">Distrib. Chi Cuadrado</string>
+    <string name="title_activity_tstudent">T de student</string>
+    <string name="title_activity_dist_znormal">DistZnormal</string>
+    <string name="title_activity_matrices">Matrices</string>
+    <string name="title_activity_estadisticas">Estadisticas</string>
+    <string name="title_activity_algebra_lineal">Algebra Lineal</string>
+    <string name="title_activity_microcomputadoras_i">MicrocomputadorasI</string>
+    <string name="title_activity_arquitectura8086">Arquitectura 8086</string>
+    <string name="concepto_arquitectura8086"><u><b>Arquitectura del 8086:</b></u>     \nEl Intel 8086 es uno de los primeros microprocesadores de 16 bits diseñados por Intel, el inicio y los primeros miembros de la arquitectura x86. El trabajo de desarrollo para el 8086 comenzó en la primavera de 1976 y fue lanzando al mercado en el verano de 1978.
+    \nLos microprocesadores 8086/8088/80286 , pertenecen a la misma familia , con registros internos de 16 bit. La diferencia entre el 8088 y el 8086 es el tamaño del bus de datos, que es de 8 bits para el 8088 y de 16 bits para el 8086, significa que para trabajar con un entero, el 8088 deberá hacer dos operaciones de transferencia, para sacar dicho numero de la memoria y pasarlo a un registro del 8088, en cambio el 8086 y el 80286 sólo deberán hacer una operación.</string>
+    <string name="titulo_estruct_arquitec8086"><u>Estructura Interna 8086:</u></string>
+    <string name="estructura_arquitectura8086">♦<b>Unidad de interfaz del bus y unidad de ejecución:</b> El 8086 y el 8088 tienen internamente dos componentes, la Unidad de Interfaz del Bus y la Unidad de ejecución (Bus Interface Unit (BIU) y Execution Unit (EU)).
+    \n\u0020\u0020•La Unidad de Ejecución procesa las instrucciones del CPU. Está conformada por los registros generales, los registros índice y apuntadores, los flags, la unidad aritmético lógica, y la lógica de control que maneja todo el proceso para ejecutar las instrucciones.
+    \n\u0020\u0020•La Unidad de Interfaz del Bus maneja la lectura y escritura desde y hacia la memoria y los puertos de entrada/salida. Está conformada por los registros de segmento, una cola de 4 bytes para instrucciones en el 8088 y de 6 en el 8086, y lógica para controlar los buses externos del microprocesador.
+    \n♦<b>Registros:</b> Los registros del i8086 e i8088 se basaron en el diseño del Intel 8080 y el Intel 8085, y de hecho son compatibles a nivel de lenguaje ensamblador con el i8080. El conjunto de registros también es similar al del i8080, pero ampliados a 16 bits. Tanto el i8086 como el i8088 tienen cuatro registros de propósito general de 16 bits, que también pueden ser accedidos como ocho registros de 8 bits, y tienen cuatro registros índice de 16 bits (incluyendo el puntero de pila). Los registros del 8086 podrían clasificarse en tres grupos de acuerdo con sus funciones. El grupo de datos, que es esencialmente el conjunto de registros aritméticos; el grupo de apuntadores, que incluye los registros base e índices y también el contador.</string>
+    <string name="descrip_img_reg8086">Juego de Registros del 8086</string>
+    <string name="descrip_img_arq8086">Diagrama de bloque de los microprocesadores Intel 8086 ,Autor de imagen: Harkonnen2 (https://commons.wikimedia.org/wiki/File:Intel_8086_block_scheme.svg).</string>
+    <string name="descrip2_img_arq8086">1 Bloque de registros de propósito general
+    \n2 Bloque de registros de segmento y registro IP
+    \n3 Sumador de direcciones
+    \n4 Bus de direcciones interno
+    \n5 Cola de instrucciones (4 bytes para el 8088 y 6 bytes para el 8086)
+    \n6 Unidad de control (muy simplificada)
+    \n7 Interfaz del bus
+    \n8 Bus de datos interno
+    \n9 Unidad aritmético lógica (ALU)
+    \n10, 11, 12 Bus de direcciones, datos y control externos.</string>
+    <string name="nota_fuente_arq8086">Fuente: <i>https://es.wikipedia.org/wiki/Intel_8086_y_8088</i> ,para obtener más información.</string>
+    <string name="title_activity_registros8086">Registros del 8086</string>
+    <string name="concepto_registros8086"><u><b>Registros de 8086:</b></u> El procesador 8086 tiene 14 registros divididos en 3 grupos de 4 mas los registros PC(IP) y FLAGS. Los registros de datos se usan a veces de forma implícita por las instrucciones, haciendo más difícil la organización de los registros para emplearlos con valores temporales.
+    \nLos registros del procesador, se usan para contener los datos con que se está trabajando puesto que el acceso a los registros es mucho más rápido que los accesos a memoria. Se pueden realizar operaciones aritméticas y lógicas, comparaciones, entre otras. Se pueden hacer estas operaciones con todos los registros excepto los de segmento, el IP, y los flags.
+    \n<b>A) Registros de Propósito General:</b> Los registros de propósito general son el AX, BX, CX, y DX, de 16 bits. Cada uno de ellos se divide en dos registros de 8 bits, llamados AH y AL, BH y BL, CH y CL, y, DH y DL, H significando High (alto) y L significando Low (bajo), indicando la parte alta o la parte baja del registro correspondiente de 16 bits (ver esquema). Un programa podía usar tanto los registros de 16 bits como los registros de 8 bits. Aparte del uso general de los registros para hacer cálculos aritméticos y lógicos, existen instrucciones que usan estos registros con un uso particular especializado, como se indica a continuación:
+    \n•<i><b>Registro AX:</b></i> Es el registro acumulador, es utilizado para operaciones que implican entrada/salida, multiplicación y división (estas dos últimas en conjunto con el registro DX).
+    \n•<i><b>Registro BX:</b></i> Es el registro base, y es el único registro de propósito general que puede ser un índice para direccionamiento indexado.
+    \n•<i><b>Registro CX:</b></i> Es conocido como el registro contador. Puede contener un valor para controlar el número de veces que un ciclo se repite o un valor para corrimiento de bits.
+    \n•<i><b>Registro DX:</b></i> Es el registro de datos. En algunas operaciones se indica mediante este registro el número de puerto de entrada/salida, y en las operaciones de multiplicación y división de 16 bits se utiliza junto con el acumulador AX.</string>
+    <string name="descrip_imgregprop"><b>Imagen:</b> Modelo de registros de propósito general</string>
+    <string name="concepto_registros8086_2"><b>B) Registros Índice:</b> Los registros SI y DI están disponibles para direccionamiento indexado y para operaciones de cadenas de caracteres.
+    \n•<i><b>Registro SI:</b></i> El registro índice fuente de 16 bits es requerido por algunas operaciones con cadenas de caracteres. El SI está asociado con el segmento DS.
+    \n•<i><b>Registro DI:</b></i> El registro índice destino también es requerido por algunas operaciones con cadenas de caracteres. El DI está asociado con el segmento ES. <b>C) Registros Apuntadores:</b> Los registros SP (apuntador de pila) y BP (apuntador base) están asociados con el registro SS y permiten al sistema acceder a datos en el segmento de la pila.
+    \n•<i><b>Registro SP:</b></i> El apuntador de pila de 16 bits está asociado con el segmento SS y proporciona un valor de desplazamiento que se refiere a la palabra actual que está siendo procesada en la pila. El sistema maneja de manera automática este registro, aunque el programa puede hacer ciertas manipulaciones con él.
+    \n•<i><b>Registro BP:</b></i> El apuntador base de 16 bits facilita la referencia de parámetros dentro de la pila.</string>
+    <string name="descrip_imgregindices"><b>Imagen:</b> Modelo de registros índices (punteros de 16 bit).</string>
+    <string name="concepto_registros8086_3"><b>C) Registros de Banderas:</b> Es un registro de 16 bits, de los cuales nueve sirven para indicar el estado actual de la máquina y el resultado del procesamiento. Muchas instrucciones aritméticas y de comparación cambian el estado de las banderas y apoyándose en ellas se pueden tomar decisiones para determinar la acción subsecuente.
+    \nLa tabla contiene 16 posiciones (de 0 a 15), que son los 16 bits del registro de banderas, numeradas de derecha a izquierda. La posición 0 la encontraremos a la derecha y la posición 15 a la izquierda.</string>
+    <string name="descrip_imgregflags"><b>Imagen:</b> Modelo de registro Bandera (Flags)</string>
+    <string name="descrip_imgregflags_2">Los bits de las banderas son las siguientes:
+    \n•OF (overflow, desbordamiento): Indica desbordamiento del bit de mayor orden después de una operación aritmética de números con signo (1=existe overflow; 0=no existe overflow). Para operaciones sin signo, no se toma en cuenta esta bandera.
+    \n•DF (dirección): Controla la selección de incremento o decremento de los registros SI y DI en las operaciones con cadenas de caracteres (1=decremento automático; 0=incremento). La bandera DF se controla con las instrucciones STD y CLD.
+    \n•IF (interrupción): Controla el disparo de las interrupciones (1=habilita las interrupciones; 0=deshabilita las interrupciones). La interrupción no enmascarable es la única que no puede ser bloqueada por esta bandera. El estado de la bandera IF se controla con las instrucciones STI y CLI.
+    \n•TF (trampa): Permite la operación del procesador en modo de depuración (paso a paso)
+    \n•SF (signo): Contiene el signo resultante de una operación aritmética (0=positivo; 1=negativo).
+    \n•ZF (cero): Indica el resultado de una operación aritmética o de comparación (0=resultado diferente de cero; 1=resultado igual a cero).
+    \n•AF (acarreo auxiliar): Contiene el acarreo del bit 3. Esta bandera se prueba con las instrucciones DAA y DAS para ajustar el valor de AL después de una suma o resta BCD.
+    \n•PF (paridad): Indica si el número de bits 1, del byte menos significativos de una operación, es par (0=número de bits 1 es impar; 1=número de bits 1 es par).
+    \n•CF (acarreo): Contiene el acarreo del bit de mayor orden después de una operación aritmética; también almacena el contenido del último bit en una operación de desplazamiento o de rotación.</string>
+    <string name="concepto_registros8086_4"><b>D) Registros de Segmento:</b> Definen áreas de 64 Kb dentro del espacio de direcciones de 1 Mb del 8086. Estas áreas pueden solaparse total o parcialmente. No es posible acceder a una posición de memoria no definida por algún segmento: si es preciso, habrá de moverse alguno.
+    \n•<i><b>Registro CS:</b></i> El DOS almacena la dirección inicial del segmento de código de un programa en el registro CS. Esta dirección de segmento, más un valor de desplazamiento en el registro apuntador de instrucción (IP), indica la dirección de una instrucción que es buscada para su ejecución. Para propósitos de programación normal, no se necesita referenciar el registro CS.
+    \n•<i><b>Registro DS:</b></i> La dirección inicial de un segmento de datos de programa es almacenada en el registro DS. Esta dirección, más un valor de desplazamiento en una instrucción, genera una referencia a la localidad de un byte específico en el segmento de datos.
+    \n•<i><b>Registro SS:</b></i> El registro SS permite la colocación en memoria de una pila, para almacenamiento temporal de direcciones y datos. El DOS almacena la dirección de inicio del segmento de pila de un programa en el registro SS. Esta dirección de segmento, más un valor de desplazamiento en el registro del apuntador de la pila (SP), indica la palabra actual en la pila que está siendo direccionada. Para propósitos de programación normal, no se necesita referenciar el registro SS.
+    \n•<i><b>Registro ES:</b></i> Algunas operaciones con cadenas de caracteres utilizan el registro extra de segmento para manejar el direccionamiento de memoria. El registro ES está asociado con el registro DI (Índice). Un programa que requiere el uso del registro ES puede inicializarlo con una dirección de segmento apropiada.</string>
+    <string name="descrip_imgregsegm"><b>Imagen:</b> Modelo de registros de segmentos</string>
+    <string name="concepto_registros8086_5"><b>E) Registro Apuntador de Instrucciones:</b> El registro IP de 16 bits contiene el desplazamiento de dirección de la siguiente instrucción que se ejecuta. El IP está asociado con el registro CS en el sentido de que el IP (Instruction Pointer) indica la instrucción actual dentro del segmento de código que se está ejecutando actualmente en la memoria.</string>
+    <string name="title_activity_memoria_segm">Segmentación de Memoria</string>
+    <string name="concepto_memoria_segm_direcc">Estos procesadores usaban 20 bits de dirección que les permitía acceder hasta 1 MB de memoria. Sus registros internos eran de sólo 16 bits, por lo que se desarrolló un mecanismo usando registros de segmento para poder acceder al megabyte de memoria. El 8086 y el 8088 tenían cuatro registros de segmento de 16 bits (CS, DS, ES y SS). En lugar de suministrar los 4 bits faltantes para direccionar los 20 bits, como la mayoría de los procesadores segmentados, el 8086 y el 8088 desplazan el contenido del registro de segmento 4 bits hacia la izquierda y lo suman a una dirección de memoria de 16 bits proveniente de registros índice (BX, SI, DI, BP, SP, IP) y opcionalmente una constante, siendo el resultado la dirección efectiva.
+    \n<b><u>Segmentación:</u></b> Había también cuatro registros de 16 bits de segmento que permitían al 8086 tener acceso a un megabyte de memoria.</string>
+    <string name="descrip_imgsegmyoff"><b>Imagen:</b> Cálculo de la dirección efectiva mediante el uso de un segmento y un offset (https://commons.wikimedia.org/wiki/File:Intel_8088_segmento_y_offset.svg). Autor de imagen: German (https://commons.wikimedia.org/wiki/User:German)</string>
+    <string name="concepto_memoria_segm_2">En vez de concatenar el registro de segmento con el registro de dirección, como en la mayoría de los procesadores cuyo espacio de dirección excedía su tamaño de registro, el 8086 y el 8088 desplazaban el segmento de 16 bits sólo cuatro bits hacia la izquierda antes de sumarlo un offset de 16 bits (16×segmento + offset), produciendo una dirección externa (efectiva o física) de 20 bits a partir del par segmento:offset de 32 bits. Consecuentemente, cada dirección externa podía ser referida por 212 = 4096 diferentes pares segmento:offset. La separación de 16 bytes entre las bases del segmento (debido al desplazamiento de 4 bits) fue llamada un párrafo.
+    \nLos compiladores para la familia 8086 comúnmente soportaban dos tipos de punteros, cerca y lejos (near y far). Los punteros near eran offset de 16 bits implícitamente asociados con el segmento del código y/o de datos del programa y así podían ser usados sólo dentro de partes de un programa suficientemente pequeño para caber en un segmento. Los punteros far eran pares segmento:offset de 32 bits que se resolvían en direcciones externas de 20 bits.</string>
+    <string name="title_activity_mem_direcc">Direccionamiento de Memoria</string>
+    <string name="concepto_mem_direcc"><u><b>Direccionamiento de Memoria:</b></u> La forma en que se especifica un operando se denomina modo de direccionamiento. Los registros del 8086 son de 16 bits, por lo tanto el número de direcciones posibles a direccionar con 1 solo registro es: 2 65536 10000 16 = 10 = 16 lo cual representa un total de 64 KiB los valores de direcciones se encuentran en el rango de 0 a FFFF. Para superar este límite se utilizan 2 registros para direccionar memoria: Uno de SEGMENTO y otro de DESPLAZAMIENTO (offset) dentro del segmento. La notación utilizada para una dirección segmentada es: <i>SEGMENTO:DESPLAZAMIENTO</i> La relación entre la dirección de memoria real y la dirección segmentada es: DIR=SEGMENTO*16+DESPLAZAMIENTO. Se tiene 1024 KiB de memoria direccionable. Los valores para direcciones reales se encuentran en el rango 0 a FFFFFh. Una misma dirección de memoria puede ser direccionada con distintos valores de segmento y desplazamiento Ej: 100:50 = 105:0 =0:1050, trabajando en base 16.</string>
+    <string name="descrip_imgmemdir"><b>Ejemplo:</b> Distancia relativa según el número de inicio del segmento. </string>
+    <string name="modos_mem_direcc"><u><b>Modos de Direccionamiento:</b></u> Se entiende por modos de direccionamiento a las diferentes formas que pueden tomar los parámetros de las instrucciones del procesador. Diferentes autores clasifican en forma distinta los modos de direccionamiento del 8086. Nosotros distinguiremos fundamentalmente cuatro modos diferentes:
+    \n•<u><b>Registro:</b></u> Un parámetro que direcciona a un registro está utilizando el modo de direccionamiento registro.
+    \nEj: MOV AX, BX
+    \nEn este ejemplo los dos parámetros direccionan un registro.
+    \n•<u><b>Valor o Inmediato:</b></u> El modo de direccionamiento inmediato es utilizado cuando se hace referencia a un valor constante. Este se codifica junto con la instrucción. Es decir dicho parámetro representa a su valor y no a una dirección de memoria o un registro que lo contiene.
+    \nEj: MOV AX, 500
+    \nEn este ejemplo el número 500 es un parámetro inmediato.
+    \n•<u><b>Directo:</b></u> Se utiliza el modo directo cuando se referencia a una dirección de memoria y la misma estacodificada junto con la instrucción.
+    \nEj: MOV AL, [127]
+    \nEn este ejemplo el desplazamiento de la dirección de memoria se codifica junto con la instrucción y el segmento se asume a DS. Si MEMORIA es un array de bytes que representa a la memoria la instrucción anterior se puede poner como: AL:= MEMORIA[DS:127]
+    \n•<u><b>Indirecto:</b></u> Se utiliza el modo directo cuando se referencia a una dirección de memoria a través de uno o varios registros.
+    \nEj: MOV AL, [BX]
+    \nAquí el desplazamiento de la dirección de memoria está contenido en el registro BX y al igual que el caso anterior como no se especifica el segmento se asume DS. Si MEMORIA es un array de bytes que representa a la memoria la instrucción anterior se puede poner como: Al := MEMORIA[ DS:BX ]
+    \nLa especificación completa de las expresiones que van dentro de los paréntesis rectos es: { BX | BP } [ + { SI | DI } ] [ + desplazamiento ] | { SI | DI } [ + desplazamiento ] | desplazamiento Donde la expresión entre {} es obligatoria, la expresión entre [] es opcional y el signo | implica opción entre dos expresiones. Fuera del paréntesis recto se puede indicar cual es el registro de segmento usado para completar la dirección de memoria. En caso que este no se especifique siempre se asume uno por defecto. Ejemplos: Mov Ax, [Bp + 3] Add [Bx + Si ], 4 Sub Es:[Bx + Di + 5],Dx En la Tabla 1 se indican las combinaciones posibles entre registros índice y los segmentos así como las asignaciones por defecto.</string>
+    <string name="nota_fuente_mem_direcc">Fuente: <i>https://es.wikipedia.org/wiki/Segmentación_de_memoria_del_x86</i> ,para obtener más información.</string>
+    <string name="title_activity_asembler_form_comandos">Asembler Comandos</string>
+    <string name="c1_asembler_form_comandos">1) <b>MOV destino, origen</b> (MOVe, mover) En realidad es una copia, ya que en el destino se copia lo que está en el origen sin alterar este último. Cuando se carga SS con MOV, el micro inhibe las interrupciones hasta después de ejecutar la siguiente instrucción.
+    \n2) <b>XCHG destino, origen</b> (eXCHanGe, intercambiar) Intercambia destino con origen; no se puede usar con registros de segmento. Esta instrucción encuentra su utilidad en aquellas instrucciones que tienen asociados registros específicos.</string>
+    <string name="c2_asembler_form_comandos">•<b>ADD destino, origen</b> (ADDition, sumar) {O,S,Z,A,P,C} Suma origen y destino, guardando el resultado en destino. Si al sumar los dos últimos bits el bit de carry se pone a 1 (y si no, a 0).
+    \n•<b>ADC destino,origen</b> (ADdition with Carry, sumar con acarreo) {O,S,Z,A,P,C} Suma origen, destino y el bit de carry, guardando el resultado en destino. Sirve entre otras cosas para sumar números de más de 16 bits arrastrando el bit de carry de una suma a otra. Si quisiéramos sumar dos números enteros de 64 bits almacenados en EAX-EBX y ECX-EDX, podríamos sumarlos con ADD EBX,EDX primero y ADC EAX,ECX después. Sumar con ADC puede generar a su vez carry, con lo que teóricamente podríamos sumar números enteros de cualquier tamaño, propagando el carry de una suma a otra.
+    \nSe puede a 1 el flag de carry directamente mediante STC (SeT Carry) o a 0 mediante CLC (CLear Carry), ambas instrucciones sin argumentos.
+    \n•<b>INC destino</b> (INCrement, incrementar) {O,S,Z,A,P} Incrementa el operando destino en 1. Puede ser un operando de tamaño \"byte\" o superior, tanto un registro como una posición de memoria; en este último caso hay que especificar tamaño con WORD, DWORD etc, tal y como explicamos en el capítulo III con los modos de direccionamiento. Esta instrucción no modifica el bit de carry; si quieres detectar cuándo se sobrepasa al incrementar un contador, usa el flag \"Zero\" o el de signo.
+    \n•<b>SUB destino, origen</b> (SUBstract, resta) {O,S,Z,A,P,C} Resta a destino lo que haya en origen.
+    \n•<b>SBB destino, origen</b> (SuBstract with Borrow, restar con llevada) {O,S,Z,A,P,C} Resta a destino lo que haya en origen. Si el flag C=1 resta uno más. Análoga a ADC.
+    \n•<b>DEC destino</b> (DECrement, decrementar) {O,S,Z,A,P} Igual que INC, pero que resta 1 en vez de sumarlo.
+    \n•<b>IMUL origen</b> (Integer MULtiplication, multiplicación entera con signo) {O,C} Multiplica origen, entero con signo (en complemento a dos), de longitud byte o word, por AL o AX respectivamente. Si origen es un byte el resultado se guarda en AX; si es tamaño word se almacena en el par DX-AX (parte alta en DX, parte baja en AX). Si las mitades de mayor peso son distintas de 0, sea cual sea el signo, CF y OF se ponen a uno. En el caso del 386+, además, se puede usar un operando origen de 32 bits. Si es así se multiplica entonces por EAX, dejando el resultado de 64 bits en el par EDX-EAX. El operando debe ser un registro o un dato de memoria (nada de valores inmediatos). Esto se aplica para IMUL, MUL, IDIV y DIV.
+    \nIMUL tiene otras dos formas más para procesadores posteriores al 8086. La primera es IMUL destino, origen donde el destino es un registro de propósito general y el origen un valor inmediato, otro registro o una posición de memoria. La segunda forma tiene el aspecto IMUL destino, origen1, origen2. Destino es nuevamente un registro de propósito general, origen1 un registro o posición de memoria, y origen2 un valor inmediato. Lo que hace es almacenar el producto de los dos operandos origen en destino. En cualquiera de las dos formas, si el resultado del producto no cabe en el destino, queda truncado.
+    \n•<b>MUL origen</b> (MULtiplication, multiplicación entera sin signo) {O,C} Como IMUL, salvo que multiplica enteros sin signo. Sólo admite la forma con un único operando.
+    \n•<b>IDIV origen</b> (Integer DIVide, división entera con signo) Divide números con signo. Calcula el cociente y el resto de dividir AX entre el operando (tamaño byte). Si el operando es de 16 bits lo que divide es el par DX-AX. Si el operando es de 32 bits (80386+), lo que divide es el par <i>EDX-EAX</i>. El cociente lo guarda en AL, AX o EAX según el caso. El resto en AH, DX o EDX. Si el cociente es mayor que el tamaño máximo (8, 16 o 32 bits) tanto cociente como resto quedan indefinidos, y salta una interrupción 0 (luego veremos cómo van estas cosas. Si divides por cero pasa lo mismo.
+    \n•<b>DIV origen</b> (DIVide, división entera sin signo) Igual que IDIV, sólo que para números sin signo.</string>
+    <string name="c3_asembler_form_comandos">•<b>AND destino,origen</b> <i>Y</i> lógica. Operación: destino &lt;- destino and origen.
+    \n•<b>OR destino,origen</b> <i>O</i> lógico.Operación: dest &lt;- destino or origen.
+    \n•<b>XOR destino,origen</b> <i>XOR</i> O exclusivo en lógica.Operación: destino &lt;- destino xor origen.
+    \n•<b>NOT destino</b> <i>NO</i> lógico.Operación: destino &lt;- Complemento a 1 de destino. No afecta los flags.
+    \n•<b>TEST destino</b> Operación: destino <i>AND</i> origen. Sólo afecta flags.</string>
+    <string name="c4_asembler_form_comandos">•<b>SAL destino,origen</b> (Shift Arithmetic Left, desplazamiento aritmético a la izquierda) {O,S,Z,P,C}
+    \n•<b>SAR destino,origen</b> (Shift Arithmetic Right, desplazamiento aritmético a la derecha) {O,S,Z,P,C}
+    \n•<b>SHL destino,origen</b> (SHift logic Left, desplazamiento lógico a la izquierda) {O,S,Z,P,C}
+    \n•<b>SHR destino,origen</b> (SHift logic Right, desplazamiento lógico a la derecha) {O,S,Z,P,C}
+    \n•<b>ROL destino,origen</b> (ROtate Left, rotación a la izquierda) {O,C}
+    \n•<b>ROR destino,origen</b> (ROtate Right, rotación a la derecha) {O,C}
+    \n•<b>RCL destino,origen</b> (Rotate with Carry Left, rotación a la izquierda con carry o  acarreo) {O,C}
+    \n•<b>RCR destino,origen</b> (Rotate with Carry Right, rotación a la derecha con carry o acarreo) {O,C}</string>
+    <string name="c5_asembler_form_comandos"><u>Entrada/salida de puertos:</u>     \n•<b>IN</b> (Entrada desde un puerto) Pone en el acumulador el valor hallado en el port indicado.
+    \n•<b>OUT</b> (Salida desde un puerto). Pone en el port indicado el valor del acumulador.</string>
+    <string name="c6_asembler_form_comandos">•<b>PUSH origen</b> :Apilar, pone el valor en el tope del stack (pila). Operación: SP &lt;- SP - 2, [SP+1:SP] &lt;- origen donde origen = {reg16|mem16|CS|DS|ES|SS}.
+    \n•<b>POP destino</b> :Desapila dato desde la pila. Retira el valor del tope del stack poniéndolo en el lugar indicado. Operación: destino &lt;- [SP+1:SP], SP &lt;- SP + 2 donde destino = {reg16|mem16|DS|ES|SS}.</string>
+    <string name="c7_asembler_form_comandos">•<b>JMP dir</b> Saltar hacia la dirección <i>dir</i>.
+    \n•<b>CALL val</b> Ir al procedimiento cuyo inicio es val. En caso de llamadas dentro del mismo segmento equivale a PUSH IP: JMP val, mientras que para llamadas entre segmentos equivale a PUSH CS: PUSH IP: JMP val.
+    \n•<b>RET</b> Retorno de procedimiento.
+    \n•<b>RET inmed</b> Retorno de procedimiento y SP  &lt;- SP + inmed.
+    \n<u>Aritmética signada</u> (con números positivos, negativos y cero)
+    \n•<b>JL val</b> O <i>JNGE val</i> :Saltar a <i>val</i> si es menor.
+    \n•<b>JLE val</b> O <i>JNG val</i> :Saltar a <i>val</i> si es menor o igual.
+    \n•<b>JE val</b> :Saltar a <i>val</i> si es igual.
+    \n•<b>JNE val</b> :Saltar a <i>val</i> si es distinto.
+    \n•<b>JGE val</b> O <i>JNL val</i> :Saltar a <i>val</i> si es mayor o igual.
+    \n•<b>JG val</b> O <i>JNLE val</i> :Saltar a <i>val</i> si es mayor.
+    \n<u>Aritmética sin signo</u> (con números positivos y cero)
+    \n•<b>JB val</b> O <i>JNAE val</i>. :Saltar a <i>val</i> si es menor.
+    \n•<b>JBE val</b> O <i>JNA val</i>. :Saltar a <i>val</i> si es menor o igual.
+    \n•<b>JE val</b> :Saltar a <i>val</i> si es igual.
+    \n•<b>JNE val</b> :Saltar a etiqueta si es distinto.
+    \n•<b>JAE val</b> O <i>JNB val</i>. :Saltar a <i>val</i> si es mayor o igual.
+    \n•<b>JA val</b> O <i>JNBE val</i>. :Saltar a <i>val</i> si es mayor.
+    \n<u>Saltos Flags</u> (según el valor de los indicadores)
+    \n•<b>JC val</b> :Saltar si hubo préstamo o arrastre (CF = 1) Carry Flag.
+    \n•<b>JNC val</b> :Saltar si no hubo préstamo o arrastre (CF = 0).
+    \n•<b>JZ val</b> :Saltar si el resultado es cero (ZF = 1) Zero Flag.
+    \n•<b>JNZ val</b> :Saltar si el resultado no es cero (ZF = 0).
+    \n•<b>JS val</b> :Saltar si el signo es negativo (SF = 1) Flag de Signo.
+    \n•<b>JNS val</b> :Saltar si el signo es positivo (SF = 0).
+    \n•<b>JP val</b> O <i>JPE val</i> :Saltar si la paridad es par (PF = 1) Flag de paridad.
+    \n•<b>JNP val</b> O <i>JPO val</i> :Saltar si la paridad es impar (PF = 0).
+    \n<u>Saltos condicionales que usan el registro CX como contador:</u>     \n•<b>LOOP val</b> :Operación: CX &lt;- CX-1. Saltar a <i>val</i> si CX&lt;>0.
+    \n•<b>LOOPZ val</b> O <i>LOOPE val</i> :Operación: CX &lt;- CX-1. Saltar a <i>val</i> si CX&lt;>0 y ZF=1.
+    \n•<b>LOOPNZ val</b> O <i>LOOPNE val</i> :Operación: CX &lt;- CX-1. Saltar a <i>val</i> si CX&lt;>0 y ZF=0.
+    \n•<b>JCXZ val</b> :Operación: Salta a label si CX = 0.</string>
+    <string name="ejm_asembler_form_comandos"><b>Ejemplos de comandos:</b>     \nMOV AX, 1234h\nMOV Bx, AX\nSUB BX, CX\nSUB BX,1234H\nSBB AL,12H\nADD BL,mem_byte\nADD AX,1234H\nPUSH [BX+DI+1000h]\nPOP [BX+DI+1000h]\nADC BL,CL\nINC AX\nCMP BX,CX</string>
+    <string name="title_activity_interrupciones">Interrupciones 8086</string>
+    <string name="concepto_interrupciones">• Posee dos líneas para interrupciones HW externas:
+    \n– INTR (INTerrupt Request):
+    \n\u0020• Enmascarable (IF, interruption flag)
+    \n\u0020• Vectorizada (tamaño del vector: 1 byte,256 int.’s)
+    \n– NMI (Non Maskable Interrupt):
+    \n\u0020• No enmascarable
+    \n\u0020• Autovectorizada (Vector = 02h)
+    \n• Las interrupciones internas (excepciones) son los vectores de 00h a 07h
+    \n• Las interrupciones SW se invocan con la instrucción INT vector, ej.: INT 21h</string>
+    <string name="nota_fuente_interrupciones">Información obtenida de: <i>http://www.ac.uma.es/~sromero/ec/EC_tema2.pdf</i>.</string>
+    <string name="title_activity_es8086">ES8086</string>
+    <string name="concepto_es8086"><u><b>E/S 8086</b></u>     \nEl 8086 usa E/S no mapeada en memoria:
+    \n– Posee líneas de interrupción.
+    \n– Posee líneas control para seleccionar lamemoria o los periféricos de E/S
+    \n– Posee instrucciones (IN, OUT) para leer y escribir de/en los puertos de los periféricos.
+    \n•Componentes del interfaz hardware de E/S:
+    \n– Buses del sistema
+    \n– Puerto de salida
+    \n– Puerto de entrada
+    \nCPU &lt;-> Interfaz &lt;-> Periféricos</string>
+    <string name="descrip_ihw8086"><b>Imagen:</b>Interfaz HW (buses del sistema), Autor: Sergio Romero Montiel (http://www.ac.uma.es/~sromero/ec/EC_tema2.pdf)</string>
+    <string name="concepto_es8086_2">El procesador 8086 multiplexa en tiempo el bus de direcciones, con el bus de datos y control. En el 8086 se ven los pines del 2 al 16 y los pines 35 al 39 con doble funcionalidad, en un momento determinado transporta la dirección y en otro momento entran o salen los datos (o sale información de algunas líneas del bus de control).</string>
+    <string name="descrip_pines8086"><b>Imagen:</b> Pines de 8086 y configuración</string>
+    <string name="concepto_es8086_3"><u>Métodos de E/S:</u>     \n<b>Polling</b> (sondeo)
+    \n• Bloqueante: el procesador espera a que el periférico esté listo (perdida de tiempo en el procesador)
+    \n• No bloqueante: el procesador continua con otra tarea y atiende al periférico al terminar (perdida de tiempo en el periférico).
+    \n<b>Interrupción</b>     \n• Permite al procesador trabajar en otra tarea mientras el periférico está ocupado.
+    \n• Es necesario que el procesador disponga de un mecanísno que le permita recibir y atender interrupciones.
+    \nLos protocolos de E/S pueden ser SW ó HW. Los más simples pueden implementarse en HW. Los complejos y más habituales son SW.</string>
+    <string name="descrip_isw8086"><b>Imagen:</b>Interfaz Sofware (SW), Autor: Sergio Romero Montiel (http://www.ac.uma.es/~sromero/ec/EC_tema2.pdf)</string>
+    <string name="nota_fuente_es8086">Fuente: <i>https://es.wikipedia.org/wiki/Intel_8086_y_8088</i> ,para obtener más información. También leer: <i>http://www.ac.uma.es/~sromero/ec/EC_tema2.pdf</i></string>
+    <string name="title_activity_controlador8259">Controlador 8259</string>
+    <string name="concepto_contr8259"><u><b>El PIC 8259</b></u>     \nControlador de Interrupciones Programable (o PIC 8259) es el microchip de intel que se utiliza con el 8086:
+    \n- Proporciona el vector de interrupción al 8086 (vector base programable)
+    \n- Pueden conectase el cascada (en dos niveles, hasta 64 interrupciones)
+    \n- 8 líneas de petición de interrupción (IRQ0-7)
+    \n- Gestiona las prioridades (programable)
+    \n- Permite enmascarar las interrupciones individualmente.</string>
+    <string name="descrip_pic8259"><b>Imagen:</b> Interconexión 8086-8259, Autor: Sergio Romero Montiel (http://www.ac.uma.es/~sromero/ec/EC_tema2.pdf)</string>
+    <string name="concepto_contr8259_2">El 8259, como periférico que es, se conecta a la CPU por los buses de dirección, datos y control asignandosele una dir. base de E/S.
+    \nEn la imagen de ejemplo la dirección base es 20h. Se puede escribir una palabra de control sobre la dirección base.</string>
+    <string name="descrip_op8259"><b>Imagen:</b> Modo de operación del 8259, Autor: Sergio Romero Montiel (http://www.ac.uma.es/~sromero/ec/EC_tema2.pdf)</string>
+    <string name="nota_fuente_contr8259">Fuente: <i>http://www.ac.uma.es/~sromero/ec/EC_tema2.pdf</i> ,para obtener más información.</string>
+    <string name="title_activity_copr8087">Coprocesador 8087</string>
+    <string name="concepto_copr8087"><u>Coprocesador 8087</u>     \nUn coprocesador es un microprocesador de un ordenador utilizado como suplemento de las funciones del procesador principal (la CPU). Los coprocesadores fueron vistos por primera vez en los mainframes donde se añadían para funcionalidad opcional como el soporte matemático para punto flotante, otro uso muy común era para el control de los canales de Entrada/Salida, aunque este dispositivo se conocía normalmente como controlador de canal, un ejemplo de estos dispositivos lo tenemos en los controladores DMA.</string>
+    <string name="concepto_copr8087_2"><u><b>Juego de instrucciones del 8087</b></u>     \n•<b>Seleccionar</b> un tipo de instrucción para mostrar concepto respectivo.</string>
+    <string name="c1_copr8087"><b>Instrucciones de transferencia de números:</b>     \n<b>FLD mem</b>: Introduce una copia de mem en ST. La fuente debe ser un número real en punto flotante de 4, 8 ó 10 bytes. Este operando se transforma automáticamente al formato real temporal.
+    \n<b>FLD ST(num)</b>:Introduce una copia de ST(num) en ST.
+    \n<b>FILD mem</b>: Introduce una copia de mem en ST. La fuente debe ser un operando de memoria de 2, 4 u 8 bytes, que se interpreta como un número entero y se convierte al formato real temporal.
+    \n<b>FBLD mem</b>: Introduce una copia de mem en ST. La fuente debe ser un operando de 10 bytes, que se interpreta como un valor BCD empaquetado y se convierte al formato real temporal.
+    \n<b>FST mem</b>: Copia ST a mem sin afectar el puntero de pila. El destino puede ser un operando real de 4 u 8 bytes (no el de 10 bytes).
+    \n<b>FST ST(num)</b>: Copia ST al registro especificado.
+    \n<b>FIST mem</b>: Copia ST a mem. El destino debe ser un operando de 2 ó 4 bytes (no de 8 bytes) y se convierte automáticamente el nuero en formato temporal real a entero.
+    \n<b>FSTP mem</b>: Extrae una copia de ST en mem. El destino puede ser un operando de memoria de 4, 8 ó 10 bytes, donde se carga el número en punto flotante.
+    \n<b>FSTP ST(num)</b>: Extrae ST hacia el registro especificado.
+    \n<b>FISTP mem</b>: Extrae una copia de ST en mem. El destino debe ser un operando de memoria de 2, 4 u 8 bytes y se convierte automáticamente el número en formato temporal real a entero.
+    \n<b>FBSTP mem</b>: Extrae una copia de ST en mem. El destino debe ser un operando de memoria de 10 bytes. El valor se redondea a un valor entero, si es necesario, y se convierte a BCD empaquetado.
+    \n<b>FXCH</b>: Intercambia ST(1) y ST.
+    \n<b>FXCH ST(num)</b>: Intercambia ST(num) y ST.</string>
+    <string name="c2_copr8087"><b>Instrucciones de carga de constantes:</b> Las constantes no se pueden dar como operandos y ser cargados directamente en los registros del coprocesador. Dicha constante debe estar ubicada en memoria con lo que luego se podrán usar las instrucciones arriba mencionadas. Sin embargo, hay algunas instrucciones para cargar ciertas constantes (0, 1, pi y algunas constantes logarítmicas). Esto es más rápido que cargar las constantes muy utilizadas desde la memoria.
+    \n<b>FLDZ</b>: Introduce el número cero en ST.
+    \n<b>FLD1</b>: Introduce el número uno en ST.
+    \n<b>FLDPI</b>: Introduce el valor de pi en ST.
+    \n<b>FLDL2E</b>: Introduce el valor de log(2) e en ST.
+    \n<b>FLDL2T</b>: Introduce el valor de log(2) 10 en ST.
+    \n<b>FLDLG2</b>: Introduce el valor de log(10) 2 en ST.
+    \n<b>FLDLN2</b>: Introduce el valor de log(e) 2 en ST.</string>
+    <string name="c3_copr8087"><b>Instrucciones de transferencia de datos de control:</b> Cada instrucción de carga tiene dos formas: La forma con espera verifica excepciones de errores numéricos no enmascarados y espera a que sean atendidos. La forma sin espera (cuyo mnemotécnico comienza con "FN") ignora excepciones sin enmascarar.
+    \n<b>FLDCW mem2byte</b>: Carga la palabra de control desde la memoria.
+    \n<b>F[N]STCW mem2byte</b>: Almacena la palabra de control en la memoria.
+    \n<b>F[N]STSW mem2byte</b>: Almacena la palabra de estado en la memoria.
+    \n<b>FLENV mem14byte</b>: Carga el entorno desde la memoria.
+    \n<b>F[N]STENV mem14byte</b>: Almacena el entorno en la memoria.
+    \n<b>FRSTOR mem94byte</b>: Restaura el estado completo del 8087.
+    \n<b>F[N]SAVE mem94byte</b>: Salva el estado completo del 8087.</string>
+    <string name="c4_copr8087"><b>Instrucciones Aritméticas:</b> Cuando se usan operandos de memoria con una instrucción aritmética, el mnemotécnico de la instrucción distingue entre número real y número entero. No se pueden realizar operaciones aritméticas con números BCD empaquetados en la memoria, por lo que se debe usar FBLD para cargar dichos números desde la memoria.
+    \n<b>FADD</b>: Hace ST(1) más ST, ajusta el puntero de pila y pone el resultado en ST, por lo que ambos operandos se destruyen.
+    \n<b>FADD mem</b>: Hace ST &lt;- ST + [mem]. En mem deberá haber un número real en punto flotante.
+    \n<b>FIADD mem</b>: Hace ST &lt;- ST + [mem]. En mem deberá haber un número entero en complemento a dos.
+    \n<b>FADD ST(num), ST</b>: Realiza ST(num) &lt;- ST(num) + ST.
+    \n<b>FADD ST, ST(num)</b>: Realiza ST &lt;- ST + ST(num).
+    \n<b>FADDP ST(num), ST</b>: Realiza ST(num) &lt;- ST(num) + ST y retira el valor de ST de la pila, con lo que ambos operandos se destruyen.
+    \n<b>FSUB</b>: Hace ST(1) menos ST, ajusta el puntero de pila y pone el resultado en ST, por lo que ambos operandos se destruyen.
+    \n<b>FSUB mem</b>: Hace ST &lt;- ST - [mem]. En mem deberá haber un número real en punto flotante.
+    \n<b>FISUB mem</b>: Hace ST &lt;- ST - [mem]. En mem deberá haber un número entero en complemento a dos.
+    \n<b>FSUB ST(num), ST</b>: Realiza ST(num) &lt;- ST(num) - ST.
+    \n<b>FSUB ST, ST(num)</b>: Realiza ST &lt;- ST - ST(num).
+    \n<b>FSUBP ST(num), ST</b>: Realiza ST(num) &lt;- ST(num) - ST y retira el valor de ST de la pila, con lo que ambos operandos se destruyen.
+    \n<b>FSUBR</b>: Hace ST menos ST(1), ajusta el puntero de pila y pone el resultado en ST, por lo que ambos operandos se destruyen.
+    \n<b>FSUBR mem</b>: Hace ST &lt;- [mem] - ST. En mem deberá haber un número real en punto flotante.
+    \n<b>FISUBR mem</b>: Hace ST &lt;- [mem] - ST. En mem deberá haber un número entero en complemento a dos.
+    \n<b>FSUBR ST(num), ST</b>: Realiza ST(num) &lt;- ST - ST(num).
+    \n<b>FSUBR ST, ST(num)</b>: Realiza ST &lt;- ST(num) - ST.
+    \n<b>FSUBRP ST(num), ST</b>: Realiza ST(num) &lt;- ST - ST(num) y retira el valor de ST de la pila, con lo que ambos operandos se destruyen.
+    \n<b>FMUL</b>: Multiplicar el valor de ST(1) por ST, ajusta el puntero de pila y pone el resultado en ST, por lo que ambos operandos se destruyen.
+    \n<b>FMUL mem</b>: Hace ST &lt;- ST * [mem]. En mem deberá haber un número real en punto flotante.
+    \n<b>FIMUL mem</b>: Hace ST &lt;- ST * [mem]. En mem deberá haber un número entero en complemento a dos.
+    \n<b>FMUL ST(num), ST</b>: Realiza ST(num) &lt;- ST(num) * ST.
+    \n<b>FMUL ST, ST(num)</b>: Realiza ST &lt;- ST * ST(num).
+    \n<b>FMULP ST(num), ST</b>: Realiza ST(num) &lt;- ST(num) * ST y retira el valor de ST de la pila, con lo que ambos operandos se destruyen.
+    \n<b>FDIV</b>: Dividir el valor de ST(1) por ST, ajusta el puntero de pila y pone el resultado en ST, por lo que ambos operandos se destruyen.
+    \n<b>FDIV mem</b>: Hace ST &lt;- ST / [mem]. En mem deberá haber un número real en punto flotante.
+    \n<b>FIDIV mem</b>: Hace ST &lt;- ST / [mem]. En mem deberá haber un número entero en complemento a dos.
+    \n<b>FDIV ST(num), ST</b>: Realiza ST(num) &lt;- ST(num) / ST.
+    \n<b>FDIV ST, ST(num)</b>: Realiza ST &lt;- ST / ST(num).
+    \n<b>FDIVP ST(num), ST</b>: Realiza ST(num) &lt;- ST(num) / ST y retira el valor de ST de la pila, con lo que ambos operandos se destruyen.
+    \n<b>FDIVR</b>: Hace ST dividido ST(1), ajusta el puntero de pila y pone el resultado en ST, por lo que ambos operandos se destruyen.
+    \n<b>FDIVR mem</b>: Hace ST &lt;- [mem] / ST. En mem deberá haber un número real en punto flotante.
+    \n<b>FIDIVR mem</b>: Hace ST &lt;- [mem] / ST. En mem deberá haber un número entero en complemento a dos.
+    \n<b>FDIVR ST(num), ST</b>: Realiza ST(num) &lt;- ST / ST(num).
+    \n<b>FDIVR ST, ST(num)</b>: Realiza ST &lt;- ST(num) / ST.
+    \n<b>FDIVRP ST(num), ST</b>: Realiza ST(num) &lt;- ST / ST(num) y retira el valor de ST de la pila, con lo que ambos operandos se destruyen.
+    \n<b>FABS</b>: Pone el signo de ST a positivo (valor absoluto).
+    \n<b>FCHS</b>: Cambia el signo de ST.
+    \n<b>FRNDINT</b>: Redondea ST a un entero.
+    \n<b>FSQRT</b>: Reemplaza ST con su raíz cuadrada.
+    \n<b>FSCALE</b>: Suma el valor de ST(1) al exponente del valor en ST. Esto efectivamente multiplica ST por dos a la potencia contenida en ST(1). ST(1) debe ser un número entero.
+    \n<b>FPREM</b>: Calcula el resto parcial hallando el módulo de la división de los dos registros de la pila que están el tope. El valor de ST se divide por el de ST(1). El resto reemplaza el valor de ST. El valor de ST(1) no cambia. Como esta instrucción realiza sustracciones repetidas, puede tomar mucho tiempo si los operandos son muy diferentes en magnitud. Esta instrucción se utiliza a veces en funciones trigonométricas.
+    \n<b>FXTRACT</b>: Luego de esta operación, ST contiene el valor de la mantisa original y ST(1) el del exponente.</string>
+    <string name="descr_img_copr8087"><b>Imagen:</b> Coprocesador 8087,Fotógrafo:  Dirk Oppelt (https://commons.wikimedia.org/wiki/File:Intel_C8087.jpg)</string>
+    <string name="title_activity_invest_operaciones">Investigación de Operaciones</string>
+    <string name="title_activity_grafico_estadistico">Grafico Estadistico</string>
+    <string name="title_activity_micro_computadoras_ii">MicroComputadorasII</string>
+    <string name="title_activity_grafico_plot">Diagrama Sectores</string>
+    <string name="title_activity_bar_chart_plot">Diagrama de Barras</string>
+    <string name="title_activity_distrib_hipergeomtrica">Distrib. Hipergeomtrica</string>
+    <string name="title_activity_distrib_fisher">Distrib. Fisher</string>
+    <string name="title_activity_distrib_binomial">Distrib. Binomial</string>
+    <string name="title_activity_problema_mochila">Problema Mochila</string>
+    <string name="c1_problema_mochila"><u>GUIA:</u> Nombre: Nombre de los productos
+    \nValor: Cantidad que en sumatoria se maximizará.
+    \nMagn: Puede ser peso o volumen, o magnitud que restringe capacidad máxima.</string>
+    <string name="title_activity_problema_diligencia">Problema Diligencia</string>
+    <string name="p1_problema_diligencia">PASO 1: (Numero de Columnas)</string>
+    <string name="ejm_problema_diligencia"><b>Por ejemplo</b>: la siguiente imagen tiene 5 etapas y 6 columnas. Los nodos rodeados de rojo son nodos META o de llegada en la etapa 1.</string>
+    <string name="p2_problema_diligencia">PASO 2: (Numero Nodos por columna) Use los selectores</string>
+    <string name="p3_problema_diligencia">PASO 3: (Enlazar nodos) Distancia != 0
+     \n- No colocar nada si no hay enlace
+     \n- Nodos antecesores al nodo meta</string>
+    <string name="title_activity_matematicas">Matematicas</string>
+    <string name="title_activity_derivadas">Derivadas</string>
+    <string name="nota_derivadas">►Se deriva en funcion de x (minúscula).
+    \n►Se recomienda escribir las funciones en minúscula como:
+    \n-Seno de x escribir sin(x)
+    \n-Coseno de x escribir cos(x)
+    \n-Tangente de x escribir tan(x)
+    \n-Cotangente de x escribir cotan(x)
+    \n-Secante de x escribir sec(x)
+    \n-Cosecante de x escribir cosec(x)
+    \n-Arcoseno es asin(x) y similares
+    \n-Seno hiperbólico es sinh(x)
+    \n-Raiz es sqrt(x), e y ln (neperiano)
+    \nEjemplo x al cuadrado sería x^2</string>
+    <string name="title_activity_conversion_angulos">Conversión Angulos</string>
+    <string name="title_activity_sistem_ecuaciones">Sistema de Ecuaciones</string>
+    <string name="title_activity_conversion_bin_hexa">Conversion Bin-Hexa</string>
+    <string name="title_activity_formula_integrales">Formula Integrales</string>
+    <string name="title_activity_integral_numerica">Integral Numerica</string>
+    <string name="title_activity_simplex_max">Simplex Maximización</string>
+    <string name="title_activity_cad_markov_potencia">Cadena Markov Potencia</string>
+    <string name="title_activity_simplex_min">SimplexMin</string>
+    <string name="title_activity_producto_matrices">Producto de Matrices</string>
+    <string name="title_activity_simulacion_sistemas">Simulación Sistemas</string>
+    <string name="title_activity_cuadrado_medio">Cuadrado Medio</string>
+    <string name="title_activity_producto_medio">Producto Medio</string>
+    <string name="title_activity_metodo_congruencial_lineal_multiplicativo">Metodo C. L. Multiplicativo</string>
+    <string name="title_activity_metodo_lineal_mixto">Metodo C. L. Mixto</string>
+    <string name="title_activity_estructura_de_datos">Estructura De Datos</string>
+    <string name="title_activity_arboles">Arboles</string>
+    <string name="title_activity_tipos_de_datos">Tipos De Datos</string>
+    <string name="concepto_tipos_de_datos_primitivos">Los tipos de datos hacen alusión al tipo de información que se usa, se considera el rango de valores que puede tomar una variable en un programa.</string>
+    <string name="concepto_caracteres">Es tipo de dato es un dígito por sí solo el cual se puede representar como numéricos: <b>0 al 9</b>, letras : <b>a-z</b> y <b>símbolos</b>.</string>
+    <string name="concepto_caracteres_unicode">El tipo de dato <i>carácter unicode</i> permite ampliar los símbolos de escritura, provee exactamente hasta <i>65535</i> caracteres distintos.</string>
+    <string name="concepto_enteros">Son los valores que no tienen punto decimal, pueden ser positivos o negativos y el cero.</string>
+    <string name="concepto_reales">Estos tipos de datos representan números muy grandes que poseen parte entera y parte decimal.</string>
+    <string name="title_activity_algoritm_ordenacion_arreglos">Algoritmos Ordenamiento Arreglos</string>
+    <string name="concepto_algorit_burbuja">En inglés <b>\"Bubble Sort\"</b> es algoritmo de ordenamiento de fácil implementación. Consiste en revisar cada elemento del arreglo que va a ser ordenado con el siguiente, si están en el orden equivocado intercambian de posición. Es necesario revisar varias veces toda el arreglo hasta que no se necesiten más intercambios, lo cual significa que el arreglo está ordenado. Este algoritmo se llama así, por la forma con la que suben por el arreglo los elementos durante los intercambios, similar a pequeñas \'burbujas\'. También es llamado <b>método del intercambio directo</b>.</string>
+    <string name="concepto_algorit_insercion">Es una manera muy común de ordenar para el ser humano. Cuando existe <i>k</i> elementos ordenados de manera ascendente, se toma el elemento <i>k+1</i> y se compara con todos los elementos ya ordenados, se detiene cuando encuentra un elemento menor, ya que todos los elementos mayores han sido desplazados una posición a la derecha, o cuando ya no se encuentran elementos (todos los elementos están desplazados y éste es el más pequeño). En este punto se inserta el elemento <i>k+1</i> debiendo desplazarse los elementos restantes.</string>
+    <string name="concepto_algorit_quicksort">O <b>Quicksort</b> es un algoritmo creado por el científico británico en computación <i>C. A. R. Hoare</i>, basado en la técnica de <i>\"divide y vencerás\"</i>, que posibilita ordenar n elementos en un tiempo proporcional a <b>n log n</b>.</string>
+    <string name="title_activity_pilas">Pilas</string>
+    <string name="concepto_pilas">En inglés <b>\"Stack\"</b>, estructura de datos similar a una lista, en la que el modo de acceso a sus elementos es de tipo <b>LIFO</b> (del inglés <i>Last In First Out</i>, que significa último en entrar, primero en salir) que permite guardar y recuperar datos. Esta estructura se aplica en varias ocasiones en informática debido a su simplicidad y ordenación implícita propia de la estructura.
+    Su manejo de los datos posee dos operaciones básicas: apilar (<b>push</b>) que coloca un objeto en la pila, y su operación inversa, retirar o desapilar(<b>pop</b>) que retira el último elemento que se apiló.
+    \nSólo se tiene acceso a la parte superior de la pila en cada instante, es decir, al último objeto apilado (también conocido como TOS, <i>Top Of Stack</i> en inglés). La operación retirar (pop) permite la obtención de este elemento, que es retirado de la pila para poder tener acceso al siguiente (apilado con anterioridad), que pasa a ser el nuevo TOS.</string>
+    <string name="title_activity_recursividad">Recursividad</string>
+    <string name="concepto_recursividad">Es la forma en la cual se realiza un proceso que involucra internamente otro con la misma forma que se realiza cíclicamente hasta llegar a un caso base y no termine en un ciclo sin fin, este proceso especifica un proceso basado en su propia definición.</string>
+    <string name="title_activity_listas_enlazadas">Listas Enlazadas</string>
+    <string name="concepto_listas_enlazadas">En el campo de Ciencias de la Computación, es una estructura de datos fundamental, puede ser útil para implementar otras estructuras de datos. Se trata de un conjunto  de nodos en secuencia, en los cuales se almacenan campos de datos y una o dos referencias, enlaces o punteros para referenciar al nodo anterior o posterior. Una característica favorable de este tipo de listas en comparación los arreglos comunes es que el orden de los elementos enlazados puede ser diferente al orden de almacenamiento en la memoria o el disco, produciendo que el orden al recorrer una lista sea diferente al de almacenamiento.</string>
+    <string name="concepto_listas_simples_enlazadas">Es una lista enlazada compuesta por nodos, donde cada nodo tiene un sólo campo de enlace. Una referencia al primer nodo es asignada a una variable de referencia, cada nodo, menos el último, conecta con el siguiente nodo, y el enlace del último nodo para referenciar el final de la lista. Usualmente a la variable de referencia se la suele llamar top, se le podría llamar como se desee.</string>
+    <string name="concepto_listas_doble_enlazadas">Este tipo de lista enlazada es más perfeccionado, también se conoce como lista enlazada de dos vías. Cada nodo tiene dos enlaces: uno referencia al nodo anterior,  o al valor <i>NULL</i> si es el primer nodo; y otro referencia al nodo siguiente, o al valor <i>NULL</i> si es el último nodo.</string>
+    <string name="concepto_listas_enlazadas_circulares">La característica particular de estas listas es por lo cíclico o circular, el primer y el último nodo están enlazados. Se puede hacer tanto para listas enlazadas simples como para las doblemente enlazadas. Para recorrer una lista enlazada circular podemos empezar por cualquier nodo y seguir la lista en cualquier dirección hasta que se regrese hasta el nodo original. A veces las listas enlazadas circulares pueden ser vistas como listas sin comienzo ni fin. Este tipo de listas es el más útil para visitar todos los nodos de una lista a partir de uno dado.</string>
+    <string name="concepto_listas_simples_circulares">Cada nodo tiene un enlace donde cada nodo tiene un sólo campo de enlace al siguiente, donde el último nodo referencia al primero. Similar a una lista enlazada simple, los nuevos nodos pueden ser solo eficientemente incluidos después de que ya tengamos referenciado uno. Por ello, es usual quedarse con una referencia solamente al último elemento en una lista enlazada circular simple, esto nos permite rápidas inserciones al principio, y accesos al primer nodo desde el puntero del último nodo.</string>
+    <string name="concepto_listas_dobles_circulares">A diferencia del anterior, cada nodo tiene dos enlaces, a diferencia que enlace anterior del primer nodo apunta al último y el enlace siguiente del último nodo, referencia al primero. Como en una lista doblemente enlazada, las inserciones y eliminaciones pueden ser hechas desde cualquier punto con acceso a algún nodo cercano. Una lista circular doblemente enlazada no tiene ni principio ni fin, un puntero de acceso externo puede establecer el nodo apuntado que está en la cabeza o al nodo cola para mantener el orden.</string>
+    <string name="ventajas_listas_enlazadas">Siempre que se tenga una colección dinámica donde los elementos están siendo añadidos y eliminados frecuentemente e implique la localización de los nuevos elementos introducidos se incrementa el beneficio de las listas enlazadas.</string>
+    <string name="title_activity_admin_base_de_datos">Admin. Base De Datos</string>
+    <string name="title_activity_crear_base_datos">Creación de Base de Datos</string>
+    <string name="concepto_base_datos">Una <b>base de datos</b> es un conjunto de datos relacionados entre sí pertenecientes a un mismo contexto y almacenados para su posterior uso</string>
+    <string name="archivos_base_datos">Los <b>LDF</b> o <i>Log Database Files</i> (Registros de Bases de Datos ) y los <b>MDF</b> o <i>Master Database Files</i> (Archivos Maestros de Bases de Datos) Archivos son los primeros archivos creados para cada base de datos en el ambiente del Microsoft SQL Server.</string>
+    <string name="title_activity_crear_eliminar_tabla">Crear y Eliminar Tabla</string>
+    <string name="concept_crear_tabla">Una base de datos almacena su información en tablas.\nAl crear una tabla se debe tomar en cuenta campos (columnas) que tendrá y el tipo de datos almacenará cada uno de ellos, su estructura.</string>
+    <string name="drop_eliminar_tabla">\nPara eliminar una tabla se usa "\drop table"\ y nombre de la tabla a eliminar.\nSi se intenta eliminar una tabla que no existe, se genera un error indicando tal situación y la sentencia no se ejecuta. Para evitar este error el comando es el siguiente:</string>
+    <string name="nota_crear_elim">El ejemplo se usó para la tabla \'usuario\',en el comando se sugiere agregar <i>\"use NOMBREBASEDATOS\"</i>; para especificar en que base de datos se aplica comando.</string>
+    <string name="title_activity_insert_select_tabla">Insertar y Recuperar Registros</string>
+    <string name="concepto_registro">Un <b>registro</b> es una fila de la tabla que contiene datos. Por ejemplo la tabla \"usuarios\" consta de 2 campos: <i>\‘nombre\’</i> y <i>\‘clave\’</i>.\nAl insertar un registro debe tenerse en cuenta la cantidad y el orden de los campos.\nLa sintaxis básica y general es la siguiente:</string>
+    <string name="concepto_recuperar_select">Para recuperar registros de una tabla se usa \"select\".\nEl asterisco (*)  indica que muestre todos los campos de la tabla \‘usuarios\’, si se quiere especificar los campos a mostrar, se reemplaza el asterisco por los nombres de dichos campos. <b>Ejemplo:</b></string>
+    <string name="concepto_identity">Para que un campo genere sus valores automáticamente, debemos agregar el atributo <b>identity</b> luego de su definición al crear la tabla, para que un campo sea \"identity\", éste debe ser entero:</string>
+    <string name="ejemplo_identity">create table libros(\n  codigo int identity,\n  titulo varchar(50) not null,\n  autor varchar(50) not null,\n  editorial varchar(15),\n  precio float);</string>
+    <string name="adicional_identity">A un campo que tiene el atributo <i>\‘identity\’</i> no se puede ingresar valor para él, porque se inserta automáticamente tomando el último valor como referencia o 1 si es el primero:</string>
+    <string name="concepto_ident_seed">La función \"ident_seed()\" retorna el valor de inicio del campo \‘identity\’ de la tabla cuyo nombre se ingresa como parámetro para dicha función:</string>
+    <string name="title_activity_delete_update_tabla">Borrar  y Actualizar Registros</string>
+    <string name="descrip_delete_tabla">La palabra <b>\"where\"</b> indica que le sigue una condición para obtener uno o más registros con una característica especial, en este caso, especifica el valor del campo \'nombre\'. Sin condición borra todos los registros.\n</string>
+    <string name="concepto_update_tabla"><b>Update</b> o \‘actualizar\’ implica modificar un registro, se modifica alguno de sus valores de sus campos, donde sin condición especificada, afecta a todos los registros de la tabla, la condición restringe que registros serán afectados, usualmente la condición es en base al valor de uno, o más campos.</string>
+    <string name="guia_update_tabla">Se usa <b>\"update\"</b> junto al nombre de la tabla y \"set\" junto con el campo a modificar y su nuevo valor. Sintaxis básica sin agregar condición es:\n</string>
+    <string name="diferencia_truncate_delete">La diferencia con <b>\"delete\"</b> es su velocidad, <b>\"truncate table\"</b> es más veloz que \"delete\" (se nota cuando la cantidad de registros es muy grande) ya que éste borra los registros uno a uno.\nAdemás que si la tabla tiene un campo ‘identity’ y borramos todos los registros con ‘delete’ y luego ingresamos un registro, al cargarse el valor en el campo de identidad, continúa con la secuencia teniendo en cuenta el valor mayor que se había guardado anteriormente; mientras que si usamos ‘truncate table’ para borrar todos los registros, al ingresar otra vez un registro, la secuencia del campo de identidad reinicia en 1.</string>
+    <string name="title_activity_procedimientos_almacenados">Procedimientos Almacenados</string>
+    <string name="intro_activity_proc_almac">Para garantizar la integridad de datos, SQL Server brinda 2 alternativas: <b><i>PROCEDIMENTAL</i></b> (procedimientos almacenados y triggers) y <b><i>DECLARATIVA</i></b> (constraints o restricciones, reglas y valores por defecto).\n</string>
+    <string name="concepto_activity_proc_almac">Es un conjunto de instrucciones a las que se les asigna un nombre, que se almacena en el servidor, para ser invocados en un futuro permitiendo realizar tareas repetitivas con sólo ser invocados.
+        Esta sección se basa en los procedimientos creados por el usuario (creados dentro de una base de datos seleccionada; porque también existen los que estan almacenados en la base de datos master y llevan prefijo <b>\'sp_\'</b> para trabajar las tablas del sistema.\n
+        Se sugiere tipear y probar las instrucciones que se incluyen en el procedimiento almacenado, luego, si se obtiene el resultado que se espera, se crea el procedimiento.
+        \nEstos pueden hacer referencia a tablas, vistas, funciones definidas por el usuario, a otros procedimientos almacenados incluso tablas temporales. Para la creación de éstos su sintaxis básica es:</string>
+    <string name="ejecutar_activity_proc_almac">Para ejecutar el procedimiento almacenado anterior, al no tener parámetros (los cuales se tipean después del nombre del procedimiento y antes de la palabra<b>\'AS\'</b>) se realiza de la siguiente manera:</string>
+    <string name="concepto_activity_proc_alm_entrada">En un procedimiento almacenado se usan parámetros de entrada y de salida para devolver información. Los parámetros de entrada permiten pasar información a un procedimiento.
+                \nPara que un procedimiento almacenado admita parámetros de entrada se deben declarar variables, debe colocarse <b>@</b> junto al nombre de la variable, ejemplo: <i>@NOMBREDEVARIABLE</i>.
+                \nSe utiliza la siguiente sintaxis:</string>
+    <string name="ejemplo_activity_proc_alm_entrada">CREATE PROCEDURE retornaCodigoUniversitario\n@nom varchar(40),\nAS\nBEGIN
+                \n SELECT RegistroTesis..Alumno.coduniversitario from\n RegistroTesis..Alumno where\n RegistroTesis..Alumno.nombre=@nom\nEND\n</string>
+    <string name="descrip_ejemplo_activity_proc_alm_entrada">En el ejemplo anterior la variable @nom de tipo varchar permite ingresar el nombre de un estudiante, y nos muestre el código de dicho alumno.\nAl referenciar los campos a utilizar el nombre de la base de Datos y tabla<i>(NOMBREBASEDEDATOS..TABLA.CAMPO)</i>. Para ejecutarlo se usa la sintaxis:</string>
+    <string name="concepto_activity_proc_alm_salida">Los procedimientos almacenados para devolver información se usa parámetros de salida. Para que un procedimiento almacenado devuelva un valor se debe declarar una variable con la palabra clave <b>\"output\"</b> al crear el procedimiento:</string>
+    <string name="sintaxis_activity_proc_alm_salida"> create procedure NOMBREPROCEDIMIENTO\n  @PARAMETROENTRADA TIPO =VALORPORDEFECTO,\n  @PARAMETROSALIDA TIPO=VALORPORDEFECTO output\n  as\n   SENTENCIAS   \n   select @PARAMETROSALIDA=SENTENCIAS;\n</string>
+    <string name="ejemplo_activity_proc_alm_salida">CREATE PROCEDURE getCodUniversOutput\n@nom varchar(40),\n@xd char(10) output\nAS\nBEGIN
+                \n	SELECT @xd=RegistroTesis..Alumno.coduniversitario \n	from RegistroTesis..Alumno where\n	 RegistroTesis..Alumno.nombre=@nom\nEND\n</string>
+    <string name="title_activity_funciones_sabd">Funciones - SABD</string>
+    <string name="concepto_funcionDefUsuario">Una función es un conjunto de sentencias que funcionan como una unidad lógica, son invocables como los procedimientos almacenados.
+        \nUna función tiene un nombre, retorna un <b>parámetro</b> de salida y opcionalmente acepta parámetros de entrada. Las funciones definidas por el usuario pueden ser modificadas.</string>
+    <string name="concepto_funcionDefUsuarioTipos">Las funciones definidas por el usuario en SQL server son de 3 tipos:\n 1) escalares: retornan un valor escalar;\n 2) de tabla de varias instrucciones (retornan una tabla) y\n 3) de tabla en línea (retornan una tabla).\n</string>
+    <string name="concepto_funcionesescalares">Una función escalar retorna un único valor.Estas funciones se crean con la instrucción create \"function\". La sintaxis básica es:</string>
+    <string name="sintaxis_funcionesescalares"> create function NOMBRE\n (@PARAMETRO TIPO=VALORPORDEFECTO)\n  returns TIPO\n  begin
+                \n   INSTRUCCIONES\n   return VALOR\n  end;</string>
+    <string name="ejemplo_funcionesescalares">CREATE FUNCTION fReturnCodigo\n( @nom varchar(40)\n)
+                \nRETURNS char(10)\nAS\nBEGIN\n	DECLARE @cod char(10)\n	SELECT @cod=coduniversitario from Alumno where nombre=@nom\n	RETURN  @cod\nEND\n</string>
+    <string name="concepto_funcionesreturntable">Este tipo función es similar a un procedimiento almacenado al retornar una tabla; la diferencia es que la tabla retornada por la función puede ser referenciada en el \"from\" de una consulta, el procedimiento no.
+        \nTambién es similar a una vista, sin embargo en las vistas sólo se puede usar \"select\", mientras que en funciones definidas por el usuario podemos incluir sentencias como \"if\", invocar a funciones, procedimientos, etc.
+        \nSu sintaxis es:</string>
+    <string name="sintaxis_funcionesreturntable"> create function NOMBREFUNCION
+ \n(@PARAMETRO TIPO)\n returns @NOMBRETABLARETORNO table-- nombre de la tabla
+ \n--formato de la tabla\n (CAMPO1 TIPO,\n  CAMPO2 TIPO,\n  CAMPO3 TIPO)
+ \nas\n begin\n   insert @NOMBRETABLARETORNO\n    select CAMPOS
+ \nfrom TABLA\n     where campo OPERADOR @PARAMETRO\n   RETURN\nend\n</string>
+    <string name="ejemplo_funcionesreturntable"> create function f_tabla_offers\n (@min decimal(5,2))
+ \nreturns @offers table-- nombre de la tabla\n --formato de la tabla\n (code int,\n  title varchar(30),
+  \nautor varchar(30),\n  price decimal(5,2) )\n as\n begin\n   insert @offer
+    \nselect code,title,autor,price\n    from books\n    where price &lt; @min\n   return\n end;\n</string>
+    <string name="title_activity_triggers">Triggers</string>
+    <string name="concepto_triggers">Un <b>\"trigger\"</b> (disparador o desencadenador) es un tipo de procedimiento almacenado que se ejecuta automáticamente cuando se intenta modificar (agregar, actualizar o eliminar) los datos de una tabla (o vista).
+    \nLos <b>disparadores</b> se ejecutan <b>DESPUES</b> de la ejecución de una instrucción \"insert\", \"update\" o \"delete\" en la tabla en la que fueron definidos mientras que las <b>restricciones</b> se comprueban <b>ANTES</b> de la ejecución de una instrucción \"insert\", \"update\" o \"delete\".
+    \nLos triggers se crean con la instrucción \"create trigger\". Esta instrucción especifica la tabla en la que se define el disparador, los eventos para los que se ejecuta (insert, update o delete) y las instrucciones que contiene. Sintaxis básica:</string>
+    <string name="sintaxis_triggers">create triggre NOMBREDISPARADOR\n  on NOMBRETABLA\n  for EVENTO  //EVENTO puede ser insert, update o delete\nas\n  SENTENCIAS\n</string>
+    <string name="nota_triggers"><b>NOTA:</b>\nLas siguientes instrucciones no están permitidas en un desencadenador: create database, alter database, drop database, restore database, load database, reconfigure, load log, restore log, disk init, disk resize.\nEjemplo:</string>
+    <string name="ejemplo_trigger">CREATE TRIGGER trg_TesisAlumno\n   ON  Tesis\n   AFTER insert\nAS\nBEGIN\n	declare @codalum char(10)\n	if exists(select coduniversitario from Alumno\n	 join inserted on inserted.idtesista=Alumno.coduniversitario)\n	begin
+        \n		select @codalum=Alumno.coduniversitario\n			from Alumno join inserted\n			on inserted.idtesista=Alumno.coduniversitario\n		update Alumno set tesista=\'1\' where coduniversitario=@codalum\n	end\nEND\nGO\n</string>
+    <string name="descrip_trigger">El ejemplo anterior, es de tipo INSERT TRIGGER y su función es que al insertar una Tesis, se actualice el estado del alumno(tesista).\nLos triggers se eliminan con la instrucción \"drop trigger\":</string>
+    <string name="info_trigger">Para obtener información de los triggers se puede usar procedimientos almacenados del sistema, como:\n <b>sp_help <i>NOMBREDISPARADOR</i></b> : Retorna el propietario, su tipo, y fecha de creación.\n <b>sp_depends <i>NOMBREDISPARADOR</i></b> : Retorna una tabla de sus dependencias, cuyas columnas son: <i>name</i>(tablas y objetos), <i>type</i> (tipo de objeto), <i>updated</i> (si se modificao no) y <i>column</i>(campo de referencia).\n <b>sp_helptrigger <i>NOMBRETABLA-O-VISTA</i></b> : Retorna una tabla que lista cada trigger: <i>trigger_name</i>(nombre), <i>trigger_owner</i>(propietario), <i>isupdate</i>, <i>isinsert</i>, <i>isdelete</i> (3 columnas anteriores 0 o 1 si realiza dicha acción), <i>isafter</i>, <i>isinsteadof</i> (las 2 columnas anteriores con valores 0 o 1 para sus eventos de inserción).\n
+    Se puede deshabilitar o habilitar un disparador específico o todos los disparadores que tenga definidos para una tabla o vista. Si se deshabilita un disparador, éste sigue existiendo, pero no se activa, sintaxis:</string>
+    <string name="sintaxis_hab_deshabilitar_trigger">alter table NOMBRETABLA\n  ENABLE | DISABLE trigger ALL | NOMBREDISPARADOR1, NOMBREDISPARADOR2, ...;\n</string>
+    <string name="info_hab_deshabilitar_trigger">Donde \"ENABLE | DISABLE\" implica opcionalmente si es <b>ENABLE</b> para habilitar o <b>DISABLE</b> para deshabilitar, lo mismo para \"ALL | NOMBREDISPARADOR1, NOMBREDISPARADOR2, ...\" que implica que si se elije <b>ALL</b>,afecta todos los triggers; sino <b>NOMBREDISPARADOR1, NOMBREDISPARADOR2,..</b> especificando los triggers afectados.</string>
+    <string name="title_activity_redes_seg_informatica">Redes-Seguridad Informática</string>
+    <string name="title_activity_proceso_binomial">Proceso Binomial</string>
+    <string name="nota_proceso_binomial"><b>Nota:</b> Escoger si probabilidad ingresada es fracción(/) o decimal(0.x)</string>
+    <string name="title_activity_proceso_geometrico">Proceso Geométrico</string>
+    <string name="title_activity_binomial_negativo">Binomial Negativo o Pascalino</string>
+    <string name="title_activity_proceso_hipergeometrico">Proceso Hipergeométrico</string>
+    <string name="title_activity_proceso_poisoniano">ProcesoPoisoniano</string>
+    <string name="decimalE_x"><b>Nota:</b> decimalE-x significa decimalx(10<sup><small>-x</small></sup>) donde es cualquier valor decimal y x cualquier entero.</string>
+    <string name="title_activity_proceso_exponencial">Proceso Exponencial</string>
+    <string name="nota_hallarx">En este caso, en base a un \"r\" aleatorio, obtendremos el valor de x. Fórmula utilizada:</string>
+    <string name="nota_borrarsoloRotodo"><b>Borrar r:</b> Borra solamente <i>r</i> para ingresar uno nuevo, mientras que <b>Vaciar:</b> Es para dejar formulario sin datos.</string>
+    <string name="nota_otraformula_gener"><b>Otra fórmula</b>,que no ha sido usada en esta sección, corresponde al generador (obtener r o probabilidades).</string>
+    <string name="title_activity_proceso_gaussiano_norm">Proceso Gaussiano o Normal</string>
+    <string name="formulas_proceso_normal">Fórmulas:\n
+    a) X<sub><smal>i</smal></sub>=u+(-2σ<sup><small>2</small></sup>Ln(r<sub><smal>i</smal></sub>))<sup><small>1/2</small></sup>cos(2πr<sub><small>ii</small></sub>)\n
+    b) X<sub><smal>i</smal></sub>=u+(-2σ<sup><small>2</small></sup>Ln(r<sub><smal>i</smal></sub>))<sup><small>1/2</small></sup>sen(2πr<sub><small>ii</small></sub>)</string>
+    <string name="varianza">σ<sup><small>2</small></sup> (varianza):</string>
+    <string name="nota_borrarlosr"><b>Nota:</b> Borrar \'r\' sirve para borrar los números en r<sub><small>i</small></sub> y r<sub><small>ii</small></sub> para ingresar nuevos valores.</string>
+    <string name="title_activity_proceso_lognormal">Proceso Lognormal</string>
+    <string name="formulas_proceso_lognormal">Fórmulas:\n
+    a) X<sub><smal>i</smal></sub>=e<sup>[u+(-2σ<sup><small>2</small></sup>Ln(r<sub><smal>i</smal></sub>))<sup><small>1/2</small></sup>cos(2πr<sub><small>ii</small></sub>)]</sup>\n
+    b) X<sub><smal>i</smal></sub>=e<sup>[u+(-2σ<sup><small>2</small></sup>Ln(r<sub><smal>i</smal></sub>))<sup><small>1/2</small></sup>sen(2πr<sub><small>ii</small></sub>)]</sup></string>
+    <string name="title_activity_proceso_uniforme">Proceso Uniforme</string>
+    <string name="formula_proc_uniforme">x=a+(b-a)r</string>
+    <string name="title_activity_ipv6">IPv6</string>
+    <string name="concepto_ipv6"><u>IPV6:</u> En inglés: <i>Internet Protocol version 6</i> (IPv6), es una versión del Internet Protocol (IP), definida en el RFC 2460 y diseñada para reemplazar a Internet Protocol version 4 (IPv4) RFC 791, que actualmente está implementado en la gran mayoría de dispositivos que acceden a Internet.
+    \nIPv4 posibilita 4 294 967 296 (232) direcciones de host diferentes, un número inadecuado para dar una dirección a cada persona del planeta, y mucho menos a cada dispositivo, teléfono, PDA, táblet, etcétera. En cambio, IPv6 admite 340.282.366.920.938.463.463.374.607.431.768.211.456 (2<sup><small>128</small></sup> o 340 sextillones de direcciones)</string>
+    <string name="multicast_ipv6"><u>Multicast:</u> Multicast, la habilidad de enviar un paquete único a destinos múltiples es parte de la especificación base de IPv6. Esto es diferente a IPv4, donde es opcional (aunque usualmente implementado).
+    \nIPv6 no implementa <i>broadcast</i>, que es la habilidad de enviar un paquete a todos los nodos del enlace conectado. El mismo efecto puede lograrse enviando un paquete al grupo de multicast de enlace-local todos los nodos (all hosts). Por lo tanto, no existe el concepto de una dirección de broadcast y así la dirección más alta de la red (la dirección de broadcast en una red IPv4) es considerada una dirección normal en IPv6.
+    \nPv6 también soporta nuevas soluciones multicast, incluyendo <i>Embedded Rendezvous Point</i> (RFC 3956), el que simplifica el despliegue de soluciones entre dominios.</string>
+    <string name="direccionamiento_ipv6"><u>Direccionamiento en IPV6:</u> El cambio más grande de IPv4 a IPv6 es la longitud de las direcciones de red. Las direcciones IPv6, definidas en el <i>RFC 2373</i> y <i>RFC 2374</i> pero fue redefinida en abril de 2003 en la RFC 3513, son de 128 bits; esto corresponde a 32 dígitos hexadecimales, que se utilizan normalmente para escribir las direcciones IPv6, como se describe en la siguiente sección.
+    \nEl número de direcciones IPv6 posibles es de 2<sup><small>128</small></sup> ≈ 3.4 x 10<sup><small>38</small></sup>. Este número puede también representarse como 16<sup><small>32</small></sup>, con 32 dígitos hexadecimales, cada uno de los cuales puede tomar 16 valores.</string>
+    <string name="notacion_ipv6"><u>Notación para las direcciones IPV6:</u>     \n•Las direcciones IPv6, de 128 bits de longitud, se escriben como ocho grupos de cuatro dígitos hexadecimales. Por ejemplo:
+    \n<b>2001:0db8:85a3:08d3:1319:8a2e:0370:7334</b>     \n\n•Se puede comprimir un grupo de cuatro dígitos si éste es nulo (es decir, toma el valor "0000"). Por ejemplo:
+    \n<b>2001:0db8:85a3:<u>0000</u>:1319:8a2e:0370:7344</b>     \n\u0020\u0020\u0020\u0020<b>2001:0db8:85a3::1319:8a2e:0370:7344</b>     \n\n•Siguiendo esta regla, si más de dos grupos consecutivos son nulos, también pueden comprimirse como "::". Si la dirección tiene más de una serie de grupos nulos consecutivos la compresión solamente se permite en uno de ellos. Así, las siguientes son representaciones posibles de una misma dirección:
+    \n<b>2001:0DB8:0000:0000:0000:0000:1428:57ab</b>     \n<b>2001:0DB8:0000:0000:0000::1428:57ab</b>     \n<b>2001:0DB8:0:0:0:0:1428:57ab</b>     \n<b>2001:0DB8:0::0:1428:57ab</b>     \n<b>2001:0DB8::1428:57ab</b>.
+    \n\n•No es válida, cuando hay 2 o más grupos de <b>::</b> dado que en estos casos no queda claro cuántos grupos nulos hay en cada lado. Ejemplo:
+    \n<b>2001<u>::</u>25de<u>::</u>cade</b>.
+    \n\n•Los ceros iniciales en un grupo también se pueden omitir:
+    \n<b>2001:<u>0DB8</u>:02de::0e13</b>     \n<b>2001:<u>DB8</u>:2de::e13</b>.
+    \n\n•Si la dirección es una dirección IPv4 empotrada, los últimos 32 bits pueden escribirse en base decimal, así:
+    \n<b>::ffff:192.168.89.9</b>     \n<b>::ffff:c0a8:5909</b>     \n\n•El formato ::ffff:1.2.3.4 se denomina \"dirección IPv4 mapeada\", y el formato ::1.2.3.4 dirección <i>IPv4 compatible</i>.
+    \n•Las direcciones IPv4 pueden ser transformadas fácilmente al formato IPv6. Por ejemplo, si la dirección decimal IPv4 es 135.75.43.52 (en hexadecimal, 0x874B2B34), puede ser convertida a 0000:0000:0000:0000:0000:0000:874B:2B34 o ::874B:2B34.</string>
+    <string name="nota_fuente_ipv6">Fuente: <i>https://es.wikipedia.org/wiki/IPv6</i> ,para obtener más información.</string>
+    <string name="title_activity_mascarade_red">Máscara de Red</string>
+    <string name="concepto_mascara_red"><u>Máscara de Red:</u> Es una combinación de bits que sirve para delimitar el ámbito de una red de ordenadores.Su función es indicar a los dispositivos qué parte de la dirección IP es el número de la red, incluyendo la subred, y qué parte es la correspondiente al host.</string>
+    <string name="metodologia_mascara_red"><u>Metodología.-</u> Mediante la máscara de red un sistema (ordenador, puerta de enlace, router, etc...) podrá saber si debe enviar un paquete dentro o fuera de la subred en la que está conectado. Por ejemplo, si el router tiene la dirección IP 192.168.1.1 y máscara de red 255.255.255.0, entiende que todo lo que se envía a una dirección IP con formato 192.168.1.X, se envía hacia la red local, mientras que direcciones con distinto formato de direcciones IP serán buscadas hacia afuera (internet, otra red local mayor, etc...).</string>
+    <string name="titulo_tabla_mascara_red"><u>Tabla de máscaras de red</u></string>
+    <string name="ejm_mascara_red">Ejemplo: Suponiendo que tenemos un rango de direcciones IP desde 10.0.0.0 hasta 10.255.255.255, y si todas ellas forman parte de la misma red, su máscara de red sería 255.0.0.0, que también se puede expresar como 10.0.0.0/8.</string>
+    <string name="nota_fuente_mascara_red">Fuente: <i>https://es.wikipedia.org/wiki/Máscara_de_red</i> ,para obtener más información.</string>
+    <string name="title_activity_ipv4">Ipv4</string>
+    <string name="concepto_ipv4"><u>IPV4:</u> En inglés: <i>Internet Protocol version 4</i> (IPv4), es la cuarta versión del Internet Protocol (IP), y la primera en ser implementada a gran escala. Definida en el RFC 791. IPv4 usa direcciones de 32 bits, limitándola a {\displaystyle 2^{32}}  = 4 294 967 296 direcciones únicas, muchas de las cuales están dedicadas a redes locales (LAN).1 Por el crecimiento enorme que ha tenido Internet (mucho más de lo que esperaba, cuando se diseñó IPv4), combinado con el hecho de que hay desperdicio de direcciones en muchos casos (ver abajo), ya hace varios años se vio que escaseaban las direcciones IPv4.
+    \nEsta limitación ayudó a estimular el impulso hacia IPv6, que está actualmente en las primeras fases de implantación, y se espera que termine reemplazando a IPv4.
+    \nLas direcciones disponibles en la reserva global de IANA pertenecientes al protocolo IPv4 se agotaron oficialmente el lunes 31 de enero de 2011.2 Los Registros Regionales de Internet deben, desde ahora, manejarse con sus propias reservas, que se estima, alcanzaran hasta el 2020.</string>
+    <string name="representacion_ipv4"><u>Representación:</u>     \nLas direcciones IPv4 se pueden escribir de forma que expresen un entero de 32 bits, aunque normalmente se escriben con decimales separados por puntos. La siguiente tabla muestra varias formas de representación de direcciones IPv4:</string>
+    <string name="tabla_notacion_ipv4"><b>Notación</b></string>
+    <string name="tabla_valor_ipv4"><b>Valor</b></string>
+    <string name="tabla_conversion_ipv4"><b>Conversión </b></string>
+    <string name="desperdicio_ipv4"><u>Desperdicio de direcciones:</u> El desperdicio de direcciones IPv4 se debe a varios factores.
+    \nUno de los principales es que inicialmente no se consideró el enorme crecimiento que iba a tener Internet; se asignaron bloques de direcciones grandes (de 16 271 millones de direcciones) a países, e incluso a empresas.
+    \nOtro motivo de desperdicio es que en la mayoría de las redes, exceptuando las más pequeñas, resulta conveniente dividir la red en <i>subredes</i>. Dentro de cada subred, la primera y la última dirección no son utilizables; de todos modos no siempre se utilizan todas las direcciones restantes. Por ejemplo, si en una subred se quieren acomodar 80 hosts, se necesita una subred de 128 direcciones (se tiene que redondear a la siguiente potencia de base 2); en este ejemplo, las 48 direcciones restantes ya no se utilizan.</string>
+    <string name="nota_fuente_ipv4">Fuente: <i>https://es.wikipedia.org/wiki/IPv4</i> ,para obtener más información.</string>
+    <string name="title_activity_ipv6_ii">Ipv6-II</string>
+    <string name="teoria_ipv6_ii">Cuando lo que se desea es identificar un rango de direcciones diferenciable por medio de los primeros bits, se añade este número de bits tras el carácter de barra "/". Por ejemplo:
+    \n<b>2001:0DB8::1428:57AB/96</b> sería equivalente a <b>2001:0DB8::</b>     \n<b>2001:0DB8::874B:2B34/96</b> sería equivalente a <b>2001:0DB8::</b> y por supuesto también a <b>2001:0DB8::1428:57AB/96</b></string>
+    <string name="identificacion_ipv6_ii"><u>Identificación de los tipos de direcciones:</u> Los tipos de direcciones IPv6 pueden identificarse tomando en cuenta los rangos definidos por los primeros bits de cada dirección.
+    \n\u0020<b>::/128</b> La dirección con todo ceros se utiliza para indicar la ausencia de dirección, y no se asigna ningún nodo.
+    \n\u0020<b>::1/128</b> La dirección de <i>loopback</i> es una dirección que puede usar un nodo para enviarse paquetes a sí mismo (corresponde con 127.0.0.1 de IPv4). No puede asignarse a ninguna interfaz física.
+    \n\u0020<b>1.2.3.4/96</b> La dirección <i>IPv4 compatible</i> se usa como un mecanismo de transición en las redes duales IPv4/IPv6. Es un mecanismo que no se usa.
+    \n\u0020<b>::ffff:0:0/96</b> La \"dirección IPv4 mapeada\" se usa como mecanismo de transición en terminales duales.
+    \n\u0020<b>fe80::/10</b> El prefijo de <i>enlace local</i> (<i>link local</i>, en inglés) específica que la dirección solamente es válida en el enlace físico local.
+    \n\u0020<b>fec0::</b> El \"prefijo de emplazamiento local\" (en inglés, <i>site-local prefix</i>) específica que la dirección únicamente es válida dentro de una organización local. La <i>RFC 3879</i> lo declaró obsoleto, estableciendo que los sistemas futuros no deben implementar ningún soporte para este tipo de dirección especial. Se deben sustituir por direcciones Local IPv6 <i>Unicast</i>.
+    \n\u0020<b>fc00::/7</b> El \"prefijo de dirección local única\" (en inglés, <i>unique local address</i>). Esta definido por la <i>RFC 4193</i>. Se usa en substitución de las direcciones site-local.
+    \n\u0020<b>ff00::/8</b> El prefijo de <i>multicast</i>. Se usa para las direcciones multicast.Hay que resaltar que no existen las direcciones de difusión (en inglés, <i>broadcast</i>) en IPv6, aunque la funcionalidad que prestan puede emularse utilizando la dirección multicast FF01::1/128, denominada \"todos los nodos\" (en inglés, <i>all nodes</i>).</string>
+    <string name="paquete_ipv6_ii"><u>Paquete IPv6:</u> Un paquete en IPv6 está compuesto principalmente de dos partes: la cabecera (que tiene una parte fija y otra con las opciones) y la carga útil (los datos).
+    \n<b>Cabecera fija:</b> Los primeros 40 bytes (320 bits) son la cabecera del paquete y contiene los siguientes campos:</string>
+    <string name="paquete2_ipv6_ii"><b>Carga útil:</b> La carga útil del paquete puede tener un tamaño de hasta 64 KB en modo estándar, o mayor con una opción de carga jumbo (jumbo payload) en el encabezado opcional Hop-By-Hop.
+    \nLa fragmentación es manejada solamente en el host que envía la información en IPv6: los routers nunca fragmentan un paquete y los hosts se espera que utilicen el Path MTU discovery.</string>
+    <string name="ventajasydesvent_ipv6ii"><u>IPv6 (ventajas y desventajas)</u>     \n•<b>Ventajas:</b> Para dimensionar la cantidad de direcciones IP que puede suministrar IPV6, basta con afirmar que este protocolo puede asignar una cantidad cercana a los 670 mil millones de direcciones por cada milímetro cuadrado de la superficie de la tierra, lo cual lograría que cada persona pueda asignarle una IP única a cada uno de sus dispositivos, otra ventaja de utilizar IPV6 son sus niveles de seguridad, ya que incluye dentro de sus especificaciones procesos de Cifrado de información y la verificación de autenticidad del origen de la misma; IPV6 permite utilizar Jumbogramas (Paquetes de datos de mayor tamaño, hasta de 64 bits). Dentro de las bondades que nos ofrece IPV6 también se incluye el mecanismo Plug and play,facilitando asi la pronta conexión de dispositivos a la red, gracias a que la configuración se realiza de forma automática, Plug and play permite que al conectar un dispositivo a una red con IPV6 se le asigne una o mas direcciones, lo cual facilita la administración de la red; IPV6 fue pensado y desarrollado para ser escalable permitiendo introducir mejoras a futuro. Al incorporar IPv6 una gran cantidad de direcciones, no será necesario utilizar NAT Traducción de direcciones de red, y sus nuevas capacidades de Plug and Play, seguridad, y QoS implicarán mejores conexiones de voz.
+    \n•<b>Desventajas:</b> La necesidad de extender un soporte permanente requiere una dirección IPv4 o algún tipo de NAT Traducción de direcciones de red en los routers pasarela. Por otra parte a nivel de arquitectura, las direcciones IPV6 son más difíciles de memorizar. La mayoría de redes son IPv4 entonces la implementación total de ipv6 sería muy costosa y tardaría mucho tiempo mientras tanto se requieren la implementación de los mecanismos de transición para la interacción de las 2 redes.</string>
+    <string name="nota_fuente_ipv6ii">Fuente: <i>https://es.wikipedia.org/wiki/IPv6</i> ,para obtener más información.</string>
+    <string name="title_activity_subred">Subredes</string>
+    <string name="concepto_subred"><u>Subred:</u> Es un rango de direcciones lógicas. Cuando una red de computadoras se vuelve muy grande, conviene dividirla en subredes, por los siguientes motivos:
+    \n-Reducir el tamaño de los dominios de broadcast.
+    \n-Hacer la red más manejable, administrativamente. Entre otros, se puede controlar el tráfico entre diferentes subredes mediante <i>ACLs</i> (lista de control de acceso).
+    \nExisten diversas técnicas para conectar diferentes subredes entre sí. Se pueden conectar:
+    \n•A nivel físico (<b>capa 1 OSI</b>) mediante repetidores o concentradores (<i>hubs</i>)
+    \n•A nivel de enlace (<b>capa 2 OSI</b>) mediante puentes o conmutadores (<i>switches</i>)
+    \n•A nivel de red (<b>capa 3 OSI</b>) mediante <i>routers</i>     \n•A nivel de transporte (<b>capa 4 OSI</b>)
+    \n•A nivel de aplicación (<b>capa 7 OSI</b>) mediante pasarelas (<i>gateway</i>) o puerta de enlace.
+    \nTambién se pueden emplear técnicas de encapsulación (<i>tunneling</i>).</string>
+    <string name="mascarade_subred"><u>Máscara de subred:</u> La máscara de subred o subneting señala qué bytes (o qué porción) de su dirección es el identificador de la red. La máscara consiste en una secuencia de unos seguidos de una secuencia de ceros con el mismo tamaño que una dirección IP (32 bits, o lo que es lo mismo 4 bytes), por ejemplo, una máscara de 20 bits se escribiría 255.255.240.0, es decir como una dirección IP con 20 bits en 1 seguidos por 12 bits en 0, pero para facilitar su lectura se escribe separando bloques de 8 bits (1 byte) con puntos y escribiéndolos en decimal. La máscara determina todos los parámetros de una subred: dirección de red, dirección de difusión (broadcast) y direcciones asignables a nodos de red (hosts).
+    \nLos <i>routers</i> constituyen los límites entre las subredes. La comunicación desde y hasta otras subredes es hecha mediante un puerto específico de un router específico, por lo menos momentáneamente.</string>
+    <string name="titulo_tabla_masksubred"><u>Clases de máscaras en subredes:</u></string>
+    <string name="ejm_subdivision_subred"><u>Ejemplo de subdivisión:</u> A una compañía se le ha asignado la red <b>200.3.25.0</b>. Es una red de clase <b>C</b>, lo cual significa que puede disponer de <i>254</i> direcciones diferentes (la primera y la última dirección están reservadas, no son utilizables). Si no se divide la red en subredes, la máscara de subred será 255.255.255.0 (o /24).
+    \nLa compañía decide dividir esta red en 8 subredes, con lo cual, la máscara de subred tiene que recorrer tres bits más, se \"toman prestados\" tres bits de la porción que corresponde al host. Eso resulta en una máscara de subred /27, en binario 11111111.11111111.11111111.11100000, o en decimal punteado, 255.255.255.224. Cada subred tendrá (2<sup><small>5</small></sup>=32)  direcciones posibles; pero solo tendrá 2<sup><small>5</small></sup>=32)-2=32-2=30 direcciones asignables a los hosts puesto que la primera dirección (con todos los bits de host a 0) identifica a subred y la última dirección de cada subred (todos los bits de host a 1) se reserva para el <i>broadcast</i>.
+    \nPara calcular el total de subredes se debe realizar (2<sup><small>3</small></sup>)=8, ya que hemos tomado 3 bits prestados a la dirección de <i>host</i>. La <b>primera subred</b> tiene la dirección de subred <b>200.3.25.0</b>; las direcciones utilizables son <b>200.3.25.1 - 200.3.25.30</b>. La <b>segunda subred</b> tiene la dirección de subred <b>200.3.25.32</b>; las direcciones utilizables son <b>200.3.25.33 - 200.3.25.62</b>. Y así sucesivamente; de cada subred a la siguiente, el último byte aumenta en 32. Dependiendo del tipo de máscara de subred utilizado.</string>
+    <string name="direcciones_reserv_subred"><u>Direcciones reservadas:</u>     \n•Dentro de cada subred (como también en la red original, sin subdivisión) no se puede asignar la primera y la última dirección a ningún host. La primera dirección de la subred se utiliza como dirección de la subred, mientras que la última está reservada para dominios de difusión (broadcast) locales (dentro de la subred).
+    \n•Norma <i>RFC 950</i> (en desuso): no se puede utilizar la primera y la última subred. Actualmente no se utiliza por la escasez de direcciones IP.</string>
+    <string name="nota_fuente_subred">Fuente: <i>https://es.wikipedia.org/wiki/Subred</i> ,para obtener más información. Ver también: <i>https://es.wikipedia.org/wiki/Máscara_de_red</i></string>
+    <string name="title_activity_clasesde_ip">Clases de IP</string>
+    <string name="rango_clasesde_ip"><u>Rangos y Clases de la IP:</u> Una dirección IP es una etiqueta numérica que identifica, de manera lógica y jerárquica, a un interfaz (elemento de comunicación/conexión) de un dispositivo (habitualmente un ordenador) dentro de una red que utilice el protocolo IP (Internet Protocol), que corresponde al nivel de red del protocolo TCP/IP. Dicho número no se ha de confundir con la dirección MAC que es un identificador de 48bits para identificar de forma única a la tarjeta de red y no depende del protocolo de conexión utilizado ni de la red. La dirección IP puede cambiar muy a menudo por cambios en la red o porque el dispositivo encargado dentro de la red de asignar las direcciones IP, decida asignar otra IP (por ejemplo, con el protocolo <i>DHCP</i>), a esta forma de asignación de dirección IP se denomina dirección IP dinámica (normalmente abreviado como IP dinámica).</string>
+    <string name="concepto_clasesde_ip">•Clase A: 10.0.0.0 a 10.255.255.255 (8 bits red, 24 bits hosts)
+    \n•Clase B: 172.16.0.0 a 172.31.255.255 (16 bits red, 16 bits hosts)
+    \n•Clase C: 192.168.0.0 a 192.168.255.255 (24 bits red, 8 bits hosts)
+    \nPara comprender las clases de direcciones IP, necesitamos entender que cada dirección IP consiste en 4 octetos de 8 bits cada uno.Existen 5 tipos de clases de IP, más ciertas direcciones especiales:</string>
+    <string name="clasesde_ip_etc">Red por defecto (default) - La dirección IP de 0.0.0.0 se utiliza para la red por defecto.
+    \n•<b>Clase A</b> - Esta clase es para las redes muy grandes, tales como las de una gran compañía internacional. Del IP con un primer octeto a partir de 0 al 127 son parte de esta clase. Los otros tres octetos son usados para identificar cada anfitrión. Esto significa que hay 126 redes de la clase A con 16,777,214 (2<sup><small>24</small></sup> -2) posibles anfitriones para un total de 2,147,483,648 (2<sup><small>31</small></sup>) direcciones únicas del IP. Las redes de la clase A totalizan la mitad de las direcciones disponibles totales del IP.En redes de la clase A, el valor del bit *(el primer número binario) en el primer octeto es siempre 0.
+    \n•<b>Loopback</b> - La dirección IP se utiliza como la dirección del loopback. Esto significa que es utilizada por el ordenador huésped para enviar un mensaje de nuevo a sí mismo. Se utiliza comúnmente para localizar averías y pruebas de la red.
+    \n•<b>Clase B</b> - La clase B se utiliza para las redes de tamaño mediano. Un buen ejemplo es un campus grande de la universidad. Las direcciones del IP con un primer octeto a partir del 128 al 191 son parte de esta clase. Las direcciones de la clase B también incluyen el segundo octeto como parte del identificador neto. Utilizan a los otros dos octetos para identificar cada anfitrión (host). Esto significa que hay 16,384 (2<sup><small>14</small></sup>) redes de la clase B con 65,534 (2<sup><small>16</small></sup> -2) anfitriones posibles cada uno para un total de 1,073,741,824 (2<sup><small>30</small></sup>) direcciones únicas del IP. Las redes de la clase B totalizan un cuarto de las direcciones disponibles totales del IP y tienen un primer bit con valor de 1 y un segundo bit con valor de 0 en el primer octeto.
+    \n•<b>Clase C</b> - Las direcciones de la clase C se utilizan comúnmente para los negocios pequeños a medianos de tamaño. Las direcciones del IP con un primer octeto a partir del 192 al 223 son parte de esta clase. Las direcciones de la clase C también incluyen a segundos y terceros octetos como parte del identificador neto. Utilizan al último octeto para identificar cada anfitrión. Esto significa que hay 2,097,152 (2<sup><small>21</small></sup>) redes de la clase C con 256 (2<sup><small>8</small></sup> -2) anfitriones posibles cada uno para un total de 536,870,912 (2<sup><small>29</small></sup>) direcciones únicas del IP. Las redes de la clase C totalizan un octavo de las direcciones disponibles totales del IP. Las redes de la clase C tienen un primer bit con valor de 1, segundo bit con valor de 1 y de un tercer bit con valor de 0 en el primer octeto.
+    \n•<b>Clase D</b> - Utilizado para los multicast, la clase D es levemente diferente de las primeras tres clases. Tiene un primer bit con valor de 1, segundo bit con valor de 1, tercer bit con valor de 1 y cuarto bit con valor de 0. Los otros 28 bits se utilizan para identificar el grupo de computadoras al que el mensaje del multicast está dirigido. La clase D totaliza 1/16ava (268,435,456 o 2<sup><small>28</small></sup>) de las direcciones disponibles del IP.
+    \n•<b>Clase E</b> - La clase E se utiliza para propósitos experimentales solamente. Como la clase D, es diferente de las primeras tres clases. Tiene un primer bit con valor de 1, segundo bit con valor de 1, tercer bit con valor de 1 y cuarto bit con valor de 1. Los otros 28 bits se utilizan para identificar el grupo de computadoras que el mensaje del multicast está dirigido. La clase E totaliza 1/16ava (268,435,456 o 2<sup><small>28</small></sup>) de las direcciones disponibles del IP.
+    \n•<b>Broadcast</b> - los mensajes que se dirigen a todas las computadoras en una red se envían como broadcast. Estos mensajes utilizan siempre La dirección IP 255.255.255.255.</string>
+    <string name="nota_fuente_ip">Fuente: <i>https://es.wikipedia.org/wiki/Rangos_y_Clases_de_la_IP</i> ,para obtener más información.</string>
+    <string name="title_activity_subredes_apps">Subredes-Aplicación</string>
+    <string name="titulo_form1"><b>Formulario 1: Obtener máscara, #subredes y clase</b></string>
+    <string name="titulo_form2"><b>Formulario 2: Obtener máscara CIDR (sabiendo la máscara en notación decimal)</b></string>
+    <string name="title_activity_vlan">Vlan</string>
+    <string name="concepto_vlan"><u>VLAN:</u> Es acrónimo de virtual LAN (red de área local virtual), es un método para crear redes lógicas independientes dentro de una misma red física.1 Varias VLAN pueden coexistir en un único conmutador físico o en una única red física. Son útiles para reducir el tamaño del dominio de difusión y ayudan en la administración de la red, separando segmentos lógicos de una red de área local (los departamentos de una empresa, por ejemplo) que no deberían intercambiar datos usando la red local (aunque podrían hacerlo a través de un enrutador o un conmutador de capa 3 y 4).
+    \nUna VLAN consiste en dos o más redes de computadoras que se comportan como si estuviesen conectados al mismo PCI, aunque se encuentren físicamente conectados a diferentes segmentos de una red de área local (LAN). Los administradores de red configuran las VLAN mediante software en lugar de hardware, lo que las hace extremadamente fuertes.</string>
+    <string name="clasificacion_vlan"><u>Clasificación:</u> Aunque las más habituales son las VLAN basadas en puertos (nivel 1), las redes de área local virtuales se pueden clasificar en cuatro tipos según el nivel de la jerarquía OSI en el que operen:
+    \n•<b>VLAN de nivel 1 (por puerto):</b> También conocida como \“port switching\”. Se especifica qué puertos del switch pertenecen a la VLAN, los miembros de dicha VLAN son los que se conecten a esos puertos. No permite la movilidad de los usuarios, habría que reconfigurar las VLAN si el usuario se mueve físicamente. Es la más común y la que se explica en profundidad en este artículo.
+    \n•<b>VLAN de nivel 2 por direcciones MAC:</b> Se asignan hosts a una VLAN en función de su dirección MAC. Tiene la ventaja de que no hay que reconfigurar el dispositivo de conmutación si el usuario cambia su localización, es decir, se conecta a otro puerto de ese u otro dispositivo. El principal inconveniente es que si hay cientos de usuarios habría que asignar los miembros uno a uno.
+    \n•<b>VLAN de nivel 2 por tipo de protocolo:</b> La VLAN queda determinada por el contenido del campo tipo de protocolo de la trama MAC. Por ejemplo, se asociaría VLAN 1 al protocolo IPv4, VLAN 2 al protocolo IPv6, VLAN 3 a AppleTalk, VLAN 4 a IPX.
+    \n•<b>VLAN de nivel 3 por direcciones de subred (subred virtual):</b> La cabecera de nivel 3 se utiliza para mapear la VLAN a la que pertenece. En este tipo de VLAN son los paquetes, y no las estaciones, quienes pertenecen a la VLAN. Estaciones con múltiples protocolos de red (nivel 3) estarán en múltiples VLAN.
+    \n•<b>VLAN de niveles superiores:</b> Se crea una VLAN para cada aplicación: FTP, flujos multimedia, correo electrónico... La pertenencia a una VLAN puede basarse en una combinación de factores como puertos, direcciones MAC, subred, hora del día, forma de acceso, condiciones de seguridad del equipo.</string>
+    <string name="nota_fuente_vlan">Fuente: <i>https://es.wikipedia.org/wiki/VLAN</i> ,para obtener más información.</string>
+    <string name="title_activity_ataque_informatico">AtaqueInformatico</string>
+    <string name="concepto_ataque_informatico"><u>Ataque Informático:</u> Es un método por el cual un individuo, mediante un sistema informático, intenta tomar el control, desestabilizar o dañar otro sistema informático (ordenador, red privada, etcétera).</string>
+    <string name="tecnicas_ataque_informatico"><u>Tipos de ataques:</u>     \n<b>Ataques lógicos</b>     \n•<u>Trashing (cartoneo):</u> Este ocurre generalmente cuando un usuario anota su login y password en un papel y luego, cuando lo recuerda, lo arroja a la basura. Esto por más inocente que parezca es el que puede aprovechar un atacante para hacerse de una llave para entrar al sistema.
+    \n•<u>Monitorización:</u> Este tipo de ataque se realiza para observar a la victima y su sistema, con el objetivo de establecer sus vulnerabilidades y posibles formas de acceso futuro.
+    \n•<u>Ataques de autenticación:</u> Este tipo de ataque tiene como objetivo engañar al sistema de la víctima para ingresar al mismo. Generalmente este engaño se realiza tomando las sesiones ya establecidas por la víctima u obteniendo su nombre de usuario y password.
+    \n•<u>Denial of Service(DoS):</u> Los protocolos existentes actualmente fueron diseñados para ser hechos en una comunidad abierta y con una relación de confianza mutua. La realidad indica que es más fácil desorganizar el funcionamiento de un sistema que acceder al mismo; así los ataques de Negación de Servicio tienen como objetivo saturar los recursos de la víctima de forma tal que se inhabilita los servicios brindados por la misma.
+    \n•<u>Modificación (daño):</u> La modificación o daño se puede dar como:Tampering o Data Diddling: Esta categoría se refiere a la modificación desautorizada de los datos o el SOFTWARE INSTALADO en el sistema víctima (incluyendo borrado de archivos). Borrado de Huellas: El borrado de huellas es una de las tareas más importantes que debe realizar el intruso después de ingresar en un sistema, ya que, si se detecta su ingreso, el administrador buscará como conseguir \"tapar el hueco\" de seguridad, evitar ataques futuros e incluso rastrear al atacante.
+    \n<b>Otros ataques</b>     \n•<u>Ataque de fuerza bruta:</u> No es necesariamente un procedimiento que se deba realizar por procesos informáticos, aunque este sistema ahorraría tiempos, energías y esfuerzos. El sistema de ataque por fuerza bruta, trata de recuperar una clave probando todas las combinaciones posibles hasta encontrar aquella que se busca, y que permite el acceso al sistema, programa o archivo en estudio.</string>
+    <string name="consecuencias_ataque_informatico"><u>Consecuencias:</u> Los ataques informáticos tienen varias series de consecuencias o daños que un VIRUS puede causar en un sistema operativo. Hay varios tipos de daños los cuales los más notables o reconocidos son los siguientes:
+    \n-<b>Daños triviales:</b> En este tipo de daños los VIRUS que los causan son muy fáciles de remover y eliminar, por lo que se pueden quitar solo en segundos o minutos.
+    \n-<b>Daños menores:</b> En este tipo de daños se tiene que tener en cuenta el VIRUS Jerusalén. Este virus los viernes 13, borra todos los programas que una trate de usar después de que el virus haya infectado la memoria. Lo peor que puede suceder es que tocara volver a INSTALAR los programas ya borrados por el virus.
+    \n-<b>Daños moderados:</b> Este daño sucede cuando un virus formatea el DISCO DURO, y mezcla los componentes del FAT (File Allocation Table por su sigla en inglés o Tabla de Ubicación de Archivos por sus siglas en español, TUA), o también puede que sobrescriba el disco duro. Sabiendo esto se puede reinstalar el sistema operativo y usar el último backup. Esto llevara 1 hora aproximadamente.
+    \n-<b>Daños severos:</b> Los daños severos son hechos cuando los VIRUS hacen cambios mínimos y progresivos. El usuario no sabe cuando los datos son correctos o han cambiado, pues no se ve fácilmente, como en el caso del VIRUS Dark Avanger. También hay casos de virus que infectan aplicaciones que al ser descontaminadas estas aplicaciones pueden presentar problemas o perder funcionalidad.
+    \n-<b>Daños ilimitados:</b> Algunos programas como CHEEBA, VACSINA.44.LOGIN y GP1 entre otros, obtienen la clave del administrador del sistema. En el caso de CHEEBAS, crea un nuevo usuario con el privilegio máximo poniendo el nombre del usuario y la clave. El daño lo causa la tercera persona, que ingresa al sistema y podría hacer lo que quisiera.
+    \nHay diversos tipos de ataques informáticos. Algunos son:
+    \n\u0020\u0020•<u>Ataque de denegación de servicio:</u> También llamado ataque <i>DoS (Denial of Service)</i>, es un ataque a un sistema de computadoras o red que causa que un servicio o recurso sea inaccesible a los usuarios legítimos, normalmente provocando la pérdida de la conectividad de la red por el consumo del ancho de banda de la red de la víctima o sobrecarga de los recursos computacionales del sistema de la víctima.
+    \n\u0020\u0020•<u>Man in the middle:</u>  a veces abreviado <i>MitM</i>, es una situación donde un atacante supervisa (generalmente mediante un rastreador de puertos) una comunicación entre dos partes y falsifica los intercambios para hacerse pasar por una de ellas.
+    \n\u0020\u0020\u0020\u0020\u0020\u0020→Ataques de REPLAY,3 una forma de ataque de red, en el cual una transmisión de datos válida es maliciosa o fraudulentamente repetida o retardada. Es llevada a cabo por el autor o por un adversario que intercepta la información y la retransmite, posiblemente como parte de un ataque enmascarado.
+    \n\u0020\u0020•<u>Ataque de día cero:</u> ataque realizado contra un ordenador, a partir del cual se explotan ciertas vulnerabilidades, o agujeros de seguridad de algún programa o programas antes de que se conozcan las mismas, o que, una vez publicada la existencia de la vulnerabilidad, se realice el ataque antes de la publicación del parche que la solvente.</string>
+    <string name="nota_fuente_ataquesinform">Fuente: <i>https://es.wikipedia.org/wiki/Ataque_informático</i> ,para obtener más información.</string>
+    <string name="title_activity_znormal_stand">ZnormalStand</string>
+    <string name="znormal_content"><b>Formulario:</b> Obtención de Z normal Estándar conociendo el porcentaje.</string>
+    <string name="znormal_content2">El valor obtenido es el valor de tabla de distribuciones Z normal Estándar</string>
+    <string name="title_activity_tecno_web">TecnoWeb</string>
+    <string name="title_activity_html5">Html5</string>
+    <string name="concepto_html5"><u><b>HTML 5:</b></u>  O <i>HyperText Markup Language versión 5</i> es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 especifica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML5 que deberá servirse con sintaxis XML (application/xhtml+xml). El desarrollo de este lenguaje de marcado es regulado por el Consorcio W3C.</string>
+    <string name="nota_fuente_html5">Infromación de: <i>http://www.dirinfo.unsl.edu.ar/dweb/listaetiquetasHTML5.pdf</i>. (Prof. Mg.  Lorena Baigorria)</string>
+    <string name="title_activity_hoja_de_estilo">Css-Estilos</string>
+    <string name="title_activity_programacion">Programación</string>
+    <string name="title_activity_tec_programacion">Técnicas de Programación</string>
+    <string name="concepto_tec_programacion"><u><b>Técnicas de Programación:</b></u>     \nUn algoritmo es una secuencia no ambigua, finita y ordenada de instrucciones que han de seguirse para resolver un problema. Un programa normalmente implementa (traduce a un lenguaje de programación concreto) uno o más algoritmos. Un algoritmo puede expresarse de distintas maneras: en forma gráfica, como un diagrama de flujo, en forma de código como en pseudocódigo o un lenguaje de programación, en forma explicativa, etc.
+    \nLos programas suelen subdividirse en partes menores, llamadas módulos, de modo que la complejidad algorítmica de cada una de las partes sea menor que la del programa completo, lo cual ayuda al desarrollo del programa. Esta es una práctica muy utilizada y se conoce como "refino progresivo".
+    \nSegún Niklaus Wirth, un programa está formado por los algoritmos y la estructura de datos. Se han propuesto diversas técnicas de programación cuyo objetivo es mejorar tanto el proceso de creación de software como su mantenimiento. Entre ellas, se pueden mencionar las siguientes:
+    \n-Programación declarativa
+    \n-Programación estructurada
+    \n-Programación modular
+    \n-Programación orientada a objetos</string>
+    <string name="premisa_spin_tecprog">***<b>Seleccionar</b> a continuación una técnica de programación para mostrar su respectiva información:</string>
+    <string name="c1_prog_declarat">•<u>Programación declarativa:</u> En contraposición a la programación imperativa, es un paradigma de programación que está basado en el desarrollo de programas especificando o "declarando" un conjunto de condiciones, proposiciones, afirmaciones, restricciones, ecuaciones o transformaciones que describen el problema y detallan su solución. La solución es obtenida mediante mecanismos internos de control, sin especificar exactamente cómo encontrarla (tan sólo se le indica a la computadora qué es lo que se desea obtener o qué es lo que se está buscando). No existen asignaciones destructivas, y las variables son utilizadas con transparencia referencial.
+    \n<u>Tipos:</u> Existen varios tipos de lenguajes declarativos:
+    \n-Los lenguajes lógicos, como Prolog.
+    \n-Los lenguajes algebraicos, como Maude y SQL.
+    \n-Los lenguajes funcionales, como Haskell y Erlang.
+    \n<u>Ventajas:</u> Se ha dicho que los lenguajes declarativos tienen la ventaja de ser razonados matemáticamente, lo que permite el uso de mecanismos matemáticos para optimizar el rendimiento de los programas. Son fiables, elegantes y expresivos.</string>
+    <string name="c2_prog_estruct">•<u>Programación estructurada:</u> Es un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de computadora, utilizando únicamente subrutinas y tres estructuras: secuencia, selección (if y switch) e iteración (bucles for y while), considerando innecesario y contraproducente el uso de la instrucción de transferencia incondicional (GOTO), que podría conducir a "código espagueti", que es mucho más difícil de seguir y de mantener, y era la causa de muchos errores de programación.
+    \n<u>Ventajas de la programación estructurada:</u> Ventajas de la programación estructurada comparada con el modelo anterior (hoy llamado despectivamente código espagueti).
+    \n-Los programas son más fáciles de entender, pueden ser leídos de forma secuencial y no hay necesidad de hacer engorrosos seguimientos en saltos de líneas (GOTO) dentro de los bloques de código para intentar entender la lógica.
+    \n-La estructura de los programas es clara, puesto que las instrucciones están más ligadas o relacionadas entre sí.
+    \n-Reducción del esfuerzo en las pruebas y depuración. El seguimiento de los fallos o errores del programa (debugging) se facilita debido a su estructura más sencilla y comprensible, por lo que los errores se pueden detectar y corregir más fácilmente.
+    \n-Reducción de los costos de mantenimiento. Análogamente a la depuración, durante la fase de mantenimiento, modificar o extender los programas resulta más fácil.
+    \n-Los programas son más sencillos y más rápidos de confeccionar.
+    \n-Se incrementa el rendimiento de los programadores.
+    \n<u>Lenguajes de programación estructurada:</u> Es posible hacer la programación estructurada en cualquier lenguaje de programación, aunque es preferible usar algo como un lenguaje de programación procedimental. Algunos de los lenguajes utilizados inicialmente para programación estructurada incluyen: ALGOL, Pascal, PL/I y Ada —pero la mayoría de los nuevos lenguajes de programación procedimentales desde entonces han incluido características para fomentar la programación estructurada y a veces deliberadamente omiten características,4 en un esfuerzo para hacer más difícil la programación no estructurada.</string>
+    <string name="c3_prog_modul">•<u>Programación modular:</u> es un paradigma de programación que consiste en dividir un programa en módulos o subprogramas con el fin de hacerlo más legible y manejable.
+    \nSe presenta históricamente como una evolución de la programación estructurada para solucionar problemas de programación más grandes y complejos de lo que esta puede resolver.
+    \nAl aplicar la programación modular, un problema complejo debe ser dividido en varios subproblemas más simples, y estos a su vez en otros subproblemas más simples. Esto debe hacerse hasta obtener subproblemas lo suficientemente simples como para poder ser resueltos fácilmente con algún lenguaje de programación. Esta técnica se llama refinamiento sucesivo, divide y vencerás ó análisis descendente (Top-Down).</string>
+    <string name="c4_prog_or_obj">•<u>Programación orientada a objetos:</u> La programación orientada a objetos (POO, u OOP según sus siglas en inglés) es un paradigma de programación que viene a innovar la forma de obtener resultados. Los objetos manipulan los datos de entrada para la obtención de datos de salida específicos, donde cada objeto ofrece una funcionalidad especial.
+    \nMuchos de los objetos pre-diseñados de los lenguajes de programación actuales permiten la agrupación en bibliotecas o librerías, sin embargo, muchos de estos lenguajes permiten al usuario la creación de sus propias bibliotecas.
+    \nEstá basada en varias técnicas, incluyendo herencia, cohesión, abstracción, polimorfismo, acoplamiento y encapsulamiento.</string>
+    <string name="fuente_tec_programacion"><u>Información obtenida de:</u>     \n•<i>https://es.wikipedia.org/wiki/Programación</i>     \n•<i>https://es.wikipedia.org/wiki/Programación_declarativa</i>     \n•<i>https://es.wikipedia.org/wiki/Programación_estructurada</i>     \n•<i>https://es.wikipedia.org/wiki/Programación_modular</i>     \n•<i>https://es.wikipedia.org/wiki/Programación_orientada_a_objetos</i></string>
+    <string name="title_activity_prog_oo">Prog. Orientada a Objetos</string>
+    <string name="concepto_prog_oo"><b><u>Programación Orientada a Objetos:</u></b>     \nLa POO es un paradigma surgido en los años 1970, que utiliza objetos como elementos fundamentales en la construcción de la solución. Los objetos son entidades que tienen un determinado \"estado\", \"comportamiento (método)\" e \"identidad\":
+    \nLa identidad es una propiedad de un objeto que lo diferencia del resto; dicho con otras palabras, es su identificador (concepto análogo al de identificador de una variable o una constante).
+    \nUn objeto contiene toda la información que permite definirlo e identificarlo frente a otros objetos pertenecientes a otras clases e incluso frente a objetos de una misma clase, al poder tener valores bien diferenciados en sus atributos. A su vez, los objetos disponen de mecanismos de interacción llamados métodos, que favorecen la comunicación entre ellos. Esta comunicación favorece a su vez el cambio de estado en los propios objetos. Esta característica lleva a tratarlos como unidades indivisibles, en las que no se separa el estado y el comportamiento.
+    \nLos <b>métodos</b> (comportamiento) y <b>atributos</b> (estado) están estrechamente relacionados por la propiedad de conjunto. Esta propiedad destaca que una clase requiere de métodos para poder tratar los atributos con los que cuenta. El programador debe pensar indistintamente en ambos conceptos, sin separar ni darle mayor importancia a alguno de ellos. Hacerlo podría producir el hábito erróneo de crear clases contenedoras de información por un lado y clases con métodos que manejen a las primeras por el otro. De esta manera se estaría realizando una "programación estructurada camuflada" en un lenguaje de POO.
+    \nLa programación orientada a objetos difiere de la programación estructurada tradicional, en la que los datos y los procedimientos están separados y sin relación, ya que lo único que se busca es el procesamiento de unos datos de entrada para obtener otros de salida. La programación estructurada anima al programador a pensar sobre todo en términos de procedimientos o funciones, y en segundo lugar en las estructuras de datos que esos procedimientos manejan. En la programación estructurada solo se escriben funciones que procesan datos. Los programadores que emplean POO, en cambio, primero definen objetos para luego enviarles mensajes solicitándoles que realicen sus métodos por sí mismos.</string>
+    <string name="c_fund_prog_oo"><b><u>Conceptos Fundamentales:</u></b>     \nLa POO es una forma de programar que trata de encontrar una solución a estos problemas. Introduce nuevos conceptos, que superan y amplían conceptos antiguos ya conocidos. Entre ellos destacan los siguientes:
+    \n•<b><u>Clase</u>:</b>  Definiciones de las propiedades y comportamiento de un tipo de objeto concreto. La instanciación es la lectura de estas definiciones y la creación de un objeto a partir de ella.
+    \n•<b><u>Herencia</u>:</b> Por ejemplo, herencia de la clase C a la clase D, es la facilidad mediante la cual la clase D hereda en ella cada uno de los atributos y operaciones de C, como si esos atributos y operaciones hubiesen sido definidos por la misma D. Por lo tanto, puede usar los mismos métodos y variables públicas declaradas en C. Los componentes registrados como "privados" (private) también se heredan, pero como no pertenecen a la clase, se mantienen escondidos al programador y sólo pueden ser accedidos a través de otros métodos públicos. En el caso de los componentes registrados como "protegidos" (protected) también se heredan, pero solo para esa clase, no para futuras clases heredadas. Esto es así para mantener hegemónico el ideal de POO.
+    \n•<b><u>Objeto</u>:</b> Instancia de una clase. Entidad provista de un conjunto de propiedades o atributos (datos) y de comportamiento o funcionalidad (métodos), los mismos que consecuentemente reaccionan a eventos. Se corresponden con los objetos reales del mundo que nos rodea, o con objetos internos del sistema (del programa).
+    \n•<b><u>Método</u>:</b> Algoritmo asociado a un objeto (o a una clase de objetos), cuya ejecución se desencadena tras la recepción de un "mensaje". Desde el punto de vista del comportamiento, es lo que el objeto puede hacer. Un método puede producir un cambio en las propiedades del objeto, o la generación de un "evento" con un nuevo mensaje para otro objeto del sistema.
+    \n•<b><u>Evento</u>:</b> Es un suceso en el sistema (tal como una interacción del usuario con la máquina, o un mensaje enviado por un objeto). El sistema maneja el evento enviando el mensaje adecuado al objeto pertinente. También se puede definir como evento la reacción que puede desencadenar un objeto; es decir, la acción que genera.
+    \n•<b><u>Atributos</u>:</b> Características que tiene la clase.
+    \n•<b><u>Mensaje</u>:</b> Una comunicación dirigida a un objeto, que le ordena que ejecute uno de sus métodos con ciertos parámetros asociados al evento que lo generó.
+    \n•<b><u>Propiedad o atributo:</u></b> Contenedor de un tipo de datos asociados a un objeto (o a una clase de objetos), que hace los datos visibles desde fuera del objeto y esto se define como sus características predeterminadas, y cuyo valor puede ser alterado por la ejecución de algún método.
+    \n•<b><u>Estado interno</u>:</b> Es una variable que se declara privada, que puede ser únicamente accedida y alterada por un método del objeto, y que se utiliza para indicar distintas situaciones posibles para el objeto (o clase de objetos). No es visible al programador que maneja una instancia de la clase.
+    \•n<b><u>Componentes de un objeto</u>:</b> Atributos, identidad, relaciones y métodos.
+    \n•<b><u>Identificación de un objeto</u>:</b> Un objeto se representa por medio de una tabla o entidad que esté compuesta por sus atributos y funciones correspondientes. En comparación con un lenguaje imperativo, una \"variable\" no es más que un contenedor interno del atributo del objeto o de un estado interno, así como la \"función\" es un procedimiento interno del método del objeto.</string>
+    <string name="c_fund_prog_oo_2"><u><b>Características de la POO:</b></u>     \nExiste un acuerdo acerca de qué características contempla la \"orientación a objetos\". Las características siguientes son las más importantes:
+    \n-<b><u>Abstracción:</u></b> Denota las características esenciales de un objeto, donde se capturan sus comportamientos. Cada objeto en el sistema sirve como modelo de un \"agente\" abstracto que puede realizar trabajo, informar y cambiar su estado, y \"comunicarse\" con otros objetos en el sistema sin revelar \"cómo\" se implementan estas características. Los procesos, las funciones o los métodos pueden también ser abstraídos, y, cuando lo están, una variedad de técnicas son requeridas para ampliar una abstracción. El proceso de abstracción permite seleccionar las características relevantes dentro de un conjunto e identificar comportamientos comunes para definir nuevos tipos de entidades en el mundo real. La abstracción es clave en el proceso de análisis y diseño orientado a objetos, ya que mediante ella podemos llegar a armar un conjunto de clases que permitan modelar la realidad o el problema que se quiere atacar.
+    \n-<b><u>Encapsulamiento:</u></b> Significa reunir todos los elementos que pueden considerarse pertenecientes a una misma entidad, al mismo nivel de abstracción. Esto permite aumentar la cohesión (diseño estructurado) de los componentes del sistema. Algunos autores confunden este concepto con el principio de ocultación, principalmente porque se suelen emplear conjuntamente.
+    \n-<b><u>Polimorfismo:</u></b> Comportamientos diferentes, asociados a objetos distintos, pueden compartir el mismo nombre; al llamarlos por ese nombre se utilizará el comportamiento correspondiente al objeto que se esté usando. O, dicho de otro modo, las referencias y las colecciones de objetos pueden contener objetos de diferentes tipos, y la invocación de un comportamiento en una referencia producirá el comportamiento correcto para el tipo real del objeto referenciado. Cuando esto ocurre en \"tiempo de ejecución\", esta última característica se llama asignación tardía o asignación dinámica. Algunos lenguajes proporcionan medios más estáticos (en \"tiempo de compilación\") de polimorfismo, tales como las plantillas y la sobrecarga de operadores de C++.
+    \n-<b><u>Herencia:</u></b> Las clases no se encuentran aisladas, sino que se relacionan entre sí, formando una jerarquía de clasificación. Los objetos heredan las propiedades y el comportamiento de todas las clases a las que pertenecen. La herencia organiza y facilita el polimorfismo y el encapsulamiento, permitiendo a los objetos ser definidos y creados como tipos especializados de objetos preexistentes. Estos pueden compartir (y extender) su comportamiento sin tener que volver a implementarlo. Esto suele hacerse habitualmente agrupando los objetos en clases y estas en árboles o enrejados que reflejan un comportamiento común. Cuando un objeto hereda de más de una clase se dice que hay herencia múltiple; siendo de alta complejidad técnica por lo cual suele recurrirse a la herencia virtual para evitar la duplicación de datos.
+    \n-<b><u>Modularidad:</u></b> Se denomina \"modularidad\" a la propiedad que permite subdividir una aplicación en partes más pequeñas (llamadas módulos), cada una de las cuales debe ser tan independiente como sea posible de la aplicación en sí y de las restantes partes. Estos módulos se pueden compilar por separado, pero tienen conexiones con otros módulos. Al igual que la encapsulación, los lenguajes soportan la modularidad de diversas formas.
+    \n-<b><u>Principio:</u></b> de ocultación Cada objeto está aislado del exterior, es un módulo natural, y cada tipo de objeto expone una \"interfaz\" a otros objetos que especifica cómo pueden interactuar con los objetos de la clase. El aislamiento protege a las propiedades de un objeto contra su modificación por quien no tenga derecho a acceder a ellas; solamente los propios métodos internos del objeto pueden acceder a su estado. Esto asegura que otros objetos no puedan cambiar el estado interno de un objeto de manera inesperada, eliminando efectos secundarios e interacciones inesperadas. Algunos lenguajes relajan esto, permitiendo un acceso directo a los datos internos del objeto de una manera controlada y limitando el grado de abstracción. La aplicación entera se reduce a un agregado o rompecabezas de objetos.
+    \n-<b><u>Recolección de basura:</u></b> La recolección de basura (garbage collection) es la técnica por la cual el entorno de objetos se encarga de destruir automáticamente, y por tanto desvincular la memoria asociada, los objetos que hayan quedado sin ninguna referencia a ellos. Esto significa que el programador no debe preocuparse por la asignación o liberación de memoria, ya que el entorno la asignará al crear un nuevo objeto y la liberará cuando nadie lo esté usando. En la mayoría de los lenguajes híbridos que se extendieron para soportar el Paradigma de Programación Orientada a Objetos como C++ u Object Pascal, esta característica no existe y la memoria debe desasignarse expresamente.</string>
+    <string name="fuente_poo"><u>Información obtenida de:</u>     \n•<i>https://es.wikipedia.org/wiki/Programación</i></string>
+    <string name="title_activity_lenguaje_programacion">Lenguaje de Programación</string>
+    <string name="concepto_lenguaje_progr"><u><b>Lenguaje de programación:</b></u>     \nes un lenguaje formal diseñado para realizar procesos que pueden ser llevados a cabo por máquinas como las computadoras. Pueden usarse para crear programas que controlen el comportamiento físico y lógico de una máquina, para expresar algoritmos con precisión, o como modo de comunicación humana.
+    \nEstá formado por un conjunto de símbolos y reglas sintácticas y semánticas que definen su estructura y el significado de sus elementos y expresiones. Al proceso por el cual se escribe, se prueba, se depura, se compila (de ser necesario) y se mantiene el código fuente de un programa informático se le llama <i>programación</i>.
+    \nTambién la palabra programación se define como el proceso de creación de un programa de computadora, mediante la aplicación de procedimientos lógicos, a través de los siguientes pasos:
+    \n-El desarrollo lógico del programa para resolver un problema en particular.
+    \n-Escritura de la lógica del programa empleando un lenguaje de programación específico (codificación del programa).
+    \n-Ensamblaje o compilación del programa hasta convertirlo en lenguaje de máquina.
+    \n-Prueba y depuración del programa.
+    \n-Desarrollo de la documentación.
+    \nExiste un error común que trata por sinónimos los términos \'lenguaje de programación\' y \'lenguaje informático\'. Los lenguajes informáticos engloban a los lenguajes de programación y a otros más, como por ejemplo HTML (lenguaje para el marcado de páginas web que no es propiamente un lenguaje de programación, sino un conjunto de instrucciones que permiten estructurar el contenido de los documentos).</string>
+    <string name="elementos_lenguaje_progr"><u>Elementos:</u>     \n<b>a) Variables y vectores:</b> Las variables son títulos asignados a espacios en memoria para almacenar datos específicos. Son contenedores de datos y por ello se diferencian según el tipo de dato que son capaces de almacenar. En la mayoría de lenguajes de programación se requiere especificar un tipo de variable concreto para guardar un dato específico. Por ejemplo, en Java, si deseamos guardar una cadena de texto debemos especificar que la variable es del tipo String. Por otra parte, en lenguajes como PHP este tipo de especificación de variables no es necesario. Además, existen variables compuestas llamadas vectores. Un vector no es más que un conjunto de bytes consecutivas en memoria y del mismo tipo guardadas dentro de una variable contenedor. A continuación, un listado con los tipos de variables y vectores más comunes:</string>
+    <string name="lengpeog_11"><b>Tipo de Dato</b></string>
+    <string name="lengpeog_12"><b>Breve Descripción</b></string>
+    <string name="lengpeog_22">Estas variables contienen un único carácter, es decir, una letra, un signo o un número.</string>
+    <string name="lengpeog_32">Contienen un número entero.</string>
+    <string name="lengpeog_42">Contienen un número decimal.</string>
+    <string name="lengpeog_52">Contienen cadenas de texto, o lo que es lo mismo, es un vector con varias variables del tipo Char.</string>
+    <string name="lengpeog_62">Solo pueden contener un cero o un uno.</string>
+    <string name="elementos_lenguaje_progr2">En el caso de variables booleanas, el cero es considerado para muchos lenguajes como el literal falso (\"False\"), mientras que el uno se considera verdadero (\"True\").
+    \n<b>Condicionantes:</b> Son estructuras de código que indican que, para que cierta parte del programa se ejecute, deben cumplirse ciertas premisas; por ejemplo: que dos valores sean iguales, que un valor exista, que un valor sea mayor que otro... Estos condicionantes por lo general solo se ejecutan una vez a lo largo del programa. Los condicionantes más conocidos y empleados en programación son:
+    \n\u0020\-If: Indica una condición para que se ejecute una parte del programa.
+    \n\u0020\-Else if: Siempre va precedido de un \"If\" e indica una condición para que se ejecute una parte del programa siempre que no cumpla la condición del if previo y si se cumpla con la que el \"else if\" especifique.
+    \n\u0020\-Else: Siempre precedido de \"If\" y en ocasiones de \"Else If\". Indica que debe ejecutarse cuando no se cumplan las condiciones prévias.
+    \n<b>Bucles:</b> Son parientes cercanos de los condicionantes, pero ejecutan constantemente un código mientras se cumpla una determinada condición. Los más frecuentes son:
+    \n\u0020\-For: Ejecuta un código mientras una variable se encuentre entre 2 determinados parámetros.
+    \n\u0020\-While: Ejecuta un código mientras que se cumpla la condición que solicita.
+    \nHay que decir que a pesar de que existan distintos tipos de bucles, ambos son capaces de realizar exactamente las mismas funciones. El empleo de uno u otro depende, por lo general, del gusto del programador.
+    \n<b>Funciones:</b> Las funciones se crearon para evitar tener que repetir constantemente fragmentos de código. Una función podría considerarse como una variable que encierra código dentro de si. Por lo tanto cuando accedemos a dicha variable (la función) en realidad lo que estamos haciendo es ordenar al programa que ejecute un determinado código predefinido anteriormente.
+    \nTodos los lenguajes de programación tienen algunos elementos de formación primitivos para la descripción de los datos y de los procesos o transformaciones aplicadas a estos datos (tal como la suma de dos números o la selección de un elemento que forma parte de una colección). Estos elementos primitivos son definidos por reglas sintácticas y semánticas que describen su estructura y significado respectivamente.
+    \n<b>Sintaxis:</b> A la forma visible de un lenguaje de programación se le conoce como sintaxis. La mayoría de los lenguajes de programación son puramente textuales, es decir, utilizan secuencias de texto que incluyen palabras, números y puntuación, de manera similar a los lenguajes naturales escritos. Por otra parte, hay algunos lenguajes de programación que son más gráficos en su naturaleza, utilizando relaciones visuales entre símbolos para especificar un programa.
+    \nLa sintaxis de un lenguaje de programación describe las combinaciones posibles de los símbolos que forman un programa sintácticamente correcto. El significado que se le da a una combinación de símbolos es manejado por su semántica (ya sea formal o como parte del código duro de la referencia de implementación). Dado que la mayoría de los lenguajes son textuales, este artículo trata de la sintaxis textual.
+    \nLa sintaxis de los lenguajes de programación es definida generalmente utilizando una combinación de expresiones regulares (para la estructura léxica) y la <i>Notación de Backus-Naur</i> (para la estructura gramática). Este es un ejemplo de una gramática simple, tomada de Lisp:</string>
+    <string name="ejm_gram_simple">expresión ::= átomo | lista
+    \nátomo ::= número | símbolo
+    \nnúmero ::= [+-]? [\'0\'-\'9\']+
+    \nsímbolo ::= [\'A\'-\'Z\'] [\'a\'-\'z\'].*
+    \nlista ::= \'(\' expresión* \')\'</string>
+    <string name="title_activity_func_computador">Funcionamiento del Computador</string>
+    <string name="concepto_func_computador">En la actualidad se puede tener la impresión de que los computadores están ejecutando varios programas al mismo tiempo. Esto se conoce como multitarea, y es más común que se utilice el segundo término. En realidad, la CPU ejecuta instrucciones de un programa y después tras un breve periodo de tiempo, cambian a un segundo programa y ejecuta algunas de sus instrucciones. Esto crea la ilusión de que se están ejecutando varios programas simultáneamente, repartiendo el tiempo de la CPU entre los programas.</string>
+    <string name="concepto_func_computador2">Cada instrucción en su ciclo, pasan por el siguiente desplazamiento:</string>
+    <string name="concepto_func_computador3">Generando las siguientes microoperaciones:</string>
+    <string name="microoper_func_computador"><u>Microoperaciones</u>     \nMAR ← PC
+    \nBusDir ← MAR
+    \nMem ← BusDir
+    \nOrden de lectura a la memoria
+    \nBusDatos ← M[MAR]
+    \nMBR ← BusDatos
+    \nIR ← MBR</string>
+    <string name="concepto_func_computador4">•PC: Contiene la dirección de la siguiente instrucción a ejecutarse.
+    \n•MAR: (Memory Address Register) Registro de direcciones de memoria, está conectada directamente al Bus de direcciones.
+    \n•AB: (Address Bus) Bus de direcciones, transporta la dirección a la memoria.
+    \n•CB: (Control Bus) Bus de control, transporta las señales desde la Unidad de Control (UC) hasta la memoria.
+    \n•DB: (Data Bus) Bus de datos.
+    \n•MBR: (Memory Buffer Register) recibe la instrucción del DB y las lleva a IR.
+    \n-La CPU envía la dirección de PC al MAR, ésta se encargará de colocarla en el AB para llevarla a la memoria. A su vez la UC envía la señal de lectura a la memoria a través de la CB. Como respuesta la memoria devolverá la instrucción por el Bus de datos, será recibida por el MBR.
+    \n-El MBR llevará la instrucción hacia el registro IR, donde será interpretada (decodificada).
+    \n-Luego la UC envía las señales adecuadas para la ejecución de la instrucción.</string>
+    <string name="title_activity_arquitectura_instruccion">Arquitectura de Instruccion</string>
+    <string name="concepto_arquitectura_instruccion"><u>Diseño</u>     \nLas instrucciones tienen un formato, en el cual, la secuencia de bits se divide en campos que especifican la operación y los operandos.</string>
+    <string name="concepto2_arquitectura_instruccion">La instrucción viene a ser una serie de bits, y posee un tamaño: n+n\'. Si el código de la operación es de <i>n</i> bits, la cantidad de operaciones diferentes representables es 2<sup><small>n</small></sup>.
+    \nUn ejemplo de representación sencilla:</string>
+    <string name="concepto3_arquitectura_instruccion">Para una máquina de pila, no se requieren operandos, ya que al ejecutarse, desapila los operandos. El ejemplo a continuación en <i>notación post-fija</i>:
+    \nX=a+5/(b*c)-8</string>
+    <string name="concepto4_arquitectura_instruccion">En <i>post-orden</i>: <b>a5bc*/+8-</b>     \npush a
+    \npush 5
+    \npush b
+    \npush c
+    \nmultiplicar
+    \ndividir
+    \nsumar
+    \npush 8
+    \nrestar
+    \npop X
+    \n<u>Formatos de Instrucción:</u>     \n•<b><u>a) Tipo-I:</u></b></string>
+    <string name="concepto5_arquitectura_instruccion"><b>rs1</b>: registro fuente 1, <b>rd</b>: registro destino, y codigo de operación de 6 bits, genera 2<sup><small>6</small>=64 códigos de operación diferentes.</sup>     \nCodifica carga y almacenamiento de bytes, palabras, medias palabras, todos inmediatos (rd ← rs1), instrucciones de salto condicional, offset.
+    \n•<b><u>b) Tipo-R:</u></b></string>
+    <string name="concepto6_arquitectura_instruccion"> Utilizado para instrucciones aritméticas y lógicas (rd ← rs1 <i>función</i> rs2), función codifica la operación del camino de datos.
+    \n•<b><u>c) Tipo-J:</u></b></string>
+    <string name="concepto7_arquitectura_instruccion">Bifurcación, saltos incondicionales,la dirección de salto son los 26 bits menos significativos de la instrucción.</string>
+    <string name="title_activity_ciclo_instruccion">Ciclo de Instruccion</string>
+    <string name="concepto_ciclo_instruccion"><u><b>Ciclo de Instrucción:</b></u> También llamado <i>ciclo de fetch-and-execute</i> o <i>ciclo de fetch-decode-execute</i> en inglés, es el período que tarda la unidad central de proceso (CPU) en ejecutar una instrucción de lenguaje máquina.
+    \nPara que cualquier sistema de proceso de datos basado en microprocesador (por ejemplo un ordenador) o microcontrolador (por ejemplo un reproductor de MP3) realice una tarea (programa) primero debe buscar cada instrucción en la memoria principal y luego ejecutarla.</string>
+    <string name="concepto2_ciclo_instruccion"><b><u>Secuencia de acciones del ciclo de instrucción:</u></b> Habitualmente son cuatro los cuales son:
+    \n<u>1. Buscar la instrucción en la memoria principal:</u> Se vuelca el valor del contador de programa sobre el bus de direcciones. Entonces la CPU pasa la instrucción de la memoria principal a través del bus de datos al Registro de Datos de Memoria (MDR). A continuación el valor del MDR es colocado en el Registro de Instrucción Actual (CIR), un circuito que guarda la instrucción temporalmente de manera que pueda ser decodificada y ejecutada.
+    \n<u>2. Decodificar la instrucción:</u> El decodificador de instrucción interpreta e implementa la instrucción. El registro de instrucción (IR) mantiene la instrucción en curso mientras el contador de programa (PC, program counter) guarda la dirección de memoria de la siguiente instrucción a ser ejecutada.
+    \n-Recogida de datos desde la memoria principal
+    \n-Se accede al banco de registros por los operandos (solo si es necesario)
+    \n-Se calcula el valor del operando inmediato con extensión de signo (solo si es necesario)
+    \nTambién se lee la dirección efectiva de la memoria principal si la instrucción tiene una dirección indirecta, y se recogen los datos requeridos de la memoria principal para ser procesados y colocados en los registros de datos.
+    \n<u>3. Ejecutar la instrucción:</u> A partir del registro de instrucción, los datos que forman la instrucción son decodificados por la unidad de control. Ésta interpreta la información como una secuencia de señales de control que son enviadas a las unidades funcionales relevantes de la CPU para realizar la operación requerida por la instrucción poder terminarla y seguir asi.
+    \n<u>4. Almacenar o guardar resultados:</u> El resultado generado por la operación es almacenado en la memoria principal o enviado a un dispositivo de salida dependiendo de la instrucción. Basándose en los resultados de la operación, el contador de programa se incrementa para apuntar a la siguiente instrucción o se actualiza con una dirección diferente donde la próxima instrucción será recogida.
+    \n<b>Nota:</b> Los pasos 1 y 2 del ciclo de instrucción se conocen como <i>ciclo de búsquda</i> o <i>ciclo de captación</i> dado que se procesa la instrucción a partir de la palabra de instrucción, que contiene el código de operación y el operando. Los pasos 3 y 4 del ciclo de instrucción se conocen como <i>ciclo de ejecución</i>. Estos pasos cambiarán con cada tipo de instrucción.</string>
+    <string name="concepto3_ciclo_instruccion">En el diagrama las dos secciones superiores son fuera de la CPU, mientras que las 2 inferiores son dentro de la CPU.
+    \n•<b>if</b> (captura de la instrucción).
+    \n•<b>iac</b> (cálculo de la dirección de la instrucción).
+    \n•<b>iod</b> (decodificación de operación de la instrucción).
+    \n•<b>oac</b> (cálculo de la dirección del operando).
+    \n•<b>of</b> (captura del operando).
+    \n•<b>do</b> (operar datos).
+    \n•<b>os</b> (almacenar operando resultado).
+    \nDe los estados anteriores, <b>if</b>, <b>iac</b>, <b>iod</b> siempre estarán.
+    \n<b>Ejemplo:</b> El diagrama de estados para la siguiente instrucción: Sumar R<sub><small>1</small></sub>, A</string>
+    <string name="fuente_ciclo_instruccion"><u>Información obtenida de:</u>     \n•<i>https://es.wikipedia.org/wiki/Ciclo_de_instrucción</i></string>
+    <string name="title_activity_segm_instrucciones">Segmentación de Instrucciones</string>
+    <string name="concepto_segm_instrucciones">La <b>segmentación</b> (en inglés pipelining, literalmente \'tubería\' o \'cañería\') es un método por el cual se consigue aumentar el rendimiento de algunos sistemas electrónicos digitales. Se usa principalmente en los microprocesadores.
+    \nEl camino divido en etapas:</string>
+    <string name="concepto2_segm_instrucciones">Cada una de las etapas dure el mismo tiempo en cada etapa debe ser igualen todas las etapas.
+    \nEn condiciones ideales (CI=EI)</string>
+    <string name="formula_tejec_segmen">t<sub><small>ejec segm</small></sub>=t<sub><small>etapa</small></sub>*NI</string>
+    <string name="concepto3_segm_instrucciones">NI o número de instrucciones.
+    \nComparación gráfica entre si el tiempo ejecución es segmentada o no:</string>
+    <string name="concepto4_segm_instrucciones">t<sub><small>ej-seg</small></sub>=t<sub><small>NOseg</small></sub>/2
+    \nt<sub><small>ej-seg</small></sub>=t<sub><small>NOseg</small></sub>/NroEtapas
+    \nDonde: t<sub><small>ej-seg</small></sub> es tiempo de ejecución segmentado, t<sub><small>NOseg</small></sub> es tiempo ejecución no segmentado, y <i>NroEtapas</i> es el número de etapas.
+    \nLa <b>segmentación</b> consiste en descomponer la ejecución de cada instrucción en varias etapas para poder empezar a procesar una instrucción diferente en cada una de ellas y trabajar con varias a la vez.
+    \n<b><u>Riesgos de Datos y de Control:</u></b>     \nEl empleo de esta técnica conlleva diversos riesgos de datos, ya que al empezar a ejecutar instrucciones antes de terminar las anteriores puede provocar que se necesite leer/escribir un registro antes de que este haya sido escrito/leído por la instrucción anterior/siguiente. Esos riesgos de datos se pueden clasificar como:
+    \n-<b>RAW</b> (<b>R</b>ead <b>A</b>fter <b>W</b>rite): una instrucción trata de leer un operando antes de que lo escriba una instrucción anterior.
+    \n-<b>WAR</b> (<b>W</b>rite <b>A</b>fter <b>R</b>ead): una instrucción trata de escribir su resultado en un destino (sobreescribiendo su valor previo) antes de que una instrucción anterior haya leído el valor anterior de éste.
+    \n-<b>WAW</b> (<b>W</b>rite <b>A</b>fter <b>W</b>rite): una instrucción trata de escribir antes que otra instrucción anterior escriba en el mismo destino.</string>
+    <string name="concepto5_segm_instrucciones"><b><u>*Segmentación DLX*</u></b>     \nEn el caso del procesador DLX podemos encontrar las siguientes etapas en una instrucción, 5 etapas:
+    \n•<b>IF</b> o <b>BI</b> (instruction fetch): Búsqueda.
+    \n•<b>ID</b> o <b>DI</b> (instruction decode): Decodificación.
+    \n•<b>EX</b> (execution): Ejecución en la unidad aritmético lógica (EJ).
+    \n•<b>MEM</b> (memory): Memoria. Actualización del PC cuando instrucción es de salto.
+    \n•<b>WB</b> o <b>PE</b> (writeback o post-escritura): Escritura de registros con resultado.
+    \n<b><u>Cerrojos:</u></b> Se tiene 5 cerrojos.
+    \n<b>1.-PC:</b> Almacena la dirección de la siguiente instrucción a ejecutarse.
+    \n<b>2.-BI/DI:</b> Almacena la instrucción que ha sido capturada y la dirección de la instrucción, en DLX es (PC+4).
+    \n<b>3.-DI/EJ:</b> EJ o EX, almacena el valor de la fuente 1 (registro), del registro fuente 2, el número de registro de destino y el PC incremetnado en 4.
+    \n<b>4.-EJ/MEM:</b> Almacena la salida de la ALU, la condición de salto, valor a almacenar en memoria y el número de registro de destino.
+    \n<b>5.-MEM/PE:</b> Almacena salida de memoria, salida de ALU y el número de registro del destino.</string>
+    <string name="fuente_segm_instrucciones"><u>Fuente:</u>     \n•<i>https://es.wikipedia.org/wiki/Segmentación_(electrónica)</i>     \n•<i>https://es.wikipedia.org/wiki/Segmentación_de_cauce</i></string>
+    <string name="title_activity_memoria">La Memoria</string>
+    <string name="concepto_memoria">En informática, la <b>memoria</b> es el dispositivo que retiene, memoriza o almacena datos informáticos durante algún intervalo de tiempo.1 La memoria proporciona una de las principales funciones de la computación moderna: el almacenamiento de información y conocimiento. Es uno de los componentes fundamentales de la computadora, que interconectada a la unidad central de procesamiento (CPU, por las siglas en inglés de <i>Central Processing Unit</i>) y los dispositivos de entrada/salida, implementan lo fundamental del modelo de computadora de la arquitectura de von Neumann.</string>
+    <string name="descr_img_memoria"><b>Imagen:</b> Foto de memorias RAM tipo DDR instaladas en su socket. (Autor: Chrihern)</string>
+    <string name="concepto2_memoria"><b><u>*Características de las memorias:</u></b>     \nLa división entre primario, secundario, terciario, fuera de línea, se basa en la jerarquía de memoria o distancia desde la CPU. Hay otras formas de caracterizar a los distintos tipos de memoria.
+    \n<u><b>Volatilidad de la información</b></u>     \n-La <i>memoria volátil</i> requiere energía constante para mantener la información almacenada. La memoria volátil se suele usar sólo en memorias primarias. La memoria RAM es una memoria volátil, ya que pierde información en la falta de energía eléctrica.
+    \n-La <i>memoria no volátil</i> retendrá la información almacenada incluso si no recibe corriente eléctrica constantemente, como es el caso de la memoria ROM. Se usa para almacenamientos a largo plazo y, por tanto, se usa en memorias secundarias, terciarias y fuera de línea.
+    \n-La <i>memoria dinámica</i> es una memoria volátil que además requiere que periódicamente se refresque la información almacenada, o leída y reescrita sin modificaciones.
+    \n<u><b>Accesibilidad secuencial o aleatoria a información</b></u>     \nDependiendo de la habilidad para acceder a información contigua o no, se puede clasificar en:
+    \n-Acceso aleatorio significa que se puede acceder a cualquier localización de la memoria en cualquier momento en el mismo intervalo de tiempo, normalmente pequeño.
+    \n-Acceso secuencial significa que acceder a una unidad de información tomará un intervalo de tiempo variable, dependiendo de la unidad de información que fue leída anteriormente. El dispositivo puede necesitar buscar (posicionar correctamente el cabezal de lectura/escritura de un disco), o dar vueltas (esperando a que la posición adecuada aparezca debajo del cabezal de lectura/escritura en un medio que gira continuamente).
+    \n<u><b>Habilidad para cambiar la información</b></u>     \nLas memorias de lectura/escritura o memorias cambiables permiten que la información se reescriba en cualquier momento. Una computadora sin algo de memoria de lectura/escritura como memoria principal sería inútil para muchas tareas. Las computadora modernas también usan habitualmente memorias de lectura/escritura como memoria secundaria.
+    \n-La memoria de sólo lectura (<b>R</b>ead-<b>O</b>nly <b>M</b>emory, <b>ROM</b>) retiene la información almacenada en el momento de fabricarse
+    \n-La memoria de <b>escritura única lectura múltiple</b> (<i>Write Once Read Many</i>, WORM) permite que la información se escriba una sola vez en algún momento tras la fabricación. También están las memorias inmutables, que se utilizan en memorias terciarias y fuera de línea. Un ejemplo son los CD-ROM.
+    \n-Las memorias de escritura lenta y lectura rápida son memorias de lectura/escritura que permite que la información se reescriba múltiples veces pero con una velocidad de escritura mucho menor que la de lectura. Un ejemplo son los CD-RW.
+    \n<u><b>Direccionamiento de la información</b></u>     \n-En la memoria de localización direccionable, cada unidad de información accesible individualmente en la memoria se selecciona con su dirección de memoria numérica. En las computadoras modernas, la memoria de localización direccionable se suele limitar a memorias primarias, que se leen internamente por programas de computadora ya que la localización direccionable es muy eficiente, pero difícil de usar para los humanos.
+    \n-En las memorias de sistema de archivos, la información se divide en archivos informáticos de longitud variable y un fichero concreto se localiza en directorios y nombres de archivos «legible por humanos». El dispositivo subyacente sigue siendo de localización direccionable, pero el sistema operativo de la computadora proporciona la abstracción del sistema de archivos para que la operación sea más entendible. En las computadora modernas, las memorias secundarias, terciarias y fuera de línea usan sistemas de archivos.
+    \n-En las memorias de contenido direccionable (<i>content-addressable memory</i>), cada unidad de información legible individualmente se selecciona con una valor hash o un identificador corto sin relación con la dirección de memoria en la que se almacena la información. La memoria de contenido direccionable pueden construirse usando software o hardware; la opción hardware es la opción más rápida y cara.
+    \n<u><b>Capacidad de memoria</b></u>     \nMemorias de mayor capacidad son el resultado de la rápida evolución en tecnología de materiales semiconductores. Los primeros programas de ajedrez funcionaban en máquinas que utilizaban memorias de base magnética. A inicios de 1970 aparecen las memorias realizadas por semiconductores, como las utilizadas en la serie de computadoras IBM 370. Se espera que la capacidad de procesadores siga aumentando en los próximos años; no es un abuso pensar que la capacidad de memoria continuará creciendo de manera impresionante. Memorias de mayor capacidad podrán ser utilizadas por programas con tablas de Hash de mayor envergadura, las cuales mantendrán la información en forma permanente.
+    \n-Minicomputadoras: se caracterizan por tener una configuración básica regular que puede estar compuesta por un monitor, unidades de disquete, disco, impresora, etc. Su capacidad de memoria varía de 16 a 256 KiB.
+    \n-Macrocomputadoras: son aquellas que dentro de su configuración básica contienen unidades que proveen de capacidad masiva de información, terminales (monitores), etc. Su capacidad de memoria varía desde 256 a 512 KiB, también puede tener varios megabytes o hasta gigabytes según las necesidades de la empresa.
+    \n-Microcomputadores y computadoras personales: con el avance de la microelectrónica en la década de los 70 resultaba posible incluir todos los componente del procesador central de una computadora en un solo circuito integrado llamado microprocesador. Ésta fue la base de creación de unas computadoras a las que se les llamó microcomputadoras.</string>
+    <string name="fuente_memoria"><u>Fuente:</u>     \n•<i>https://es.wikipedia.org/wiki/Segmentación_(electrónica)</i>     \n•<i>https://es.wikipedia.org/wiki/Memoria_(informática)</i></string>
+    <string name="title_activity_jerarquia_memoria">Jerarquía de Memoria</string>
+    <string name="concepto_jerarquia_memoria">La <b>jerarquía de memoria</b> es la organización piramidal de la memoria en niveles que tienen las computadoras.
+    \nEl objetivo es conseguir el rendimiento de una memoria de gran velocidad al coste de una memoria de baja velocidad, basándose en el principio de cercanía de referencias.</string>
+    <string name="concepto2_jerarquia_memoria"><b><u>*Puntos básicos:</u></b>     \nLos puntos básicos relacionados con la memoria pueden resumirse en:
+    \n-Capacidad
+    \n-Velocidad
+    \n-Coste por bit
+    \nLa cuestión de la capacidad es simple, cuanto más memoria haya disponible, más podrá utilizarse. La velocidad óptima para la memoria es la velocidad a la que el microprocesador puede trabajar, de modo que no haya tiempos de espera entre cálculo y cálculo, utilizados para traer operandos o guardar resultados.
+    \nEn suma, el coste de la memoria no debe ser excesivo, para que sea factible construir un equipo accesible. Los tres factores compiten entre sí, por lo que hay que encontrar un equilibrio.
+    \nLas siguientes afirmaciones son válidas:
+    \n•A menor tiempo de acceso mayor coste.
+    \n•A mayor capacidad menor coste por bit.
+    \n•A mayor capacidad menor velocidad.
+    \nSe busca entonces contar con capacidad suficiente de memoria, con una velocidad que sirva para satisfacer la demanda de rendimiento y con un coste que no sea excesivo. Gracias a un principio llamado cercanía de referencias, es factible utilizar una mezcla de los distintos tipos y lograr un rendimiento cercano al de la memoria más rápida.
+    \n<b><u>*Niveles jerárquicos:</u></b>     \nLos componentes fundamentales de las computadoras de propósito general son la CPU, el espacio de almacenamiento y los dispositivos de entrada/salida. La habilidad para almacenar las instrucciones que forman un programa de computadora y la información que manipulan las instrucciones es lo que hace versátiles a las computadoras diseñadas según la arquitectura de programas almacenados.
+    \nLos niveles que componen la jerarquía de memoria habitualmente son:
+    \n•<b>Nivel 0</b>: Registros del microprocesador o CPU
+    \n•<b>Nivel 1</b>: Memoria caché
+    \n•<b>Nivel 2</b>: Memoria primaria (RAM)
+    \n•<b>Nivel 3</b>: Disco duro (con el mecanismo de memoria virtual)
+    \n•<b>Nivel 4</b>: Cintas magnéticas (consideradas las más lentas con mayor capacidad de acceso secuencial)
+    \n•<b>Nivel 5</b>: Redes (actualmente se considera un nivel más de la jerarquía de memorias).
+    \n<b><u>*Gestión de memoria:</u></b>     \nLos lenguajes de programación actuales generalmente asumen la existencia de únicamente dos niveles de memoria: memoria primaria y memoria secundaria (normalmente en disco). En lenguaje ensamblador, ensamblador en línea, y lenguajes como C y C++, se pueden direccionar datos directamente a los registros de la CPU.
+    \nPara aprovechar de forma óptima las ventajas de la jerarquía de memoria es necesaria la cooperación entre programadores, compiladores y fabricantes de hardware:
+    \n-<b>Programadores</b>: deben ser responsables del movimiento entre memoria principal y disco mediante el uso de ficheros.
+    \n-<b>Hardware</b>: el movimiento de datos entre la memoria principal y los niveles de caché es realizado por algoritmos de hardware.
+    \n-<b>Compiladores</b>: son responsables de optimizar el código de modo que el uso de los registros y la caché sea eficiente.</string>
+    <string name="fuente_jerarquia_memoria"><u>Fuente:</u>     \n•<i>https://es.wikipedia.org/wiki/Jerarquía_de_memoria</i></string>
+    <string name="title_activity_css">Hoja de Estilo Cascada</string>
+    <string name="concepto_css"><b>Hoja de estilo en cascada</b> o <b>CSS</b> (siglas en inglés de <i>cascading style sheets</i>) es un lenguaje usado para definir y crear la presentación de un documento estructurado escrito en HTML o XML2 (y por extensión en XHTML). El World Wide Web Consortium (W3C) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.
+    \nLa idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación.
+    \nLa información de estilo puede ser definida en un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales con el elemento «style» o en cada etiqueta particular mediante el atributo «style».
+    \nLos estilos pueden ser incluídos internamente en el archivo <i>HTML</i>, como también en un archivo diferente de formato <i>.css</i> para ser invocado.
+    \nDe manera interna, en el archivo HTML se usaban etiquetas que contenían los estilos, según los identificadores, clases u objetos referenciados en ella:
+    \n&lt;style type=\"text/css\">
+    \n ... contenido de estilos
+    \n&lt;/style>
+    \nMientras que en un hoja de estilos se invocará:
+    \n&lt;link rel=\"stylesheet\" href=\"miestilo.css\">
+    \nLa siguiente tabla con algunas propiedades CSS:</string>
+    <string name="imagen_css"><b>Imagen:</b> Propiedades css básicas <b>Autor:</b> Bartolomé Sintes Marco <b>Web:</b> <i>http://www.mclibre.org/consultar/htmlcss/css/css_propiedades.html</i></string>
+    <string name="title_activity_bootstrap">Bootstrap</string>
+    <string name="concepto_bootstrap"><b>Twitter Bootstrap</b> es un framework o conjunto de herramientas de <i>Código abierto</i> para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en <i>HTML</i> y <i>CSS</i>, así como, extensiones de <i>JavaScript</i> opcionales adicionales.
+    \n<b><u>Características:</u></b> Bootstrap tiene un soporte relativamente incompleto para HTML5 y CSS 3, pero es compatible con la mayoría de los navegadores web. La información básica de compatibilidad de sitios web o aplicaciones está disponible para todos los dispositivos y navegadores. Ejemplo:</string>
+    <string name="concepto2_bootstrap">El ejemplo anterior ilustra como funciona. El código HTML define un simple formulario de búsqueda y una lista de resultados en un formulario tabular. La página consiste en elementos regulares y semánticos de HTML 5, y alguna información adicional de la clase de CSS de acuerdo con la documentación de Bootstrap. La figura muestra la representación del documento en Mozilla Firefox 10.Los componentes de JavaScript para Bootstrap están basados en la librería jQuery de JavaScript.Se observa en la figura el atributo del botón y la caja de texto.
+    \n<u><b>Uso:</b></u> Para usar Bootstrap en una página HTML, el desarrollador solo debe descargar la hoja de estilo Bootstrap CSS y enlazarla en el archivo HTML. Otra opción sería compilar el archivo CSS desde la hoja de estilo LESS descargada. Esto puede realizarse con un compilador especial.
+    \nSi el desarrollador también quiere usar los componentes de JavaScript, éstos deben estar referenciados junto con la librería jQuery en el documento HTML.
+    \n<u><b>Uso de Rejilla</b></u>     \nEn los siguientes ejemplos mostrará el uso de la rejilla, seleccione un tipo de ejemplo en lista desplegable:</string>
+    <string name="c_bootstrap_colmd">El siguiente ejemplo se observa el uso de una rejilla con las clases <i>.col-md-*</i>. En los dispositivos móviles (esextra pequeño) la rejilla se verá verticalmente, mientras que en un ordenador se ve horizontalmente.</string>
+    <string name="c_bootstrap_colxsmd">utiliza a la vez las clases .col-xs-* y .col-md-*, tal y como muestra el siguiente ejemplo, evita que se muestren en dispositivos pequeños de manera vertical.</string>
+    <string name="bootstrap_nota">Generando la siguiente vista:</string>
+    <string name="concepto3_bootstrap"><b>Nota:</b>Es más dinámico agregando al <i>div</i> las clases <i>.col-sm-*</i> útiles para ser visibles en tablets.
+    \nBootstrap 3 ya no adapta automáticamente el tamaño de las imágenes como sucedía en Bootstrap 2. Para ello <i>img-responsive</i> es una clase a usar como solución.
+    \nBootstrap también implementa fondos y colores a los botones y otros estilos.</string>
+    <string name="fuente_bootstrap"><u>Fuente:</u>     \n•<i>https://es.wikipedia.org/wiki/Twitter_Bootstrap</i></string>
+    <string name="title_activity_metodologia_desarrollo">Metodología de Desarrollo</string>
+    <string name="concepto_metodologia_desarrollo"><b>Metodología de desarrollo de software en ingeniería</b> de software es un marco de trabajo usado para estructurar, planificar y controlar el proceso de desarrollo en sistemas de información.</string>
+    <string name="descrip_metod_desarr"><b>Imagen:</b> Tres patrones básicos en las metodologías de desarrollo de software.
+    \n<b>Fuente:</b> <i>https://commons.wikimedia.org/wiki/File:Software_development_methodologies.jpg</i>
+    \n<b>Autor:</b> Marcel Douwe Dekker</string>
+    <string name="concepto2_metodologia_desarrollo">El <i>framework</i> para metodología de desarrollo de software consiste en:
+    \n\u0020\u0020•Una filosofía de desarrollo de programas de computación con el enfoque del proceso de desarrollo de software
+    \n\u0020\u0020•Herramientas, modelos y métodos para asistir al proceso de desarrollo de software.
+    \n&gt;&gt;<b><u>Enfoques de desarrollo de software</u></b>
+    \nCada metodología de desarrollo de software tiene más o menos su propio enfoque para el desarrollo de software. Estos son los enfoques más generales, que se desarrollan en varias metodologías específicas. Estos enfoques son los siguientes:1
+    \n\u0020\u0020•<u>Modelo en cascada</u>: Framework lineal.
+    \n\u0020\u0020•<u>Prototipado</u>: Framework iterativo.
+    \n\u0020\u0020•<u>Incremental</u>: Combinación de framework lineal e iterativo.
+    \n\u0020\u0020•<u>Espiral</u>: Combinación de framework lineal e iterativo.
+    \n\u0020\u0020•<u>RAD</u>: Rapid Application Development, framework iterativo.
+    \n<b><u>Modelo en cascada:</u></b> Es un proceso secuencial, fácil de desarrollo en el que los pasos de desarrollo son vistos hacia abajo (como en una cascada de agua) a través de las fases de análisis de las necesidades, el diseño, implantación, pruebas (validación), la integración, y mantenimiento. La primera descripción formal del modelo de cascada se cita a menudo a un artículo publicado por Winston Royce W.2 en 1970, aunque Royce no utiliza el término \"cascada\" de este artículo. Los principios básicos del modelo de cascada son los siguientes:
+    \n\u0020\u0020•El proyecto está dividido en fases secuenciales, con cierta superposición y splashback aceptable entre fases.
+    \n\u0020\u0020•La planificación, los horarios, fechas, presupuestos y ejecución de todo un sistema de una sola vez.
+    \n\u0020\u0020•Un estricto control se mantiene durante la vida del proyecto a través de la utilización de una amplia documentación escrita, así como a través de comentarios y aprobación / signoff por el usuario y la tecnología de la información de gestión al final de la mayoría de las fases antes de comenzar la próxima fase.
+    \n<b><u>Prototipado:</u></b> El prototipado permite desarrollar modelos de aplicaciones de software que permiten ver la funcionalidad básica de la misma, sin necesariamente incluir toda la lógica o características del modelo terminado. El prototipado permite al cliente evaluar en forma temprana el producto, e interactuar con los diseñadores y desarrolladores para saber si se está cumpliendo con las expectativas y las funcionalidades acordadas.Los Prototipos no poseen la funcionalidad total del sistema pero si condensa la idea principal del mismo, Paso a Paso crece su funcionalidad, y maneja un alto grado de participación del usuario.
+    \n<b><u>Incremental:</u></b> Provee una estrategia para controlar la complejidad y los riesgos, desarrollando una parte del producto software reservando el resto de aspectos para el futuro.
+    \nLos principios básicos son:
+    \n\u0020\u0020•Una serie de mini-Cascadas se llevan a cabo.
+    \n\u0020\u0020•Se definen los requisitos antes de proceder con lo evolutivo, se realiza un mini-Cascada de desarrollo de cada uno de los incrementos del sistema.
+    \n\u0020\u0020•El concepto inicial de software, análisis de las necesidades, y el diseño de la arquitectura y colectiva básicas se definen usando el enfoque de cascada, seguida por iterativo, que culmina en la instalación del prototipo final.
+    \n<b><u>Espiral:</u></b> Los principios básicos son:
+    \n\u0020\u0020•La atención se centra en la evaluación y reducción del riesgo del proyecto dividiendo el proyecto en segmentos más pequeños y proporcionar más facilidad de cambio durante el proceso de desarrollo, así como ofrecer la oportunidad de evaluar los riesgos y con un peso de la consideración de la continuación del proyecto durante todo el ciclo de vida.
+    \n\u0020\u0020•Cada viaje alrededor de la espiral atraviesa cuatro cuadrantes básicos: determinar objetivos, alternativas, y desencadenantes de la iteración; Evaluar alternativas; Identificar y resolver los riesgos; desarrollar y verificar los resultados de la iteración, y plan de la próxima iteración.
+    \n\u0020\u0020•Cada ciclo comienza con la identificación de los interesados y sus condiciones de ganancia, y termina con la revisión y examinación.
+    \n<b><u>Rapid Application Development (RAD):</u></b> El desarrollo rápido de aplicaciones (RAD) es una metodología de desarrollo de software, que implica el desarrollo iterativo y la construcción de prototipos.</string>
+    <string name="fuente_metod_desarrollo"><u>Fuente:</u>     \n•<i>https://es.wikipedia.org/wiki/Metodología_de_desarrollo_de_software</i></string>
+    <string name="title_activity_ingenieria_software">Ingeniería de Software</string>
+    <string name="concepto_ingenieria_software"><b>La ingeniería de software</b> es la aplicación de un enfoque sistemático, disciplinado y cuantificable al desarrollo, operación y mantenimiento de software, y el estudio de estos enfoques, es decir, la aplicación de la ingeniería al software. Integra matemáticas, ciencias de la computación y prácticas cuyos orígenes se encuentran en la ingeniería.
+    \n&gt;&gt;<u><b>Objetivos</b></u>
+    \nLa ingeniería de software aplica diferentes normas y métodos que permiten obtener mejores resultados, en cuanto al desarrollo y uso del software, mediante la aplicación correcta de estos procedimientos se puede llegar a cumplir de manera satisfactoria con los objetivos fundamentales de la ingeniería de software.
+    \nEntre los objetivos de la ingeniería de software están:
+    \n\u0020\u0020-Mejorar el diseño de aplicaciones o software de tal modo que se adapten de mejor manera a las necesidades de las organizaciones o finalidades para las cuales fueron creadas.
+    \n\u0020\u0020-Promover mayor calidad al desarrollar aplicaciones complejas.
+    \n\u0020\u0020-Brindar mayor exactitud en los costos de proyectos y tiempo de desarrollo de los mismos.
+    \n\u0020\u0020-Aumentar la eficiencia de los sistemas al introducir procesos que permitan medir mediante normas específicas, la calidad del software desarrollado, buscando siempre la mejor calidad posible según las necesidades y resultados que se quieren generar.
+    \n\u0020\u0020-Una mejor organización de equipos de trabajo, en el área de desarrollo y mantenimiento de software.
+    \n\u0020\u0020-Detectar a través de pruebas, posibles mejoras para un mejor funcionamiento del software desarrollado.
+    \n&gt;&gt;<u><b>Recursos</b></u>
+    \n•<b>Recurso humano:</b> Son todas aquellas personas que intervienen en la planificación de cualquier instancias de software (por ejemplo: gestor, ingeniero de software experimentado, etc).
+    \n•<b>Recursos de entorno:</b> Es el entorno de las aplicaciones (software y hardware) el hardware proporciona el medio físico para desarrollar las aplicaciones (software), este recurso es indispensable.
+    \n&gt;&gt;<u><b>Notaciones</b></u>
+    \n•<b>LUM (lenguaje unificado de modelado) o UML:</b> Es un lenguaje de modelado muy reconocido y utilizado actualmente que se utiliza para describir o especificar métodos. También es aplicable en el desarrollo de software.
+    \nLas siglas UML significan lenguaje unificado de modelado esto quiere decir que no pretende definir un modelo estándar de desarrollo, sino únicamente un lenguaje de modelado.
+    \n•<b>BPMN (notación para el modelado de procesos de negocios):</b> El objetivo de la notación para el modelado de procesos de negocios es proporcionar de una manera fácil de definir y analizar los procesos de negocios públicos y privados simulando un diagrama de flujo. La notación ha sido diseñada específicamente para coordinar la secuencia de los procesos y los mensajes que fluyen entre los participantes del mismo, con un conjunto de actividades relacionadas. Características básicas de los elementos de BPMN
+    \n\u0020-Objetos de flujo: eventos, actividades, rombos de control de flujo (gateways).
+    \n\u0020-Objetos de conexión: flujo de secuencia, flujo de mensaje, asociación.
+    \n\u0020-Swimlanes (carriles de piscina): pool, lane.
+    \n\u0020-Artefactos: objetos de datos, grupo, anotación.
+     \n•<b>Diagrama de flujo de datos (DFD):</b> Un diagrama de flujo de datos permite representar el movimiento de datos a través de un sistema por medio de modelos que describen los flujos de datos, los procesos que tranforman o cambian los datos, los destinos de datos y los almacenamientos de datos a la cual tiene acceso el sistema.
+    \n&gt;&gt;<u><b>ETAPAS</b></u>
+    \nLa <i>ingeniería de software</i> requiere llevar a cabo numerosas tareas agrupadas en etapas, al conjunto de estas etapas se le denomina ciclo de vida. Las etapas comunes a casi todos los modelos de ciclo de vida son las siguientes:
+    \n•<b>Obtención de los requisitos:</b> Se debe identificar sobre qué se está trabajando, es decir, el tema principal que motiva el inicio del estudio y creación del nuevo software o modificación de uno ya existente. A su vez identificar los recursos que se tienen, en esto entra el conocer los recursos humanos y materiales que participan en el desarrollo de las actividades. Es importante entender el contexto del negocio para identificar adecuadamente los requisitos.
+    \nSe tiene que tener dominio de la información de un problema, lo cual incluye los datos fuera del software (usuarios finales, otros sistemas o dispositivos externos), los datos que salen del sistema (por la interfaz de usuario, interfaces de red, reportes, gráficas y otros medios) y los almacenamientos de datos que recaban y organizan objetos persistentes de datos.
+    \n•<b>Análisis de requisitos:</b> Extraer los requisitos de un producto software es la primera etapa para crearlo. Durante la fase de análisis, el cliente plantea las necesidades que se presenta e intenta explicar lo que debería hacer el software o producto final para satisfacer dicha necesidad mientras que el desarrollador actúa como interrogador, como la persona que resuelve problemas.
+    \nFinalidades del análisis de requisitos:
+    \n\u0020\u0020-Brindar al usuario todo lo necesario para que pueda trabajar en conjunto con el software desarrollado obteniendo los mejores resultados posibles.
+    \n\u0020\u0020-Tener un control más completo en la etapa creación del software, en cuanto a tiempo de desarrollo y costos.
+    \n\u0020\u0020-Utilización de métodos más eficientes que permitan el mejor aprovechamiento del software según sea la finalidad de uso del mismo.
+    \n\u0020\u0020-Aumentar la calidad del software desarrollado al disminuir los riesgos de mal funcionamiento.
+    \n•<b>Especificación:</b> La especificación de requisitos describe el comportamiento esperado en el software una vez desarrollado. Gran parte del éxito de un proyecto de software radicará en la identificación de las necesidades del negocio (definidas por la alta dirección), así como la interacción con los usuarios funcionales para la recolección, clasificación, identificación, priorización y especificación de los requisitos del software.
+    \nEntre las técnicas utilizadas para la especificación de requisitos se encuentran:
+    \n\u0020\u0020-Caso de uso
+    \n\u0020\u0020-Historias de usuario
+    \nSiendo los primeros más rigurosas y formales, los segundas más ágiles e informales.
+    \n•<b>Arquitectura:</b> La integración de infraestructura, desarrollo de aplicaciones, bases de datos y herramientas gerenciales, requieren de capacidad y liderazgo para poder ser conceptualizados y proyectados a futuro, solucionando los problemas de hoy. El rol en el cual se delegan todas estas actividades es el del Arquitecto.
+    \nEl arquitecto de software es la persona que añade valor a los procesos de negocios gracias a su valioso aporte de soluciones tecnológicas.
+    \nLa arquitectura de sistemas en general, es una actividad de planeación, ya sea a nivel de infraestructura de red y hardware, o de software.
+    \nLo principal en este punto es poner en claro los aspectos lógicos y físicos de las salidas, modelos de organización y representación de datos, entradas y procesos que componen el sistema, considerando las bondades y limitaciones de los recursos disponibles en la satisfacción de las pacificaciones brindadas para el análisis. La arquitectura de software consiste en el diseño de componentes de una aplicación (entidades del negocio), generalmente utilizando patrones de arquitectura.
+    \nPara ello se documenta utilizando diagramas, por ejemplo:
+    \n\u0020\u0020-Diagramas de clases
+    \n\u0020\u0020-Diagramas de base de datos
+    \n\u0020\u0020-Diagrama de despliegue
+    \n\u0020\u0020-Diagrama de secuencia
+    \n<b>Nota:</b> Los dos primeros son los mínimos necesarios para describir la arquitectura de un proyecto que iniciará a ser codificado. Dependiendo del alcance del proyecto, complejidad y necesidades, el arquitecto elegirá cuales de los diagramas se requiere elaborar.
+    \nLas herramientas para el diseño y modelado de software se denominan CASE (Computer Aided Software Engineering) entre las cuales se encuentran:
+    \n\u0020\u0020-Enterprise Architect
+    \n\u0020\u0020-Microsoft Visio for Enterprise Architects
+    \n•<b>Programación:</b> Implementar un diseño en código puede ser la parte más obvia del trabajo de ingeniería de software, pero no necesariamente es la que demanda mayor trabajo y ni la más complicada. La complejidad y la duración de esta etapa está íntimamente relacionada al o a los lenguajes de programación utilizados, así como al diseño previamente realizado.
+    \n<i>Desarrollo de la aplicación</i> es necesario considerar cinco fases para tener una aplicación o programa eficiente, estas son:
+    \n\u0020-<b>Desarrollo de la infraestructura:</b> Esta fase permite el desarrollo y la organización de los elementos que formaran la infraestructura de la aplicación, con el propósito de finalizar la aplicación eficientemente.
+    \n\u0020-<b>Adaptación del paquete:</b> El objetivo principal de esta fase es entender de una manera detallada el funcionamiento del paquete, esto tiene como finalidad garantizar que el paquete pueda ser utilizado en su máximo rendimiento, tanto para negocios o recursos. Todos los elementos que componen el paquete son inspeccionados de manera detallada para evitar errores y entender mejor todas las características del paquete.
+    \n\u0020-<b>Desarrollo de unidades de diseño de interactivas:</b> En esta fase se realizan los procedimientos que se ejecutan por un diálogo usuario-sistema. Los procedimientos de esta fase tienen como objetivo principal:
+    \nEstablecer específicamente las acciones que debe efectuar la unidad de diseño.
+    \nLa creación de componentes para sus procedimientos.
+    \nEjecutar pruebas unitarias y de integración en la unidad de diseño.
+    \n\u0020-<b>Desarrollo de unidades de diseño batch:</b> En esta fase se utilizan una serie de combinación de técnicas, como diagrama de flujo, diagramas de estructuras, tablas de decisiones, etc. Cualquiera a utilizar será beneficioso para plasmar de manera clara y objetiva las especificaciones y que así el programador tenga mayor comprensión a la hora de programar y probar los programas que le corresponden.
+    \n\u0020-<b>Desarrollo de unidades de diseño manuales:</b> En esta fase el objetivo central es proyectar todos los procedimientos administrativos que desarrollarán en torno a la utilización de los componentes computarizados.
+    \n•<b>Pruebas de software:</b> Consiste en comprobar que el software realice correctamente las tareas indicadas en la especificación del problema. Una técnica es probar por separado cada módulo del software, y luego probarlo de manera integral, para así llegar al objetivo. Se considera una buena práctica el que las pruebas sean efectuadas por alguien distinto al desarrollador que la programó, idealmente un área de pruebas; sin perjuicio de lo anterior el programador debe hacer sus propias pruebas.
+    \n•<b>Implementación:</b> Una Implementación es la realización de una especificación técnica o algoritmos con un programa, componente software, u otro sistema de cómputo. Muchas especificaciones son dadas según a su especificación o un estándar. Las especificaciones recomendadas según el <i>World Wide Web Consortium</i>, y las herramientas de desarrollo del software contienen implementaciones de lenguajes de programación. El modelo de implementación es una colección de componentes y los subsitemas que contienen. Componentes tales como: ficheros ejecutables, ficheros de código fuente y todo otro tipo de ficheros que sean necesarios para la implementación y despliegue del sistema.
+    \n•<b>Documentación:</b> Es todo lo concerniente a la documentación del propio desarrollo del software y de la gestión del proyecto, pasando por modelaciones (UML), diagramas de casos de uso, pruebas, manuales de usuario, manuales técnicos, etc; todo con el propósito de eventuales correcciones, usabilidad, mantenimiento futuro y ampliaciones al sistema.
+    \n•<b>Mantenimiento:</b> Fase dedicada a mantener y mejorar el software para corregir errores descubiertos e incorporar nuevos requisitos. Esto puede llevar más tiempo incluso que el desarrollo del software inicial. Alrededor de 2/3 del tiempo de ciclo de vida de un proyecto21 está dedicado a su mantenimiento. Una pequeña parte de este trabajo consiste eliminar errores (<i>bugs</i>); siendo que la mayor parte reside en extender el sistema para incorporarle nuevas funcionalidades y hacer frente a su evolución.
+    \n&gt;&gt;<u><b>Ventajas</b></u>
+    \n<b>Desde el punto de vista de gestión</b>
+    \n\u0020\u0020-Facilitar la tarea de seguimiento del proyecto
+    \n\u0020\u0020-Optimizar el uso de recursos
+    \n\u0020\u0020-Facilitar la comunicación entre usuarios y desarrolladores
+    \n\u0020\u0020-Facilitar la evaluación de resultados y cumplimiento de objetivos.
+    \n<b>Desde el punto de vista de los ingenieros de Software</b>
+    \n\u0020\u0020-Ayudar a comprender el problema
+    \n\u0020\u0020-Permitir la reutilización
+    \n\u0020\u0020-Facilitar el mantenimiento del producto final
+    \n\u0020\u0020-Optimizar el conjunto y cada una de las fases del proceso de desarrollo
+    \n<b>Desde el punto de vista de cliente o usuario final</b>
+    \n\u0020\u0020-Garantizar el nivel de calidad del producto final
+    \n\u0020\u0020-Obtener el ciclo de vida adecuado para el proyecto
+    \n\u0020\u0020-Confianza en los plazos del tiempo mostrados en la definición del proyecto</string>
+    <string name="fuente_ing_soft"><u>Fuente:</u>     \n•<i>https://es.wikipedia.org/wiki/Ingeniería_de_software</i></string>
+    <string name="title_activity_java_lenguaje">Lenguaje Java</string>
+    <string name="concepto_java_lenguaje"><b>Java</b> es un lenguaje de programación de propósito general, concurrente, orientado a objetos que fue diseñado específicamente para tener tan pocas dependencias de implementación como fuera posible.
+    \n&gt;&gt;<u><b>Sintaxis:</b></u>
+    \nLa sintaxis de Java se deriva en gran medida de C++. Pero a diferencia de éste, que combina la sintaxis para programación genérica, estructurada y orientada a objetos, Java fue construido desde el principio para ser completamente orientado a objetos. Todo en Java es un objeto (salvo algunas excepciones), y todo en Java reside en alguna clase (recordemos que una clase es un molde a partir del cual pueden crearse varios objetos).
+    \n•<b><u>Applets:</u></b> Las applet Java son programas incrustados en otras aplicaciones, normalmente una página Web que se muestra en un navegador.</string>
+    <string name="concepto2_java_lenguaje"><b>Nota:</b> Actualmente HTML 5 ha eliminado el uso de la etiqueta &lt;apple&gt;. Pero todavía existe la forma de usarlo en HTML5.</string>
+    <string name="concepto3_java_lenguaje">•<b><u>Servlets:</u></b> Los servlets son componentes de la parte del servidor de Java EE, encargados de generar respuestas a las peticiones recibidas de los clientes.
+    \nEn el siguiente ejemplo, las sentencias import indican al compilador de Java la inclusión de todas las clases públicas e interfaces de los paquetes java.io y javax.servlet en la compilación.
+    \nLa clase Hola extiende (extends), es heredera de la clase GenericServlet. Esta clase proporciona la interfaz para que el servidor le pase las peticiones al servlet y el mecanismo para controlar el ciclo de vida del servlet.</string>
+    <string name="concepto4_java_lenguaje">El método <i>setContentType</i> (String) en el objeto respuesta establece el tipo de contenido MIME a \"text/html\", para indicar al cliente que la respuesta a su petición es una página con formato HTML. El método getWriter() del objeto respuesta devuelve un objeto de tipo PrintWriter, usado como una tubería por la que viajarán los datos al cliente. El método <i>println</i> (String) escribe la cadena \"Hola, mundo!\" en la respuesta y finalmente se llama al método <i>close()</i> para cerrar la conexión, que hace que los datos escritos en la tubería o stream sean devueltos al cliente.
+    \n<b>Nota:</b> <i>ServletRequest</i> que contiene la petición del cliente, <i>ServletResponse</i>, usado para generar la respuesta que se devuelve al cliente.
+    \n•<b><u>Aplicaciones con interfaz:</u></b> <i>Swing</i> es la biblioteca para la interfaz gráfica de usuario avanzada de la plataforma Java SE.</string>
+    <string name="concepto5_java_lenguaje"><b><u>En dispositivos móviles y sistemas embebidos</u></b>
+    \nDesde la creación de la especificación J2ME (Java 2 Platform, Micro Edition), una versión del entorno de ejecución Java reducido y altamente optimizado, especialmente desarrollado para el mercado de dispositivos electrónicos de consumo se ha producido toda una revolución en lo que a la extensión de Java se refiere.
+    \nEs posible encontrar microprocesadores diseñados para ejecutar bytecode Java y software Java para tarjetas inteligentes (JavaCard), teléfonos móviles, buscapersonas, set-top-boxes, sintonizadores de TV y otros pequeños electrodomésticos.
+    \nEl modelo de desarrollo de estas aplicaciones es muy semejante a las applets de los navegadores salvo que en este caso se denominan <i>MIDlets</i>.
+    \n<u>Palabras Clave:</u>
+    \nSon los identificadores reservados por java para cumplir con un objetivo específico en el código y el compilador, se usan de forma limitada y en casos específicos. Las palabras claves que usa java son las siguientes:</string>
+    <string name="concepto6_java_lenguaje">Las palabras que se encuentran en negrita (de la tabla), son palabras claves para java aunque actualmente no se utilicen en la versión de java, pero se pretenden integrar en las siguientes versiones de java.
+    \n<u>Literales y constantes:</u>
+    \nLos literales son sintaxis para asignar valores a una variable, es decir el valor que puede tomar una variable, también es un valor constante que puede ser de tipo numérico. Las constantes son variables que tienen un valor fijo y no puede ser modificado en el trascurso de la ejecución del código, estas se declaran por medio de los modificadores final y static.
+    \n<b>Ejemplo:</b> final static double pi= 3.1416;</string>
+    <string name="fuente_java_lenguaje"><u>Fuente:</u>     \n•<i>https://es.wikipedia.org/wiki/Java_(lenguaje_de_programación)</i></string>
+    <string name="title_activity_des_agil_softw">Desarrollo Ágil Software</string>
+    <string name="concepto_des_agil_softw"><b>El desarrollo ágil de software</b> envuelve un enfoque para la toma de decisiones en los proyectos de software, que se refiere a métodos de ingeniería del software basados en el desarrollo iterativo e incremental, donde los requisitos y soluciones evolucionan con el tiempo según la necesidad del proyecto. Así el trabajo es realizado mediante la colaboración de equipos auto-organizados y multidisciplinarios, inmersos en un proceso compartido de toma de decisiones a corto plazo.
+    </string>
+    <string name="title_activity_rup">RUP</string>
+
+    <string name="title_activity_asp_net">Asp.NET</string>
+    <string name="concepto_asp_net"><b>ASP.NET</b> es un framework para aplicaciones web desarrollado y comercializado por Microsoft. Es usado por programadores y diseñadores para construir sitios web dinámicos, aplicaciones web y servicios web XML.
+    \nLas páginas de ASP.NET, conocidas oficialmente como \"web forms\" (formularios web), son el principal medio de construcción para el desarrollo de aplicaciones web. Los formularios web están contenidos en archivos con una extensión <b>ASPX</b> ; en jerga de programación, estos archivos típicamente contienen etiquetas HTML o XHTML estático, y también etiquetas definiendo Controles Web que se procesan del lado del servidor y Controles de Usuario donde los desarrolladores colocan todo el código estático y dinámico requerido por la página web. Adicionalmente, el código dinámico que se ejecuta en el servidor puede ser colocado en una página dentro de un bloque &lt;\u0025 -- código dinámico -- \u0025&gt; que es muy similar a otras tecnologías de desarrollo como PHP, JSP y ASP. <b>Ejemplo</b> :</string>
+    <string name="concepto2_asp_net"><b>Nota:</b> ASP.NET no sólo funciona sobre el servidor de Microsoft <b>IIS</b>, también lo hace sobre <b>Apache</b>.
+    \n<u><b>El modelo Code-behind:</b></u> Microsoft recomienda que para realizar programación dinámica se use el modelo code-behind, o de respaldo, que coloca el código en un archivo separado o en una etiqueta de script especialmente diseñada. Los nombres de los archivos code-behind están basados en el nombre del archivo ASPX tales como MiPagina.aspx.cs o MiPagina.aspx.vb (esta práctica se realiza automáticamente en Microsoft Visual Studio y otros entornos de desarrollo). Cuando se usa este estilo de programación, el desarrollador escribe el código correspondiente a diferentes eventos, como la carga de la página, o el clic en un control, en vez de un recorrido lineal a través del documento.
+    \nEl modelo code-behind de ASP.NET marca la separación del ASP clásico y alienta a los desarrolladores a construir aplicaciones con la idea de presentación y contenido separados en mente. En teoría, esto permite a un diseñador web, por ejemplo, enfocarse en la creación del diseño con menos posibilidades de alterar el código de programación mientras lo hace. Esto es similar a la separación en el <i>Modelo Vista Controlador</i>.</string>
+    <string name="concepto3_asp_net">•<b><u>1) Estado de la sesión:</u></b>
+    \nEl estado de la sesión (<i>Session state</i>) es una colección de variables definidas por el usuario, las cuales persisten durante la sesión de un usuario. Estas variables son únicas para diferentes instancias de una sesión de usuario, y son accedidas usando la colección Session. Las variables de sesión pueden ser preparadas para ser automáticamente destruidas después de un determinado tiempo de inactividad, incluso si la sesión no ha terminado. Del lado del cliente, una sesión de usuario es identificada por una cookie o codificando el ID de la sesión en la misma URL.
+    \nASP.NET proporciona tres modos de persistencia para variables de sesión:
+    \n\u0020\u0020<b><u>1.1) InProc.-</u></b> Las variables de sesión son mantenidas dentro del proceso. Sin embargo, en este modo, las variables son destruidas cuando el proceso ASP.NET es reciclado o terminado.
+    \n\u0020\u0020<b><u>1.2) StateServer.-</u></b> En este modo, ASP.NET ejecuta un servicio de Windows separado que mantiene las variables de estado. Como esta administración de estado ocurre fuera del proceso ASP.NET, tiene un impacto negativo en el rendimiento, pero permite a múltiples instancias de ASP.NET compartir el mismo estado del servidor, permitiendo que una aplicación ASP.NET pueda tener su carga balanceada y escalada en múltiples servidores. También, como el servicio de administración del estado se ejecuta independiente de ASP.NET, las variables pueden persistir a través de las finalizaciones del proceso ASP.NET.
+    \n\u0020\u0020<b><u>1.3) SqlServer.-</u></b> En este modo, las variables de estado son almacenadas en un servidor de base de datos, accesible usando SQL. Las variables de sesión pueden persistir a través de finalizaciones de procesos también en este modo.
+    \nUtilizando Visual Studio para el diseño de sitios web, proporciona un \"Cuadro de Herramientas\" para diseñar de manera gráfica:</string>
+    <string name="concepto4_asp_net"><b><u>Otros archivos:</u></b>
+    \nOtras extensiones de archivo asociadas con las diferentes versiones de ASP.NET incluyen:</string>
+    <string name="concepto5_asp_net"><b><u>Estructura de directorios:</u></b>
+    \nEn general, la estructura de directorios de ASP.NET puede ser determinada por las preferencias del programador. Aparte de unos pocos nombres de directorios reservados, el sitio puede extenderse a una cantidad de directorios cualquiera.
+    Los nombres de directorios especiales (a partir de ASP.NET 2.0 son):
+    \n•<b>App_Browsers</b>
+    \nContiene archivos de definición específicos para navegadores.
+    \n•<b>App_Code</b>
+    \nEs un directorio para códigos. El servidor ASP.NET automáticamente compilará los archivos (y subdirectorios) en esta carpeta en un ensamblado que es accesible desde cualquier página del sitio. App_Code es típicamente usada para código de acceso a datos, código de modelo o código de negocios. También cualquier manejador http específico para el sitio e implementación de módulos y servicios web van este directorio. Como alternativa a utilizar App_Code el desarrollador puede optar por proporcionar un ensamblado independiente con código precompilado.
+    \n•<b>App_Data</b>
+    \nDirectorio por defecto para las base de datos, tales como archivos mdb de Microsoft Access y archivos mdf de Microsoft SQL Server. Este directorio es usualmente el único con permisos de escritura en la aplicación.
+    \n•<b>App_LocalResources</b>
+    \nContiene archivos de recursos localizados para páginas individuales del sitio.
+    \n•<b>App_GlobalResources</b>
+    \nContiene archivos resx con recursos localizados disponibles para cada página del sitio. Este es donde el desarrollador ASP.NET típicamente almacenara mensajes que serán usados en más de una página.
+    \n•<b>App_Themes</b>
+    \nUsado para temas alternativos del sitio.
+    \n•<b>App_WebReferences</b>
+    \nUsado para archivos de descubrimiento y archivos WSDL para referencias a servicios web para ser consumidos en el sitio.
+    \n•<b>Bin</b>
+    \nContiene código compilado (archivos .dll) para controles, componentes, y otro código que pueda ser referenciado por la aplicación. Cualquier clase representada por código en la carpeta Bin es automáticamente referenciada en la aplicación. Son archivos o librerías que tienen como principal acción ejecutar una función cuando estas son llamadas o se invocan.</string>
+    <string name="fuente_asp_net"><u>Fuente:</u>     \n•<i>https://es.wikipedia.org/wiki/ASP.NET</i></string>
+    <string name="title_activity_foundation">Foundation (framework)</string>
+    <string name="title_activity_jsp">JSP</string>
+
+</resources>

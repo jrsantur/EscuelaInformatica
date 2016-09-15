@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.Arboles">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txttituloArboles"
+            style="@style/textviewteoria.000066"
+            android:textStyle="bold"
+            android:text="Arboles:"/>
+        <TextView
+            android:id="@+id/txtarbolesConcepto"
+            style="@style/textviewteoria.negrita"
+            android:scrollbars="vertical"/>
+        <TextView
+            style="@style/textviewteoria"
+            android:paddingTop="2dp"
+            android:textColor="#CC0066"
+            android:text="Terminologías usadas en Arboles:"/>
+        <TextView
+            android:id="@+id/txtterminologiasarboles"
+            style="@style/textviewteoria.negrita"/>
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/arbol"/>
+        </HorizontalScrollView>
+        <TextView
+            style="@style/textviewteoria.3333FF"
+            android:text="Ejm:arbol (binario)"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            style="@style/textviewteoria"
+            android:paddingTop="2dp"
+            android:textColor="#CC0066"
+            android:text="Tipos de Arboles:"/>
+        <TextView
+            android:id="@+id/txttiposdearbol"
+            style="@style/textviewteoria"
+            android:textColor="#000"
+            android:padding="2dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

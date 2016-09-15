@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.Triggers">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/concepto_triggers"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="@string/sintaxis_triggers"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/nota_triggers"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="@string/ejemplo_trigger"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/descrip_trigger"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="drop trigger NOMBREDISPARADOR;\n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/info_trigger"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:text="@string/sintaxis_hab_deshabilitar_trigger"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/info_hab_deshabilitar_trigger"/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

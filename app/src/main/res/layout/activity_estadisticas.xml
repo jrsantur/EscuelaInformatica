@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.Estadistica.Estadisticas">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:text="Los temas tomados en cuenta de este curso son:"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="#ffb1dde0"
+                android:orientation="vertical">
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="grafEstad"
+                    android:text="Gráfico Estadístico"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="chicuad"
+                    android:text="Distribución Chi cuadrado"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="disT"
+                    android:text="Distribución T de Student"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="disN"
+                    android:text="Distribución Z normal"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="disH"
+                    android:text="Distribución Hipergeométrica"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="disF"
+                    android:text="Distribución Fisher"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="disB"
+                    android:text="Distribución Binomial"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="znormestand"
+                    android:text="Z normal Estándar"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

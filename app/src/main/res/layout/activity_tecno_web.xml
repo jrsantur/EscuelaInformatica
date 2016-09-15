@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.TecnologiaWeb.TecnoWeb">
+    <ScrollView
+        style="@style/textviewteoria">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:text="Los temas tomados en cuenta de este curso son:"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="html5"
+                android:text="HTML 5"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="css"
+                android:text="CSS (Estilos)"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="bootstrap"
+                android:text="Bootstrap"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="aspnet"
+                android:text="Asp.NET"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="foundationn"
+                android:text="Foundation"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="jsp"
+                android:text="jsp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

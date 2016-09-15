@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.MemoriaSegm">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.000063"
+                android:text="@string/concepto_memoria_segm_direcc"/>
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/segmentoyoffset"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:text="@string/descrip_imgsegmyoff"/>
+            <TextView
+                style="@style/textviewteoria.000063"
+                android:text="@string/concepto_memoria_segm_2"/>
+            <TextView
+                style="@style/textviewteoria"
+                android:text="@string/nota_fuente_arq8086"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

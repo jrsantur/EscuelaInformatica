@@ -1,0 +1,166 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+    <!-- Estilos de DIMENSIONES fill y wrap.nosolo Textviews tambien otros controles -->
+    <style name="textviewteoria">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Estilos de TextViews TEORIAy colores. -->
+    <style name="textviewteoria.negrita">
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="textviewteoria.000033">
+        <item name="android:textColor">#0000FF</item>
+    </style>
+    <style name="textviewteoria.000063">
+        <item name="android:textColor">#000033</item>
+    </style>
+    <style name="textviewteoria.000066">
+        <item name="android:textColor">#000066</item>
+    </style>
+    <style name="textviewteoria.000080">
+        <item name="android:textColor">#000080</item>
+    </style>
+    <style name="textviewteoria.000096">
+        <item name="android:textColor">#000096</item>
+    </style>
+    <style name="textviewteoria.000099">
+        <item name="android:textColor">#000099</item>
+    </style>
+    <style name="textviewteoria.0000CC">
+        <item name="android:textColor">#0000CC</item>
+    </style>
+    <style name="textviewteoria.0000CD">
+        <item name="android:textColor">#0000CD</item>
+    </style>
+    <style name="textviewteoria.0000FF">
+        <item name="android:textColor">#0000FF</item>
+    </style>
+    <style name="textviewteoria.003333">
+        <item name="android:textColor">#003333</item>
+    </style>
+    <style name="textviewteoria.0033CC">
+        <item name="android:textColor">#0033CC</item>
+    </style>
+    <style name="textviewteoria.0033FF">
+        <item name="android:textColor">#0033FF</item>
+    </style>
+    <style name="textviewteoria.000036">
+        <item name="android:textColor">#000036</item>
+    </style>
+    <style name="textviewteoria.2248E3">
+        <item name="android:textColor">#2248E3</item>
+    </style>
+    <style name="textviewteoria.330000">
+        <item name="android:textColor">#330000</item>
+    </style>
+    <style name="textviewteoria.3300CC">
+        <item name="android:textColor">#3300CC</item>
+    </style>
+    <style name="textviewteoria.330099">
+        <item name="android:textColor">#330099</item>
+    </style>
+    <style name="textviewteoria.3333CC">
+        <item name="android:textColor">#3333CC</item>
+    </style>
+    <style name="textviewteoria.3333FF">
+        <item name="android:textColor">#3333FF</item>
+    </style>
+    <style name="textviewteoria.424242">
+        <item name="android:textColor">#424242</item>
+    </style>
+    <style name="textviewteoria.660033">
+        <item name="android:textColor">#660033</item>
+    </style>
+    <style name="textviewteoria.990099">
+        <item name="android:textColor">#990099</item>
+    </style>
+    <style name="textviewteoria.CCCCCC">
+        <item name="android:textColor">#CCCCCC</item>
+    </style>
+    <style name="textviewteoria.CCFFFF">
+        <item name="android:textColor">#CCFFFF</item>
+    </style>
+    <style name="textviewteoria.E32030">
+        <item name="android:textColor">#E32030</item>
+    </style>
+    <style name="textviewteoria.FFFF33">
+        <item name="android:textColor">#FFFF33</item>
+    </style>
+    <style name="textviewteoria.FFFF66">
+        <item name="android:textColor">#FFFF66</item>
+    </style>
+    <style name="textviewteoria.FFFF99">
+        <item name="android:textColor">#FFFF99</item>
+    </style>
+    <style name="textviewteoria.FFF">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <!-- Estilos wrap de alto y wrap de ancho -->
+    <style name="fullwrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="fullwrap.negrita">
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="fullwrap.000066">
+        <item name="android:textColor">#000066</item>
+    </style>
+    <style name="fullwrap.000099">
+        <item name="android:textColor">#000099</item>
+    </style>
+    <style name="fullwrap.0000CC">
+        <item name="android:textColor">#0000CC</item>
+    </style>
+    <style name="fullwrap.0000FF">
+        <item name="android:textColor">#0000FF</item>
+    </style>
+    <style name="fullwrap.CCCCCC">
+        <item name="android:textColor">#CCCCCC</item>
+    </style>
+    <style name="fullwrap.FFF">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <!-- Estilos letra serif. -->
+    <style name="letraserif">
+        <item name="android:typeface">serif</item>
+        <item name="android:textColor">#000066</item>
+    </style>
+
+    <style name="bordeado">
+        <item name="android:padding">2dp</item>
+        <item name="android:background">@drawable/borde</item>
+    </style>
+
+    <style name="cabecera">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/borde</item>
+    </style>
+
+    <style name="moradoborde">
+        <item name="android:padding">2dp</item>
+        <item name="android:background">@drawable/bordemorado</item>
+    </style>
+
+    <!-- Estilos con bordes de color -->
+    <style name="moradoborde.letrasnegras">
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="moradoborde.letrasnegras.fillwrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="moradoborde.letrasnegras.wrapwrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

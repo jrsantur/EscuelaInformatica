@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.ConversionBinHexa">
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#AD2D8F"
+    android:text="De Binario a Hexadecimal:"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/fullwrap"
+            android:textColor="#000"
+            android:text="Numero en binario"/>
+        <EditText
+            android:id="@+id/edtxBinario"
+            style="@style/textviewteoria"
+            android:background="@drawable/borde"
+            android:maxLength="34"
+            android:digits="01 "/>
+        </LinearLayout>
+    <Button
+        style="@style/fullwrap"
+        android:text="Convertir"
+        android:onClick="deBinaHexa"
+        android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/fullwrap"
+                android:textColor="#2008d6"
+                android:text="Rpta:"/>
+            <TextView
+                android:id="@+id/BinHexa"
+                style="@style/fullwrap" />
+        </LinearLayout>
+
+
+    <TextView
+        style="@style/textviewteoria"
+        android:paddingTop="40dp"
+        android:textColor="#AD2D8F"
+        android:text="De Hexadecimal a Binario:"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/fullwrap.negrita"
+            android:text="Numero en Hex."/>
+        <EditText
+            android:id="@+id/edtxHexadecimal"
+            style="@style/textviewteoria"
+            android:background="@drawable/borde"
+            android:maxLength="7"
+            android:digits="ABCDEF0123456789"/>
+    </LinearLayout>
+    <Button
+        style="@style/fullwrap"
+        android:text="Convertir"
+        android:onClick="deHexaBin"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/fullwrap"
+            android:textColor="#2008d6"
+            android:text="Rpta:"/>
+        <TextView
+            android:id="@+id/HexaBin"
+            style="@style/fullwrap" />
+    </LinearLayout>
+</LinearLayout>

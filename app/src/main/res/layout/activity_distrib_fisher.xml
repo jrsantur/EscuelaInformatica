@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.Estadistica.DistribFisher">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#CCFFFF"
+    android:padding="2dp">
+    <TextView
+        style="@style/fullwrap"
+        android:text="g.l.1"
+        android:paddingRight="4dp"/>
+    <EditText
+        android:id="@+id/textgl1"
+        style="@style/textviewteoria"
+        android:background="@drawable/borde"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="grados de libertad 1"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/textviewteoria"
+        android:orientation="horizontal"
+        android:background="#CCFFFF"
+        android:padding="2dp">
+        <TextView
+            style="@style/fullwrap"
+            android:text="g.l.2"
+            android:paddingRight="4dp"/>
+        <EditText
+            android:id="@+id/textgl2"
+            style="@style/textviewteoria"
+            android:background="@drawable/borde"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="grados de libertad 2"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/textviewteoria"
+        android:orientation="horizontal"
+        android:background="#99FFFF"
+        android:padding="2dp">
+        <TextView
+            style="@style/fullwrap"
+            android:text="α (probabilidad)"
+            android:paddingRight="4dp"/>
+        <EditText
+            android:id="@+id/textalfa"
+            style="@style/textviewteoria"
+            android:background="@drawable/borde"
+            android:gravity="center"
+            android:hint="prob. en decimal"/>
+    </LinearLayout>
+    <Button
+        style="@style/fullwrap"
+        android:layout_gravity="center"
+        android:onClick="hallarFisher"
+        android:text="Obtener F de tabla"/>
+    <LinearLayout
+        style="@style/textviewteoria"
+        android:orientation="horizontal"
+        android:background="#99FF66"
+        android:padding="5dp">
+        <TextView
+            style="@style/fullwrap.negrita"
+            android:text="F de tabla es:"
+            android:paddingRight="4dp"/>
+       <TextView
+           android:id="@+id/textResultF"
+           style="@style/textviewteoria.0033FF"
+           android:textStyle="italic"
+           android:text="Resultado"
+           android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

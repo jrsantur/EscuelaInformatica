@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.CrearEliminarTabla">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/concept_crear_tabla"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="La sintaxis básica y general para crear una tabla es la siguiente:"/>
+            <TextView
+                android:id="@+id/txtcomandoCrearTabla"
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:text="Ejemplo:"/>
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4px"
+                    android:src="@drawable/creartablabd"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/drop_eliminar_tabla"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="if object_id('usuarios') is not null\n  drop table usuarios;"/>
+            <TextView
+                android:id="@+id/txttitlenotaeliminartabla"
+                style="@style/textviewteoria.negrita"
+                android:text="Nota:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:text="@string/nota_crear_elim"/>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

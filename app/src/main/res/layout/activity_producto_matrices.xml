@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.Matematicas.ProductoMatrices">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Matriz de mxn"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/fullwrap"
+                    android:text="m (filas)"/>
+                <Spinner
+                    android:id="@+id/spinm"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"></Spinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="n (columnas)"/>
+                <Spinner
+                    android:id="@+id/spinn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"></Spinner>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnmxn"
+                style="@style/fullwrap"
+                android:onClick="okmxn"
+                android:text="ok-mxn"/>
+            <TextView
+                android:id="@+id/txtmatriz"
+                style="@style/textviewteoria" />
+            <TableLayout
+                android:id="@+id/tablamatriz"
+                style="@style/textviewteoria"></TableLayout>
+            <LinearLayout
+                style="@style/textviewteoria"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnx"
+                    style="@style/fullwrap"
+                    android:onClick="primerFactor"
+                    android:text="X (Por)"/>
+                <Button
+                    android:id="@+id/btnresultado"
+                    style="@style/fullwrap"
+                    android:onClick="multiplicar"
+                    android:visibility="invisible"
+                    android:text="Resultado"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

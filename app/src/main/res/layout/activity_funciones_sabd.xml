@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.FuncionesSABD">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/concepto_funcionDefUsuario"/>
+            <TextView
+                style="@style/textviewteoria.660033"
+                android:text="@string/concepto_funcionDefUsuarioTipos"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Las funciones definidas por el usuario se eliminan con la instrucción 'drop function'. Sintaxis:"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="drop function NOMBREPPROPIETARIO.NOMBREFUNCION;"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Ejemplo:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="drop function dbo.f_fechacadena;\n"/>
+            <TextView
+                android:id="@+id/txttitulofuncEscalares"
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:text="Funciones Escalares:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/concepto_funcionesescalares"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="@string/sintaxis_funcionesescalares"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Ejemplo:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="@string/ejemplo_funcionesescalares"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Sintaxis para invocar este tipo de función es:"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="select dbo.NOMBREFUNCION(PARÁMETROENTRADA1,PARÁMETROENTRADA2,...);\n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Ejemplo:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="select dbo.fReturnCodigo('Peña Zurita Antonia');\n"/>
+            <TextView
+                android:id="@+id/txttitulofuncReturnTabla"
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:text="Funciones que retornan una tabla:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/concepto_funcionesreturntable"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="@string/sintaxis_funcionesreturntable"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Ejemplo:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="@string/ejemplo_funcionesreturntable"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Para llamar la función es (se puede sin especificar .dbo):"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text=" select *from f_tabla_offers(25);\n select *from dbo.f_tabla_offers(30);"/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

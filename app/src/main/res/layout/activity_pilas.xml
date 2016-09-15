@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.Pilas">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txttituloPilas"
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:text="Pilas:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:scrollbars="vertical"
+                android:text="@string/concepto_pilas"/>
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/stack"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.3333FF"
+                android:text="Ejemplo: pila(operaciones)"
+                android:layout_marginBottom="4px"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                style="@style/fullwrap.000066"
+                android:text="Operaciones:"/>
+            <TextView
+                android:id="@+id/txtpilasoperaciones"
+                style="@style/textviewteoria.negrita"/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

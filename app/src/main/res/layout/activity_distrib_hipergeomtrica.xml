@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.Estadistica.DistribHipergeomtrica">
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#99FFCC"
+    android:padding="2dp">
+    <TextView
+        style="@style/fullwrap"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:text="N (Tamaño de población):"/>
+    <EditText
+        android:id="@+id/etNpob"
+        style="@style/textviewteoria"
+        android:inputType="number"
+        android:background="@drawable/borde"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/textviewteoria"
+        android:background="#99FFCC"
+        android:padding="2dp">
+        <TextView
+            style="@style/fullwrap"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="n (Tamaño de la muestra):"/>
+        <EditText
+            android:id="@+id/etn"
+            style="@style/textviewteoria"
+            android:inputType="number"
+            android:background="@drawable/borde"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#99FFCC"
+        android:padding="2dp">
+        <TextView
+            style="@style/fullwrap.negrita"
+            android:textSize="15dp"
+            android:text="a (Elem. cierta categoría):"/>
+        <EditText
+            android:id="@+id/eta"
+            style="@style/textviewteoria"
+            android:inputType="number"
+            android:background="@drawable/borde"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/textviewteoria"
+        android:background="#CCFFFF"
+        android:padding="2dp"
+        android:gravity="center"
+        android:paddingBottom="2dp">
+        <TextView
+            style="@style/fullwrap.0000CC"
+            android:textSize="15dp"
+            android:text="x (Cant. exitos): "/>
+        <EditText
+            android:id="@+id/etx"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/borde"/>
+    </LinearLayout>
+    <Button
+        style="@style/fullwrap"
+        android:layout_gravity="center"
+        android:onClick="probHiperg"
+        android:text="Obtener probabilidad"/>
+
+    <LinearLayout
+        style="@style/textviewteoria"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/fullwrap"
+            android:text="F(x) o P(X&lt;=x):"/>
+        <TextView
+            android:id="@+id/txtResultH1"
+            style="@style/textviewteoria" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/textviewteoria"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/fullwrap"
+            android:text="f(x) o P(X=x):"/>
+        <TextView
+            android:id="@+id/txtResultH2"
+            style="@style/textviewteoria" />
+    </LinearLayout>
+</LinearLayout>

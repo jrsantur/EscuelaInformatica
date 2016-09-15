@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.FuncComputador">
+    <ScrollView
+        style="@style/textviewteoria">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.000036"
+                android:text="@string/concepto_func_computador"/>
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/funccomputador"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.000036"
+                android:text="@string/concepto_func_computador2"/>
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/funccomputador2"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.000036"
+                android:text="@string/concepto_func_computador3"/>
+            <TextView
+                style="@style/moradoborde.letrasnegras.fillwrap"
+                android:text="@string/microoper_func_computador"/>
+
+            <TextView
+                style="@style/textviewteoria.000036"
+                android:text="@string/concepto_func_computador4"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

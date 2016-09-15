@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.MicroComputII">
+    <ScrollView
+        style="@style/textviewteoria">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="Los temas tomados en cuenta son:"
+                style="@style/textviewteoria" />
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="funcionamComputador"
+                android:text="Funcionamiento del Computador"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="arqInstruccion"
+                android:text="Arquitectura de Instrucción"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="cicloInstruccion"
+                android:text="Ciclo de Instrucción"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="segmentacionInstr"
+                android:text="Segmentación de Instrucción"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="laMemoria"
+                android:text="Memoria"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="jerarqMemoria"
+                android:text="Jerarquía de memoria"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="converBinHexa"
+                android:text="Conversion Binario Hex."/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

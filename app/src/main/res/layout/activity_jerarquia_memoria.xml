@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.JerarquiaMemoria">
+    <ScrollView
+        style="@style/textviewteoria">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="@string/concepto_jerarquia_memoria"
+                style="@style/textviewteoria.000036" />
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/jerarquiamem"/>
+            </HorizontalScrollView>
+            <TextView
+                android:text="@string/concepto2_jerarquia_memoria"
+                style="@style/textviewteoria.000036" />
+            <TextView
+                android:text="@string/fuente_jerarquia_memoria"
+                style="@style/textviewteoria" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

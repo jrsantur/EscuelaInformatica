@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.Programation.Programacion">
+    <ScrollView
+            style="@style/textviewteoria">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/textviewteoria"
+                    android:text="Los temas tomados en cuenta son:"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="abrirtecprogram"
+                    android:text="Técnicas de Programación"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="abrirPOO"
+                    android:text="Programación orientada a objetos"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="abrirLengProg"
+                    android:text="Lenguajes de Programación"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="abrirMetodologiaDesarr"
+                    android:text="Metodología de desarrollo de software"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="abrirIngenSoftware"
+                    android:text="Ingeniería del Software (tema)"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="abrirRup"
+                    android:text="RUP"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="abrirDesarrolloAgil"
+                    android:text="Desarrollo ágil de software"/>
+                <Button
+                    style="@style/textviewteoria"
+                    android:onClick="abrirJavaLenguaje"
+                    android:text="Java"/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

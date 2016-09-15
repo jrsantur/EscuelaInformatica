@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasII.SegmInstrucciones">
+    <ScrollView
+        style="@style/textviewteoria">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="@string/concepto_segm_instrucciones"
+                style="@style/textviewteoria.000066" />
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/tejecsegm"/>
+            </HorizontalScrollView>
+            <TextView
+                android:text="@string/concepto2_segm_instrucciones"
+                style="@style/textviewteoria.000066" />
+            <TextView
+                android:text="@string/formula_tejec_segmen"
+                style="@style/fullwrap.0000FF"
+                android:padding="5dp"
+                android:background="@drawable/bordemoradofondoyellow"/>
+            <TextView
+                android:text="@string/concepto3_segm_instrucciones"
+                style="@style/textviewteoria.000066" />
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/tsegtnoseg"/>
+            </HorizontalScrollView>
+            <TextView
+                android:text="@string/concepto4_segm_instrucciones"
+                style="@style/textviewteoria.000066" />
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/segmentacioninstr"/>
+            </HorizontalScrollView>
+            <TextView
+                android:text="@string/concepto5_segm_instrucciones"
+                style="@style/textviewteoria.000066" />
+            <TextView
+                android:text="@string/fuente_segm_instrucciones"
+                style="@style/textviewteoria" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

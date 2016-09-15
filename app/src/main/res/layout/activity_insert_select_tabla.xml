@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.AdmBaseDeDatos.InsertSelectTabla">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:layout_marginTop="4px"
+                android:text="@string/concepto_registro"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="italic"
+                android:text="insert into NOMBRETABLA (NOMBRECAMPO1, ..., NOMBRECAMPOn)\n values (VALORCAMPO1, ..., VALORCAMPOn);\n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Ejemplo: Para insertar un registro en tabla 'usuarios' se tipea:"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="insert into usuarios (nombre, clave) values ('Mariano','payaso');"/>
+            <TextView
+                android:id="@+id/txttituloinsertselecttabla"
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:text="Nota:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="En el comando anterior se insertó cadenas de caracteres, por eso se utilizó comillas simples.\n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/concepto_recuperar_select"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="select * from usuarios;"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:layout_marginTop="4px"
+                android:text="Ejemplo:"/>
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/selecttablausuarios"/>
+            </HorizontalScrollView>
+            <TextView
+                android:id="@+id/txttituloidentity"
+                style="@style/fullwrap.000099"
+                android:textStyle="bold"
+                android:text="\nCampos Identity:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/concepto_identity"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:text="@string/ejemplo_identity"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="@string/adicional_identity"/>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:textStyle="italic"
+                android:text="insert into libros (titulo,autor,editorial,precio)\n  values(‘El cuervo’, ’Edgar Allan Poe’,'Editorial-X',30);\n"/>
+            <TextView
+                style="@style/textviewteoria.000099"
+                android:textStyle="bold"
+                android:text="\nOtras características del atributo Identity:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:layout_marginTop="4px"
+                android:text="A un campo ‘identity’ se le puede indicar el valor de inicio de la secuencia y el incremento en ese orden respectivamente: Ejemplo:"/>
+            <TextView
+                style="@style/textviewteoria.000099"
+                android:text="codigo int identity(10,2) /* campo llamado codigo tipo identity */ \n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:layout_marginTop="4px"
+                android:text="@string/concepto_ident_seed"/>
+            <TextView
+                style="@style/textviewteoria.000099"
+                android:text="select ident_seed('NOMBREDETABLA'); \n"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:layout_marginTop="4px"
+                android:text="La función ‘ident_incr()’ retorna el valor de incremento del campo ‘identity’ de la tabla mencionada como parámetro en dicha función:"/>
+            <TextView
+                style="@style/textviewteoria.000099"
+                android:text="select ident_incr('NOMBREDETABLA');"/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

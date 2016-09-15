@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.MicrocomputadorasI.Controlador8259">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.000096"
+                android:text="@string/concepto_contr8259"/>
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pic8259conex"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:text="@string/descrip_pic8259"/>
+            <TextView
+                style="@style/textviewteoria.000096"
+                android:text="@string/concepto_contr8259_2"/>
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/op8259"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.0000FF"
+                android:text="@string/descrip_op8259"/>
+            <TextView
+                style="@style/textviewteoria"
+                android:text="@string/nota_fuente_contr8259"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

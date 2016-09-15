@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.EstructuraDeDatos.AlgoritmOrdenacionArreglos">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:text="Estos algoritmos que colocan los elementos de una lista o un vector en una secuencia dada por una relación de orden"/>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:layout_marginTop="4px"
+                android:text="Ordenación por Burbuja:"/>
+            <TextView
+                style="@style/textviewteoria.negrita"
+                android:scrollbars="vertical"
+                android:text="@string/concepto_algorit_burbuja"
+                android:layout_marginBottom="4px"/>
+            <HorizontalScrollView
+                style="@style/textviewteoria">
+                <ImageView
+                    style="@style/fullwrap"
+                    android:src="@drawable/algoritmoburbuja"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:layout_marginTop="4px"
+                android:text="Ordenación por Inserción:"/>
+            <TextView
+                style="@style/textviewteoria"
+                android:scrollbars="vertical"
+                android:text="@string/concepto_algorit_insercion"
+                android:layout_marginBottom="4px"/>
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/algoritmoinsercion"/>
+            </HorizontalScrollView>
+            <TextView
+                style="@style/textviewteoria.000066"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:text="Ordenación Rápida:"/>
+            <TextView
+                style="@style/textviewteoria"
+                android:scrollbars="vertical"
+                android:text="@string/concepto_algorit_quicksort"
+                android:layout_marginBottom="2dp"/>
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/algoritmoquicksort"/>
+            </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

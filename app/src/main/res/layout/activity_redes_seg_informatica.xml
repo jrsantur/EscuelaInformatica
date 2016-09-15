@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.RedesInformatica.RedesSegInformatica">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria"
+                android:text="Los temas tomados en cuenta son:"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="abrirActivityipv4"
+                android:text="IPv4"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="abrirActivityClasesdeIp"
+                android:text="Clases de IP"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="abrirActivitymascarared"
+                android:text="Máscara de red"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="abrirActivitysubred"
+                android:text="Subred"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="abrirActivitysubredapp"
+                android:text="Subredes-aplicación"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="abrirActivityipv6"
+                android:text="IPv6"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="abrirActivityipv6ii"
+                android:text="IPv6-II"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="abrirActivityvlan"
+                android:text="VLAN"/>
+            <Button
+                style="@style/textviewteoria"
+                android:onClick="abrirActivityatqinformatico"
+                android:text="Ataque informático"/>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

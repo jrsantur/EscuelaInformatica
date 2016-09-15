@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="chiroque.aplicaciones.com.escuelainformatica" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Estadistica.ChiCuadrado"
+            android:label="@string/title_activity_chi_cuadrado" >
+        </activity>
+        <activity
+            android:name=".Estadistica.Tstudent"
+            android:label="@string/title_activity_tstudent" >
+        </activity>
+        <activity
+            android:name=".Estadistica.DistZnormal"
+            android:label="@string/title_activity_dist_znormal" >
+        </activity>
+        <activity
+            android:name=".Matematicas.Matrices"
+            android:label="@string/title_activity_matrices" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.AsemblerFormComandos"
+            android:label="@string/title_activity_asembler_form_comandos" >
+        </activity>
+        <activity
+            android:name=".Estadistica.Estadisticas"
+            android:label="@string/title_activity_estadisticas" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.MicrocomputI"
+            android:label="@string/title_activity_microcomputadoras_i" >
+        </activity>
+        <activity
+            android:name=".InvestOperaciones.InvestOperaciones"
+            android:label="@string/title_activity_invest_operaciones" >
+        </activity>
+        <activity
+            android:name=".Estadistica.GraficoEstadistico"
+            android:label="@string/title_activity_grafico_estadistico" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasII.MicroComputII"
+            android:label="@string/title_activity_micro_computadoras_ii" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.Interrupciones"
+            android:label="@string/title_activity_interrupciones" >
+        </activity>
+        <activity
+            android:name=".Estadistica.GraficosEstadisticos.GraficoPLOT"
+            android:label="@string/title_activity_grafico_plot" >
+        </activity>
+        <activity
+            android:name=".Estadistica.GraficosEstadisticos.BarChartPLOT"
+            android:label="@string/title_activity_bar_chart_plot" >
+        </activity>
+        <activity
+            android:name=".Estadistica.DistribHipergeomtrica"
+            android:label="@string/title_activity_distrib_hipergeomtrica" >
+        </activity>
+        <activity
+            android:name=".Estadistica.DistribFisher"
+            android:label="@string/title_activity_distrib_fisher" >
+        </activity>
+        <activity
+            android:name=".Estadistica.DistribBinomial"
+            android:label="@string/title_activity_distrib_binomial" >
+        </activity>
+        <activity
+            android:name=".InvestOperaciones.ProblemaMochila"
+            android:label="@string/title_activity_problema_mochila" >
+        </activity>
+        <activity
+            android:name=".InvestOperaciones.ProblemaDiligencia"
+            android:label="@string/title_activity_problema_diligencia" >
+        </activity>
+        <activity
+            android:name=".Matematicas.Matematicas"
+            android:label="@string/title_activity_matematicas" >
+        </activity>
+        <activity
+            android:name=".Matematicas.Derivadas"
+            android:label="@string/title_activity_derivadas" >
+        </activity>
+        <activity
+            android:name=".Matematicas.ConversionAngulos"
+            android:label="@string/title_activity_conversion_angulos" >
+        </activity>
+        <activity
+            android:name=".Matematicas.SistemEcuaciones"
+            android:label="@string/title_activity_sistem_ecuaciones" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasII.ConversionBinHexa"
+            android:label="@string/title_activity_conversion_bin_hexa" >
+        </activity>
+        <activity
+            android:name=".Matematicas.FormulaIntegrales"
+            android:label="@string/title_activity_formula_integrales" >
+        </activity>
+        <activity
+            android:name=".Matematicas.IntegralNumerica"
+            android:label="@string/title_activity_integral_numerica" >
+        </activity>
+        <activity
+            android:name=".InvestOperaciones.SimplexMax"
+            android:label="@string/title_activity_simplex_max" >
+        </activity>
+        <activity
+            android:name=".InvestOperaciones.CadMarkovPotencia"
+            android:label="@string/title_activity_cad_markov_potencia" >
+        </activity>
+        <activity
+            android:name=".Matematicas.ProductoMatrices"
+            android:label="@string/title_activity_producto_matrices" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.SimulacionSistemas"
+            android:label="@string/title_activity_simulacion_sistemas" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.CuadradoMedio"
+            android:label="@string/title_activity_cuadrado_medio" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProductoMedio"
+            android:label="@string/title_activity_producto_medio" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.MetodoCongruencialLinealMultiplicativo"
+            android:label="@string/title_activity_metodo_congruencial_lineal_multiplicativo" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.MetodoLinealMixto"
+            android:label="@string/title_activity_metodo_lineal_mixto" >
+        </activity>
+        <activity
+            android:name=".EstructuraDeDatos.EstructuraDDatos"
+            android:label="@string/title_activity_estructura_de_datos" >
+        </activity>
+        <activity
+            android:name=".EstructuraDeDatos.Arboles"
+            android:label="@string/title_activity_arboles" >
+        </activity>
+        <activity
+            android:name=".EstructuraDeDatos.TiposDeDatos"
+            android:label="@string/title_activity_tipos_de_datos" >
+        </activity>
+        <activity
+            android:name=".EstructuraDeDatos.AlgoritmOrdenacionArreglos"
+            android:label="@string/title_activity_algoritm_ordenacion_arreglos" >
+        </activity>
+        <activity
+            android:name=".EstructuraDeDatos.Pilas"
+            android:label="@string/title_activity_pilas" >
+        </activity>
+        <activity
+            android:name=".EstructuraDeDatos.Recursividad"
+            android:label="@string/title_activity_recursividad" >
+        </activity>
+        <activity
+            android:name=".EstructuraDeDatos.ListasEnlazadas"
+            android:label="@string/title_activity_listas_enlazadas" >
+        </activity>
+        <activity
+            android:name=".AdmBaseDeDatos.AdminBaseDeDatos"
+            android:label="@string/title_activity_admin_base_de_datos" >
+        </activity>
+        <activity
+            android:name=".AdmBaseDeDatos.CrearBaseDatos"
+            android:label="@string/title_activity_crear_base_datos" >
+        </activity>
+        <activity
+            android:name=".AdmBaseDeDatos.CrearEliminarTabla"
+            android:label="@string/title_activity_crear_eliminar_tabla" >
+        </activity>
+        <activity
+            android:name=".AdmBaseDeDatos.InsertSelectTabla"
+            android:label="@string/title_activity_insert_select_tabla" >
+        </activity>
+        <activity
+            android:name=".AdmBaseDeDatos.DeleteUpdateTabla"
+            android:label="@string/title_activity_delete_update_tabla" >
+        </activity>
+        <activity
+            android:name=".AdmBaseDeDatos.ProcedimientosAlmacenados"
+            android:label="@string/title_activity_procedimientos_almacenados" >
+        </activity>
+        <activity
+            android:name=".AdmBaseDeDatos.FuncionesSABD"
+            android:label="@string/title_activity_funciones_sabd" >
+        </activity>
+        <activity
+            android:name=".AdmBaseDeDatos.Triggers"
+            android:label="@string/title_activity_triggers" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.RedesSegInformatica"
+            android:label="@string/title_activity_redes_seg_informatica" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProcesoBinomial"
+            android:label="@string/title_activity_proceso_binomial" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProcesoGeometrico"
+            android:label="@string/title_activity_proceso_geometrico" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProcesoBinomialNegativo"
+            android:label="@string/title_activity_binomial_negativo" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProcesoHipergeometrico"
+            android:label="@string/title_activity_proceso_hipergeometrico" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProcesoPoisoniano"
+            android:label="@string/title_activity_proceso_poisoniano" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProcesoExponencial"
+            android:label="@string/title_activity_proceso_exponencial" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProcesoGaussianoNorm"
+            android:label="@string/title_activity_proceso_gaussiano_norm" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProcesoLognormal"
+            android:label="@string/title_activity_proceso_lognormal" >
+        </activity>
+        <activity
+            android:name=".SimulacionDeSistemas.ProcesoUniforme"
+            android:label="@string/title_activity_proceso_uniforme" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.IPv6"
+            android:label="@string/title_activity_ipv6" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.MascaradeRed"
+            android:label="@string/title_activity_mascarade_red" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.Ipv4"
+            android:label="@string/title_activity_ipv4" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.Ipv6II"
+            android:label="@string/title_activity_ipv6_ii" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.Subred"
+            android:label="@string/title_activity_subred" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.ClasesdeIp"
+            android:label="@string/title_activity_clasesde_ip" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.SubredesApps"
+            android:label="@string/title_activity_subredes_apps" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.Vlan"
+            android:label="@string/title_activity_vlan" >
+        </activity>
+        <activity
+            android:name=".RedesInformatica.AtaqueInformatico"
+            android:label="@string/title_activity_ataque_informatico" >
+        </activity>
+        <activity
+            android:name=".Estadistica.ZnormalStand"
+            android:label="@string/title_activity_znormal_stand" >
+        </activity>
+        <activity
+            android:name=".TecnologiaWeb.TecnoWeb"
+            android:label="@string/title_activity_tecno_web" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.Arquitectura8086"
+            android:label="@string/title_activity_arquitectura8086" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.Registros8086"
+            android:label="@string/title_activity_registros8086" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.MemoriaSegm"
+            android:label="@string/title_activity_memoria_segm" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.MemDirecc"
+            android:label="@string/title_activity_mem_direcc" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.ES8086"
+            android:label="@string/title_activity_es8086" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.Controlador8259"
+            android:label="@string/title_activity_controlador8259" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasI.Copr8087"
+            android:label="@string/title_activity_copr8087" >
+        </activity>
+        <activity
+            android:name=".TecnologiaWeb.Html5"
+            android:label="@string/title_activity_html5" >
+        </activity>
+        <activity
+            android:name=".Programation.Programacion"
+            android:label="@string/title_activity_programacion" >
+        </activity>
+        <activity
+            android:name=".Programation.TecProgramacion"
+            android:label="@string/title_activity_tec_programacion" >
+        </activity>
+        <activity
+            android:name=".Programation.ProgOO"
+            android:label="@string/title_activity_prog_oo" >
+        </activity>
+        <activity
+            android:name=".Programation.LenguajeProgramacion"
+            android:label="@string/title_activity_lenguaje_programacion" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasII.FuncComputador"
+            android:label="@string/title_activity_func_computador" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasII.ArquitecturaInstruccion"
+            android:label="@string/title_activity_arquitectura_instruccion" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasII.CicloInstruccion"
+            android:label="@string/title_activity_ciclo_instruccion" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasII.SegmInstrucciones"
+            android:label="@string/title_activity_segm_instrucciones" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasII.JerarquiaMemoria"
+            android:label="@string/title_activity_jerarquia_memoria" >
+        </activity>
+        <activity
+            android:name=".MicrocomputadorasII.Memoria"
+            android:label="@string/title_activity_memoria" >
+        </activity>
+        <activity
+            android:name=".TecnologiaWeb.Css"
+            android:label="@string/title_activity_css" >
+        </activity>
+        <activity
+            android:name=".TecnologiaWeb.Bootstrap"
+            android:label="@string/title_activity_bootstrap" >
+        </activity>
+        <activity
+            android:name=".Programation.MetodologiaDesarrollo"
+            android:label="@string/title_activity_metodologia_desarrollo" >
+        </activity>
+        <activity
+            android:name=".Programation.IngenieriaSoftware"
+            android:label="@string/title_activity_ingenieria_software" >
+        </activity>
+        <activity
+            android:name=".Programation.JavaLenguaje"
+            android:label="@string/title_activity_java_lenguaje" >
+        </activity>
+        <activity
+            android:name=".Programation.DesAgilSoftw"
+            android:label="@string/title_activity_des_agil_softw" >
+        </activity>
+        <activity
+            android:name=".Programation.Rup"
+            android:label="@string/title_activity_rup" >
+        </activity>
+        <activity
+            android:name=".TecnologiaWeb.AspNet"
+            android:label="@string/title_activity_asp_net" >
+        </activity>
+        <activity
+            android:name=".TecnologiaWeb.Foundation"
+            android:label="@string/title_activity_foundation" >
+        </activity>
+        <activity
+            android:name=".TecnologiaWeb.Jsp"
+            android:label="@string/title_activity_jsp" >
+        </activity>
+    </application>
+
+</manifest>

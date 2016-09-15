@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context="chiroque.aplicaciones.com.escuelainformatica.Programation.ProgOO">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textviewteoria.FFF"
+                android:text="@string/concepto_prog_oo"/>
+            <TextView
+                style="@style/textviewteoria.CCFFFF"
+                android:text="@string/c_fund_prog_oo"/>
+            <TextView
+                style="@style/textviewteoria.FFFF99"
+                android:text="@string/c_fund_prog_oo_2"/>
+            <TextView
+                style="@style/textviewteoria.CCCCCC"
+                android:text="@string/fuente_poo"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
